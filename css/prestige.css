@@ -1,0 +1,810 @@
+/* ==========================================================================
+   OPTION 2: PRESTIGE BY MAESTROOO (prestige.css)
+   Luxury, product-led, editorial ecommerce aesthetics inspired by Prestige
+   ========================================================================== */
+
+/* Prestige Container & Core System */
+#theme-prestige {
+  font-family: var(--font-body--family);
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+}
+
+#theme-prestige .prestige-container {
+  width: 100%;
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+#theme-prestige .prestige-section {
+  padding-block: clamp(5rem, 9vw, 8.5rem);
+  position: relative;
+}
+
+#theme-prestige .prestige-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+}
+
+#theme-prestige .prestige-title-large {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.4rem, 4.5vw, 4.25rem);
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 01: HEADER & LUXURY MINIMAL NAVIGATION
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-header {
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  background-color: rgba(247, 244, 238, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(37, 40, 36, 0.08);
+}
+
+#theme-prestige .prestige-announcement {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  padding: 0.6rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+#theme-prestige .prestige-header .prestige-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1360px;
+  padding-inline: clamp(1rem, 2vw, 2rem);
+  margin-inline: auto;
+}
+
+#theme-prestige .prestige-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 1.2vw, 1.5rem);
+  min-height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#theme-prestige .prestige-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+#theme-prestige .prestige-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+#theme-prestige .prestige-logo-link img {
+  width: clamp(125px, 10vw, 150px);
+  height: auto;
+  max-height: 42px;
+}
+
+#theme-prestige .prestige-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.35rem, 0.9vw, 1.2rem);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 1;
+}
+
+#theme-prestige .prestige-menu a {
+  font-size: clamp(0.6875rem, 0.8vw, 0.78125rem);
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+#theme-prestige .prestige-menu a:hover,
+#theme-prestige .prestige-menu a[aria-current="page"] {
+  color: var(--color-gold);
+}
+
+#theme-prestige .prestige-nav-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 0.6vw, 0.75rem);
+  flex-shrink: 0;
+}
+
+#theme-prestige .prestige-nav-right .btn-icon {
+  width: 38px;
+  height: 38px;
+}
+
+#theme-prestige .prestige-header .prestige-btn-luxury.prestige-header-cta {
+  padding: 0.55rem 1.15rem !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  display: inline-flex;
+}
+
+#theme-prestige .prestige-mobile-toggle {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 02: IMMERSIVE FULL-WIDTH HERO WITH FLOATING LUXURY CARD
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-hero {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-oat);
+  overflow: hidden;
+}
+
+#theme-prestige .prestige-hero__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+#theme-prestige .prestige-hero__backdrop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  filter: brightness(0.92);
+}
+
+#theme-prestige .prestige-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(25, 28, 24, 0.45) 0%, rgba(25, 28, 24, 0.15) 60%, transparent 100%);
+  z-index: 2;
+}
+
+#theme-prestige .prestige-hero__panel {
+  position: relative;
+  z-index: 3;
+  max-width: 620px;
+  background-color: rgba(247, 244, 238, 0.95);
+  backdrop-filter: blur(12px);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  box-shadow: 0 24px 60px -12px rgba(15, 22, 19, 0.35);
+  border: 1px solid rgba(183, 155, 106, 0.35);
+  margin-block: 3rem;
+}
+
+#theme-prestige .prestige-hero__panel h1 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.4rem, 3.8vw, 3.8rem);
+  line-height: 1.14;
+  margin-bottom: var(--space-md);
+  color: var(--color-ink);
+}
+
+#theme-prestige .prestige-hero__panel p {
+  font-size: 1.0625rem;
+  line-height: 1.68;
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-xl);
+}
+
+#theme-prestige .prestige-btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.15rem 2.5rem;
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-forest);
+  transition: all var(--transition-fast);
+}
+
+#theme-prestige .prestige-btn-luxury:hover {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-ink);
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 03: WHAT'S INSIDE — HIGH-END SPLIT LOOKBOOK SPREAD
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-lookbook-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(3rem, 6vw, 6.5rem);
+  align-items: center;
+}
+
+#theme-prestige .prestige-lookbook-media {
+  position: relative;
+  background-color: var(--color-white);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-editorial);
+  border: 1px solid var(--border-light);
+}
+
+#theme-prestige .prestige-inclusions-list {
+  display: grid;
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  padding-left: 0;
+  list-style: none;
+}
+
+#theme-prestige .prestige-inclusions-item {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: var(--space-lg);
+}
+
+#theme-prestige .prestige-inclusions-item h3 {
+  font-family: var(--font-heading--family);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+  color: var(--color-ink);
+}
+
+#theme-prestige .prestige-inclusions-item p {
+  font-size: 0.9375rem;
+  line-height: 1.62;
+  color: var(--color-ink-muted);
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 04: FEATURED VOLUME — LUXURY MERCHANDISING
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-product-showcase {
+  background-color: var(--color-white);
+  border-block: 1px solid var(--border-light);
+}
+
+#theme-prestige .prestige-product-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+}
+
+#theme-prestige .prestige-product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: sticky;
+  top: 120px;
+}
+
+#theme-prestige .prestige-product-hero-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background-color: var(--color-ivory);
+  box-shadow: var(--shadow-book);
+}
+
+#theme-prestige .prestige-product-info h2 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.2rem, 3.2vw, 3.1rem);
+  line-height: 1.15;
+  margin-bottom: var(--space-xs);
+}
+
+#theme-prestige .prestige-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  margin-block: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--border-light);
+}
+
+#theme-prestige .prestige-price-amount {
+  font-family: var(--font-heading--family);
+  font-size: 2.25rem;
+  color: var(--color-forest);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 05: HOW IT WORKS — RESTRAINED HORIZONTAL TIMELINE
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-process {
+  background-color: var(--color-oat);
+}
+
+#theme-prestige .prestige-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2xl);
+  margin-top: var(--space-3xl);
+}
+
+#theme-prestige .prestige-timeline-item {
+  border-top: 1px solid rgba(37, 40, 36, 0.2);
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+#theme-prestige .prestige-timeline-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+#theme-prestige .prestige-timeline-item h3 {
+  font-family: var(--font-heading--family);
+  font-size: 1.45rem;
+  margin-block: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 06: COLLECTOR'S JOURNEY — HIGH JEWELRY EDITORIAL STYLE
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-collector {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+}
+
+#theme-prestige .prestige-collector-header {
+  max-width: 680px;
+  margin-bottom: var(--space-3xl);
+}
+
+#theme-prestige .prestige-collector-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+#theme-prestige .prestige-tier-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(183, 155, 106, 0.35);
+  padding: var(--space-2xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#theme-prestige .prestige-tier-box h3 {
+  font-family: var(--font-heading--family);
+  font-size: 1.95rem;
+  color: var(--color-ivory);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 07: EDITORIAL JOURNAL
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  margin-top: var(--space-3xl);
+}
+
+#theme-prestige .prestige-journal-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+#theme-prestige .prestige-journal-card:hover img {
+  transform: scale(1.03);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 08: MEET THE FOUNDER — EDITORIAL DESK STUDY
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-founder-section {
+  background-color: var(--color-oat);
+}
+
+#theme-prestige .prestige-founder-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: center;
+}
+
+#theme-prestige .prestige-founder-media {
+  position: relative;
+}
+
+#theme-prestige .prestige-founder-media img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  box-shadow: var(--shadow-editorial);
+  border: 1px solid rgba(183, 155, 106, 0.4);
+}
+
+#theme-prestige .prestige-founder-content h2 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+  color: var(--color-ink);
+}
+
+#theme-prestige .prestige-founder-content p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--color-ink);
+  margin-bottom: var(--space-md);
+}
+
+#theme-prestige .prestige-founder-signature {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(37, 40, 36, 0.16);
+  font-family: var(--font-heading--family);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 09: TESTIMONIAL QUOTATION HERO
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-quote-hero {
+  text-align: center;
+  max-width: 860px;
+  margin-inline: auto;
+  padding-block: var(--space-2xl);
+}
+
+#theme-prestige .prestige-quote-hero blockquote {
+  font-family: var(--font-heading--family);
+  font-size: clamp(1.8rem, 2.8vw, 2.75rem);
+  line-height: 1.35;
+  font-style: italic;
+  color: var(--color-ink);
+  margin-bottom: var(--space-lg);
+}
+
+#theme-prestige .prestige-quote-author {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+#theme-prestige .prestige-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-3xl);
+}
+
+#theme-prestige .prestige-testimonial-card {
+  background-color: var(--color-white);
+  padding: var(--space-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+#theme-prestige .prestige-testimonial-card p {
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+  margin-bottom: var(--space-md);
+}
+
+#theme-prestige .prestige-testimonial-card cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 10: FAQS — RESTRAINED ACCORDION
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-faqs-section {
+  background-color: var(--color-white);
+}
+
+#theme-prestige .prestige-faqs-header {
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: var(--space-3xl);
+}
+
+#theme-prestige .prestige-accordion-list {
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+#theme-prestige .prestige-accordion-details {
+  border-bottom: 1px solid var(--border-light);
+}
+
+#theme-prestige .prestige-accordion-details:first-child {
+  border-top: 1px solid var(--border-light);
+}
+
+#theme-prestige .prestige-accordion-details summary {
+  padding-block: 1.35rem;
+  font-family: var(--font-heading--family);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+#theme-prestige .prestige-accordion-details summary::-webkit-details-marker {
+  display: none;
+}
+
+#theme-prestige .prestige-accordion-details summary::marker {
+  display: none;
+}
+
+#theme-prestige .prestige-accordion-details summary:hover {
+  color: var(--color-gold);
+}
+
+#theme-prestige .prestige-accordion-details summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  transition: transform var(--transition-fast);
+}
+
+#theme-prestige .prestige-accordion-details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+#theme-prestige .prestige-accordion-content {
+  padding-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 11: FINAL SUBSCRIPTION CTA
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-cta-banner {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  text-align: center;
+  border-top: 1px solid rgba(183, 155, 106, 0.35);
+}
+
+#theme-prestige .prestige-cta-box {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: clamp(3rem, 6vw, 5rem) var(--space-xl);
+  border: 1px solid rgba(183, 155, 106, 0.3);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+#theme-prestige .prestige-cta-box h2 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  color: var(--color-ivory);
+  margin-bottom: var(--space-md);
+}
+
+#theme-prestige .prestige-cta-box p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--color-ivory-muted);
+  margin-bottom: var(--space-2xl);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE 12: FOOTER & NEWSLETTER
+   -------------------------------------------------------------------------- */
+#theme-prestige .prestige-footer {
+  background-color: #1a241f;
+  color: var(--color-ivory);
+  padding-block: var(--space-3xl) var(--space-xl);
+  border-top: 1px solid rgba(183, 155, 106, 0.2);
+}
+
+#theme-prestige .prestige-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+}
+
+#theme-prestige .prestige-footer-col h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-lg);
+}
+
+#theme-prestige .prestige-footer-col ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+#theme-prestige .prestige-footer-col a {
+  font-size: 0.875rem;
+  color: var(--color-ivory-muted);
+  transition: color var(--transition-fast);
+}
+
+#theme-prestige .prestige-footer-col a:hover {
+  color: var(--color-ivory);
+}
+
+#theme-prestige .prestige-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-xl);
+  border-top: 1px solid rgba(247, 244, 238, 0.08);
+  font-size: 0.75rem;
+  color: var(--color-ivory-muted);
+}
+
+/* --------------------------------------------------------------------------
+   PRESTIGE LUXURY MOBILE DRAWER
+   -------------------------------------------------------------------------- */
+.prestige-drawer {
+  background-color: var(--color-ivory);
+  border-right: 1px solid rgba(183, 155, 106, 0.35);
+}
+
+.prestige-drawer__header {
+  border-bottom: 1px solid var(--border-light);
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-ivory);
+}
+
+.prestige-drawer__title {
+  font-family: var(--font-heading--family);
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+}
+
+.prestige-drawer__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 65px);
+  overflow-y: auto;
+}
+
+.prestige-drawer__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.prestige-drawer__link {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 0.9rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+}
+
+.prestige-drawer__link:hover {
+  color: var(--color-gold);
+  padding-left: 0.35rem;
+}
+
+.prestige-drawer__num {
+  font-family: var(--font-heading--family);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-gold);
+  min-width: 1.5rem;
+}
+
+.prestige-drawer__footer {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Responsive Prestige Adjustments */
+@media (max-width: 1024px) {
+  #theme-prestige .prestige-nav-wrapper {
+    min-height: 72px;
+  }
+
+  #theme-prestige .prestige-menu {
+    display: none;
+  }
+
+  #theme-prestige .prestige-mobile-toggle {
+    display: inline-flex;
+  }
+
+  #theme-prestige .prestige-header-cta {
+    display: none;
+  }
+
+  #theme-prestige .prestige-lookbook-grid,
+  #theme-prestige .prestige-product-grid,
+  #theme-prestige .prestige-founder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #theme-prestige .prestige-product-gallery {
+    position: static;
+  }
+
+  #theme-prestige .prestige-timeline-grid,
+  #theme-prestige .prestige-collector-card-grid,
+  #theme-prestige .prestige-journal-grid,
+  #theme-prestige .prestige-testimonials-grid,
+  #theme-prestige .prestige-footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  #theme-prestige .prestige-footer-bottom {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+}

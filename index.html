@@ -1,0 +1,4934 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hijri | A Monthly Periodical to Recenter You Throughout Your Lunar Year</title>
+
+  <meta name="description" content="Hijri by Masuma Abdul-Muhit &mdash; A 40-page A4 monthly Islamic print publication exploring one meaningful spiritual theme each lunar month through Qur'anic reflection, classical scholarship, and guided journaling.">
+
+  <!-- Original Brand Favicon -->
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Editorial Typography: Cormorant Garamond & DM Sans -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Modular Stylesheets (No External Frameworks) -->
+
+  <link rel="stylesheet" href="css/variables.css">
+
+  <link rel="stylesheet" href="css/base.css">
+
+  <link rel="stylesheet" href="css/components.css">
+
+    <link rel="stylesheet" href="css/sections.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="stylesheet" href="css/theme-switcher.css">
+
+  <link rel="stylesheet" href="css/prestige.css">
+
+  <link rel="stylesheet" href="css/publisher.css">
+
+</head>
+
+<body class="color-scheme-main-light">
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- ========================================================================
+
+       OPTION 1: HORIZON (FREE THEME BY SHOPIFY)
+
+       Existing implementation preserved visually and functionally
+
+       ======================================================================== -->
+
+  <div id="theme-horizon" class="theme-container is-active-theme" data-theme-container="horizon">
+
+<!-- ========================================================================
+
+       SECTION 01: ANNOUNCEMENT BAR & HEADER
+
+       Horizon Mapping: `sections/header-announcements.liquid` + `sections/header.liquid`
+
+       ======================================================================== -->
+
+  <aside class="announcement-bar color-scheme-dark-forest" role="region" aria-label="Store announcement">
+
+    <div class="container announcement-bar__inner">
+
+      <span>Free Delivery on All Orders (UK &amp; International)</span>
+
+      <span class="announcement-bar__dot" aria-hidden="true">&bull;</span>
+
+      <span>
+
+        Volume 6 <strong>Shukr</strong> Pre-Orders Open (Closes 12 Nov) &mdash;
+
+        <a href="#featured-volume" class="announcement-bar__link">Reserve Issue</a>
+
+      </span>
+
+      <span class="announcement-bar__dot announcement-bar__hide-mobile" aria-hidden="true">&bull;</span>
+
+      <span class="announcement-bar__hide-mobile">Vol 5 Sabr Dispatched from 19/10</span>
+
+    </div>
+
+  </aside>
+
+  <header class="site-header color-scheme-main-light" data-site-header>
+
+    <div class="container site-header__inner">
+
+      <!-- Mobile Menu Trigger -->
+
+      <button
+
+        type="button"
+
+        class="btn-icon site-header__mobile-toggle"
+
+        aria-label="Open navigation menu"
+
+        aria-expanded="false"
+
+        aria-controls="mobile-nav-drawer"
+
+        data-drawer-open="mobile-nav-drawer"
+
+      >
+
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+
+          <line x1="3" y1="7" x2="21" y2="7"></line>
+
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+
+          <line x1="3" y1="17" x2="15" y2="17"></line>
+
+        </svg>
+
+      </button>
+
+      <!-- Original Brand Logo (`blocks/_header-logo.liquid`) -->
+
+      <a href="#top" class="site-header__logo-link" aria-label="Hijri by Masuma Abdul-Muhit &mdash; Home">
+
+        <img
+
+          src="assets/images/logo.png"
+
+          alt="Hijri by Masuma Abdul-Muhit"
+
+          width="192"
+
+          height="54"
+
+          class="site-header__logo-img"
+
+        >
+
+      </a>
+
+      <!-- Primary Desktop Navigation (`blocks/_header-menu.liquid`) -->
+
+      <nav class="site-nav" aria-label="Primary navigation">
+
+        <ul class="site-nav__list">
+
+          <li><a href="#top" class="site-nav__link" aria-current="page">Home</a></li>
+
+          <li><a href="#featured-volume" class="site-nav__link">Shop</a></li>
+
+          <li><a href="#collectors-journey" class="site-nav__link">Collector's Journey</a></li>
+
+          <li><a href="#how-it-works" class="site-nav__link">Midway Moments</a></li>
+
+          <li><a href="#behind-the-themes" class="site-nav__link">Journal</a></li>
+
+          <li><a href="#meet-the-founder" class="site-nav__link">About</a></li>
+
+          <li><a href="#faqs" class="site-nav__link">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Utility Actions: Localization, Search, Account, Cart Drawer -->
+
+      <div class="site-header__utilities">
+
+        <label for="header-currency" class="visually-hidden">Select Country and Currency</label>
+
+        <select id="header-currency" class="currency-selector" aria-label="Country and currency">
+
+          <option value="GBP" selected>GBP &pound;</option>
+
+          <option value="USD">USD $</option>
+
+          <option value="CAD">CAD $</option>
+
+          <option value="AUD">AUD $</option>
+
+        </select>
+
+        <button
+
+          type="button"
+
+          class="btn-icon"
+
+          aria-label="Open search"
+
+          aria-expanded="false"
+
+          aria-controls="search-drawer"
+
+          data-drawer-open="search-drawer"
+
+        >
+
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+            <circle cx="11" cy="11" r="7"></circle>
+
+            <line x1="20" y1="20" x2="16.2" y2="16.2"></line>
+
+          </svg>
+
+        </button>
+
+        <a
+
+          href="#how-it-works"
+
+          class="btn-icon"
+
+          aria-label="Reader account and Midway Moments login"
+
+          title="Reader Account Login"
+
+        >
+
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+
+            <circle cx="12" cy="7" r="4"></circle>
+
+          </svg>
+
+        </a>
+
+        <button
+
+          type="button"
+
+          class="btn-icon"
+
+          aria-label="View bag (1 item)"
+
+          aria-expanded="false"
+
+          aria-controls="cart-drawer"
+
+          data-drawer-open="cart-drawer"
+
+        >
+
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+
+          </svg>
+
+          <span class="cart-count-badge" aria-hidden="true">1</span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main id="main-content">
+
+    <!-- ======================================================================
+
+         SECTION 02: EDITORIAL HERO
+
+         Horizon Mapping: `sections/section.liquid` (or `sections/hero.liquid`)
+
+         with nested `group`, `_heading`, `text`, `button`, and `image` blocks.
+
+         Scheme: Dark Forest (#34483F bg, #F7F4EE text)
+
+         ====================================================================== -->
+
+    <section id="top" class="hero-editorial color-scheme-dark-forest" aria-labelledby="hero-heading">
+
+      <div class="container hero-editorial__grid">
+
+        <!-- Left Column: Editorial Value Proposition -->
+
+        <div class="hero-editorial__content reveal-on-scroll">
+
+          <span class="eyebrow">A Monthly Print Periodical for the Lunar Year</span>
+
+          <h1 id="hero-heading" class="hero-editorial__title">
+
+            Twelve months. <em>One journey</em> back to yourself.
+
+          </h1>
+
+          <p class="hero-editorial__subtitle">
+
+            One meaningful theme each lunar month, explored through Qur&rsquo;anic reflection, classical scholarship and guided journaling &mdash; printed on 40 A4 pages and posted to your door, sans the screen.
+
+          </p>
+
+          <div class="hero-editorial__actions">
+
+            <a href="#featured-volume" class="btn btn--primary btn--lg">
+
+              Start Your Journey
+
+            </a>
+
+            <a href="#whats-inside" class="link-editorial">
+
+              <span>Discover What's Inside</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+          </div>
+
+          <ul class="hero-editorial__reassurance" aria-label="Subscription benefits">
+
+            <li class="hero-editorial__reassurance-item">
+
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <polyline points="20 6 9 17 4 12"></polyline>
+
+              </svg>
+
+              <span><strong>&pound;11.99/mo</strong> subscription (save 20% off &pound;14.99 single issue)</span>
+
+            </li>
+
+            <li class="hero-editorial__reassurance-item">
+
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <polyline points="20 6 9 17 4 12"></polyline>
+
+              </svg>
+
+              <span>Free UK &amp; international delivery</span>
+
+            </li>
+
+            <li class="hero-editorial__reassurance-item">
+
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <polyline points="20 6 9 17 4 12"></polyline>
+
+              </svg>
+
+              <span>Skip a month or cancel anytime before the 12th</span>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Right Column: Real Publication Photography Composition -->
+
+        <div class="hero-editorial__visual reveal-on-scroll" data-reveal-delay="120">
+
+          <div class="hero-editorial__main-frame">
+
+            <span class="hero-editorial__issue-tag">Current Issue &bull; Vol. 6 Shukr</span>
+
+            <img
+
+              src="assets/images/vol6-cover.png"
+
+              alt="Hijri Volume 6: Jumada al-Thani &mdash; Shukr (Gratitude) printed A4 magazine cover"
+
+              width="720"
+
+              height="900"
+
+              fetchpriority="high"
+
+              class="hero-editorial__main-img"
+
+            >
+
+          </div>
+
+          <div class="hero-editorial__floating-card">
+
+            <img
+
+              src="assets/images/spread-1.png"
+
+              alt="Interior guided reflection and scholarship spread inside Hijri magazine"
+
+              width="340"
+
+              height="255"
+
+              class="hero-editorial__floating-img"
+
+            >
+
+            <div class="hero-editorial__floating-caption">
+
+              <span>40 Pages &bull; A4 Print Edition</span>
+
+              <span>120gsm Uncoated</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 03: WHAT'S INSIDE EVERY VOLUME
+
+         Horizon Mapping: `sections/section.liquid` with nested `image`, `_heading`,
+
+         `text`, `icon`, `button`, and `group` blocks.
+
+         Scheme: Main Light (Soft Ivory #F7F4EE bg, Soft Ink #252824 text)
+
+         ====================================================================== -->
+
+    <section id="whats-inside" class="section-spacing color-scheme-main-light" aria-labelledby="whats-inside-heading">
+
+      <div class="container whats-inside__layout">
+
+        <!-- Left: Authentic Order Flatlay Photography -->
+
+        <div class="whats-inside__media reveal-on-scroll">
+
+          <div class="whats-inside__primary-img-wrap">
+
+            <img
+
+              src="assets/images/whats-inside.png"
+
+              alt="Flatlay of Hijri magazine alongside the monthly collector's token, welcome letter, and lunar year journey print"
+
+              width="640"
+
+              height="800"
+
+              loading="lazy"
+
+              class="whats-inside__primary-img"
+
+            >
+
+          </div>
+
+          <div class="whats-inside__spec-strip" aria-label="Physical print specifications">
+
+            <span>40 A4 Pages</span>
+
+            <span>&bull;</span>
+
+            <span>120gsm Inner Stock</span>
+
+            <span>&bull;</span>
+
+            <span>350gsm Matte Cover</span>
+
+            <span>&bull;</span>
+
+            <span>Scholar Checked</span>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Editorial Breakdown of Inclusions -->
+
+        <div class="whats-inside__content reveal-on-scroll" data-reveal-delay="100">
+
+          <span class="eyebrow">What Comes With Every Order</span>
+
+          <h2 id="whats-inside-heading" class="section-header__title">
+
+            A meaningful moment, delivered every month.
+
+          </h2>
+
+          <p class="lead-paragraph">
+
+            In a world of fleeting notifications and digital noise, Hijri was made to be held in your hands &mdash; read slowly with a warm cup of tea, annotated in the margins, and returned to throughout the lunar month.
+
+          </p>
+
+          <div class="whats-inside__features-grid">
+
+            <!-- Inclusion 1 -->
+
+            <article class="inclusions-item">
+
+              <div class="inclusions-item__header">
+
+                <span class="inclusions-item__icon" aria-hidden="true">
+
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+
+                  </svg>
+
+                </span>
+
+                <h3 class="inclusions-item__title">The 40-Page A4 Magazine</h3>
+
+              </div>
+
+              <p class="inclusions-item__desc">
+
+                Articles on the month&rsquo;s spiritual theme written in light of the Qur&rsquo;an, Sunnah and classical scholars of the heart &mdash; authored by a qualified Aalimah and life coach and verified by scholars.
+
+              </p>
+
+            </article>
+
+            <!-- Inclusion 2 -->
+
+            <article class="inclusions-item">
+
+              <div class="inclusions-item__header">
+
+                <span class="inclusions-item__icon" aria-hidden="true">
+
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                    <path d="M12 20h9"></path>
+
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+
+                  </svg>
+
+                </span>
+
+                <h3 class="inclusions-item__title">Guided Journaling &amp; Rhythm</h3>
+
+              </div>
+
+              <p class="inclusions-item__desc">
+
+                Self-accounting (<em>muhasabah</em>) prompts, the signature <em>Whisper</em> reflection pages, a dhikr to carry, and a gentle daily/weekly rhythm with no streaks or guilt.
+
+              </p>
+
+            </article>
+
+            <!-- Inclusion 3 -->
+
+            <article class="inclusions-item">
+
+              <div class="inclusions-item__header">
+
+                <span class="inclusions-item__icon" aria-hidden="true">
+
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                    <circle cx="12" cy="8" r="6"></circle>
+
+                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+
+                  </svg>
+
+                </span>
+
+                <h3 class="inclusions-item__title">Token &amp; Twelve-Month Print</h3>
+
+              </div>
+
+              <p class="inclusions-item__desc">
+
+                A welcome letter, a journey print mapping all twelve lunar months, and a physical Collector&rsquo;s Token bearing the month&rsquo;s word to unlock milestone rewards at 4, 8 and 12 volumes.
+
+              </p>
+
+            </article>
+
+            <!-- Inclusion 4 -->
+
+            <article class="inclusions-item">
+
+              <div class="inclusions-item__header">
+
+                <span class="inclusions-item__icon" aria-hidden="true">
+
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+
+                  </svg>
+
+                </span>
+
+                <h3 class="inclusions-item__title">Midway Moments Video</h3>
+
+              </div>
+
+              <p class="inclusions-item__desc">
+
+                Halfway through the lunar month, readers receive access to an exclusive mid-month video reflection from Masuma to check in with your heart and renew your intentions.
+
+              </p>
+
+            </article>
+
+          </div>
+
+          <a href="#featured-volume" class="link-editorial">
+
+            <span>Explore Volume 6: Jumada al-Thani | Shukr</span>
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+
+              <polyline points="12 5 19 12 12 19"></polyline>
+
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 04: FEATURED CURRENT VOLUME
+
+         Horizon Mapping: `sections/featured-product.liquid` with static blocks
+
+         `_product-media-gallery.liquid`, `_product-details.liquid`, and
+
+         `Shopify Subscriptions` app block (`subscriptions-remix-95`).
+
+         Scheme: Clean White (#FFFFFF bg, #252824 text)
+
+         ====================================================================== -->
+
+    <section id="featured-volume" class="section-spacing featured-volume color-scheme-clean-white" aria-labelledby="featured-volume-heading">
+
+      <div class="container featured-volume__grid">
+
+        <!-- Left: Interactive Product Media Gallery (`blocks/_product-media-gallery.liquid`) -->
+
+        <div class="product-gallery reveal-on-scroll" aria-label="Volume 6 product gallery">
+
+          <div class="product-gallery__stage">
+
+            <img
+
+              id="featured-main-image"
+
+              src="assets/images/vol6-cover.png"
+
+              alt="Volume 6 - Jumada al-Thani | SHUKR front cover"
+
+              width="720"
+
+              height="900"
+
+              loading="lazy"
+
+              class="product-gallery__main-img"
+
+            >
+
+            <span id="featured-main-caption" class="product-gallery__stage-caption">
+
+              Volume 6 Cover &bull; Jumada al-Thani | Shukr
+
+            </span>
+
+          </div>
+
+          <div class="product-gallery__thumbs" role="tablist" aria-label="Choose product view">
+
+            <button
+
+              type="button"
+
+              role="tab"
+
+              aria-selected="true"
+
+              class="product-gallery__thumb"
+
+              data-gallery-thumb
+
+              data-src="assets/images/vol6-cover.png"
+
+              data-alt="Volume 6 - Jumada al-Thani | SHUKR front cover"
+
+              data-caption="Volume 6 Cover &bull; Jumada al-Thani | Shukr"
+
+            >
+
+              <img src="assets/images/vol6-cover.png" alt="Cover thumbnail" width="160" height="160" loading="lazy">
+
+            </button>
+
+            <button
+
+              type="button"
+
+              role="tab"
+
+              aria-selected="false"
+
+              class="product-gallery__thumb"
+
+              data-gallery-thumb
+
+              data-src="assets/images/vol6-flatlay.png"
+
+              data-alt="Volume 6 flatlay with collector's token, welcome card and envelope"
+
+              data-caption="Complete Parcel &bull; Magazine, Welcome Letter & Collector's Token"
+
+            >
+
+              <img src="assets/images/vol6-flatlay.png" alt="Flatlay thumbnail" width="160" height="160" loading="lazy">
+
+            </button>
+
+            <button
+
+              type="button"
+
+              role="tab"
+
+              aria-selected="false"
+
+              class="product-gallery__thumb"
+
+              data-gallery-thumb
+
+              data-src="assets/images/spread-1.png"
+
+              data-alt="Interior editorial spread inside Hijri magazine"
+
+              data-caption="Interior Spread &bull; Qur'anic Reflection & Classical Scholarship"
+
+            >
+
+              <img src="assets/images/spread-1.png" alt="Interior spread 1 thumbnail" width="160" height="160" loading="lazy">
+
+            </button>
+
+            <button
+
+              type="button"
+
+              role="tab"
+
+              aria-selected="false"
+
+              class="product-gallery__thumb"
+
+              data-gallery-thumb
+
+              data-src="assets/images/spread-2.png"
+
+              data-alt="Guided journaling and self-accounting spread inside Hijri"
+
+              data-caption="Guided Journaling &bull; Intention, Reflection, Action & Lasting Change"
+
+            >
+
+              <img src="assets/images/spread-2.png" alt="Interior spread 2 thumbnail" width="160" height="160" loading="lazy">
+
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Product Details & Selling Plan Selector (`blocks/_product-details.liquid`) -->
+
+        <div class="product-details reveal-on-scroll" data-reveal-delay="100">
+
+          <div class="product-details__meta-row">
+
+            <span class="badge badge--forest">Current Pre-Order &bull; Limited Print Run</span>
+
+            <span id="featured-price-badge" class="badge badge--gold">Save 20% Monthly</span>
+
+          </div>
+
+          <h2 id="featured-volume-heading" class="product-details__title">
+
+            Volume 6 &mdash; Jumada al-Thani | SHUKR
+
+          </h2>
+
+          <p class="product-details__subtitle">
+
+            &ldquo;What Patience Planted&rdquo;
+
+          </p>
+
+          <!-- Price Bar (Dynamically synced with Selling Plan selection) -->
+
+          <div class="product-details__price-bar" aria-live="polite">
+
+            <span id="featured-price-current" class="product-details__price-current">&pound;11.99 GBP</span>
+
+            <span id="featured-price-compare" class="product-details__price-compare">&pound;14.99 GBP</span>
+
+            <span class="product-details__price-note">Free UK &amp; International Delivery Included</span>
+
+          </div>
+
+          <div class="product-details__excerpt">
+
+            <p>
+
+              Volume 6 explores <strong>Shukr &mdash; gratitude</strong>: the quiet, active seeing that reveals the life you already have as full, long before anything new arrives. It is the other half of faith, the harvest after the long wait.
+
+            </p>
+
+            <p>
+
+              Through Qur&rsquo;anic reflection, the wisdom of the classical scholars of the heart, guided journaling and small daily practices, this volume walks you through the season of thanks: to see the favours that have gone invisible because they never failed you, and to trace every gift back to its Giver.
+
+            </p>
+
+            <blockquote>
+
+              &ldquo;Shukr is not the arrival of more, but the opening of your eyes to how much was always, extravagantly, here. You are not behind. You are in abundance.&rdquo;
+
+            </blockquote>
+
+          </div>
+
+          <!-- Purchase Options Selector (Addresses Live Site Missing One-Time Radio Option) -->
+
+          <form class="product-details__form" aria-label="Purchase options for Volume 6">
+
+            <fieldset class="purchase-options">
+
+              <legend class="purchase-options__legend">Select How You Would Like to Read</legend>
+
+              <!-- Option 1: Monthly Subscription (&pound;11.99 / month &mdash; Selling Plan ID 738968437120) -->
+
+              <label class="plan-option is-selected" data-plan-option="subscription">
+
+                <div class="plan-option__header">
+
+                  <div class="plan-option__radio-wrap">
+
+                    <input
+
+                      type="radio"
+
+                      name="purchase_plan"
+
+                      value="subscription"
+
+                      checked
+
+                      class="plan-option__radio"
+
+                    >
+
+                    <span class="plan-option__title">Monthly Subscription &mdash; Deliver Every Month</span>
+
+                  </div>
+
+                  <div class="plan-option__price-group">
+
+                    <span class="plan-option__price">&pound;11.99 / mo</span>
+
+                    <span class="plan-option__compare">&pound;14.99</span>
+
+                  </div>
+
+                </div>
+
+                <ul class="plan-option__perks">
+
+                  <li class="plan-option__perk">
+
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <polyline points="20 6 9 17 4 12"></polyline>
+
+                    </svg>
+
+                    <span>Save 20% every lunar month + free worldwide delivery</span>
+
+                  </li>
+
+                  <li class="plan-option__perk">
+
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <polyline points="20 6 9 17 4 12"></polyline>
+
+                    </svg>
+
+                    <span>Collect every monthly Token toward 4, 8 &amp; 12-volume rewards</span>
+
+                  </li>
+
+                  <li class="plan-option__perk">
+
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <polyline points="20 6 9 17 4 12"></polyline>
+
+                    </svg>
+
+                    <span>Auto-renews; pause, skip a month, or cancel anytime before the 12th</span>
+
+                  </li>
+
+                </ul>
+
+              </label>
+
+              <!-- Option 2: Single Volume One-Time Purchase (&pound;14.99) -->
+
+              <label class="plan-option" data-plan-option="onetime">
+
+                <div class="plan-option__header">
+
+                  <div class="plan-option__radio-wrap">
+
+                    <input
+
+                      type="radio"
+
+                      name="purchase_plan"
+
+                      value="onetime"
+
+                      class="plan-option__radio"
+
+                    >
+
+                    <span class="plan-option__title">One-Time Purchase &mdash; Single Volume Only</span>
+
+                  </div>
+
+                  <div class="plan-option__price-group">
+
+                    <span class="plan-option__price">&pound;14.99</span>
+
+                  </div>
+
+                </div>
+
+                <ul class="plan-option__perks">
+
+                  <li class="plan-option__perk">
+
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                      <polyline points="20 6 9 17 4 12"></polyline>
+
+                    </svg>
+
+                    <span>Start with Volume 6 (Shukr) with no ongoing commitment</span>
+
+                  </li>
+
+                </ul>
+
+              </label>
+
+            </fieldset>
+
+            <button type="submit" id="featured-submit-btn" class="btn btn--primary btn--full btn--lg">
+
+              <span id="featured-submit-text">Subscribe &mdash; &pound;11.99 / month</span>
+
+            </button>
+
+          </form>
+
+          <!-- Verified Pre-Order & Dispatch Schedule -->
+
+          <div class="product-details__dispatch-box" aria-label="Pre-order and dispatch schedule">
+
+            <div><strong>Pre-orders close:</strong> 12 November 2026 (once closed, single volumes are never reprinted).</div>
+
+            <div><strong>Dispatch window:</strong> Within 7&ndash;12 working days of the pre-order window closing via Royal Mail 2nd Class.</div>
+
+            <div><strong>Format:</strong> 40 pages, A4, 120gsm inner pages, 350gsm cover &mdash; includes Collector&rsquo;s Token &amp; Midway Moments access.</div>
+
+          </div>
+
+          <div style="margin-top: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm);">
+
+            <a href="#whats-inside" class="link-editorial">
+
+              <span>See Full Package Inclusions</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+            <button type="button" data-drawer-open="search-drawer" style="font-size: var(--text-small); color: var(--color-ink-muted); text-decoration: underline;">
+
+              Browse 1448 Archive (Vol 2, Vol 4, Vol 5)
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 05: HOW THE HIJRI JOURNEY WORKS
+
+         Horizon Mapping: `sections/section.liquid` with nested `group`, `icon`,
+
+         `_heading`, and `text` blocks.
+
+         Scheme: Warm Alternate (Warm Oat #E8DFD1 bg, Soft Ink #252824 text)
+
+         ====================================================================== -->
+
+    <section id="how-it-works" class="section-spacing color-scheme-warm-oat" aria-labelledby="how-it-works-heading">
+
+      <div class="container">
+
+        <div class="section-header section-header--split reveal-on-scroll">
+
+          <div class="section-header__content">
+
+            <span class="eyebrow">A Gentle Monthly Rhythm</span>
+
+            <h2 id="how-it-works-heading" class="section-header__title">
+
+              How the Hijri journey works
+
+            </h2>
+
+            <p class="section-header__subtitle">
+
+              Designed for busy lives &mdash; as little as a few quiet minutes with your tea. No streaks, no guilt, and no catching up if you miss a day.
+
+            </p>
+
+          </div>
+
+          <a href="#featured-volume" class="btn btn--primary">
+
+            Join Before the 12th
+
+          </a>
+
+        </div>
+
+        <ol class="journey-steps" aria-label="Four steps of the Hijri monthly subscription">
+
+          <!-- Step 1 -->
+
+          <li class="journey-step reveal-on-scroll">
+
+            <div class="journey-step__header">
+
+              <span class="journey-step__marker" aria-hidden="true">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+
+                </svg>
+
+              </span>
+
+              <span class="journey-step__number">Step 01</span>
+
+            </div>
+
+            <h3 class="journey-step__title">1. Subscribe</h3>
+
+            <p class="journey-step__desc">
+
+              Join before the monthly pre-order window closes on the 12th. Delivery is free worldwide, and you can pause, skip a month, or cancel anytime.
+
+            </p>
+
+          </li>
+
+          <!-- Step 2 -->
+
+          <li class="journey-step reveal-on-scroll" data-reveal-delay="80">
+
+            <div class="journey-step__header">
+
+              <span class="journey-step__marker" aria-hidden="true">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+
+                  <polyline points="22,6 12,13 2,6"></polyline>
+
+                </svg>
+
+              </span>
+
+              <span class="journey-step__number">Step 02</span>
+
+            </div>
+
+            <h3 class="journey-step__title">2. We post it</h3>
+
+            <p class="journey-step__desc">
+
+              Pre-orders close on the 12th of each month, and your limited-edition print volume is dispatched within 7&ndash;12 working days to your door.
+
+            </p>
+
+          </li>
+
+          <!-- Step 3 -->
+
+          <li class="journey-step reveal-on-scroll" data-reveal-delay="160">
+
+            <div class="journey-step__header">
+
+              <span class="journey-step__marker" aria-hidden="true">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+
+                </svg>
+
+              </span>
+
+              <span class="journey-step__number">Step 03</span>
+
+            </div>
+
+            <h3 class="journey-step__title">3. Read and reflect</h3>
+
+            <p class="journey-step__desc">
+
+              40 A4 pages of Qur'anic reflection, classical scholarship and guided journaling. Collect a token with every volume and unlock rewards at 4, 8 and 12.
+
+            </p>
+
+          </li>
+
+          <!-- Step 4 -->
+
+          <li class="journey-step reveal-on-scroll" data-reveal-delay="240">
+
+            <div class="journey-step__header">
+
+              <span class="journey-step__marker" aria-hidden="true">
+
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+
+                  <circle cx="12" cy="12" r="10"></circle>
+
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+
+                </svg>
+
+              </span>
+
+              <span class="journey-step__number">Step 04</span>
+
+            </div>
+
+            <h3 class="journey-step__title">4. Midway Moments</h3>
+
+            <p class="journey-step__desc">
+
+              Halfway through the month, readers receive a short exclusive video from Masuma to revisit the theme, check in with your heart, and go deeper.
+
+            </p>
+
+          </li>
+
+        </ol>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 06: THE COLLECTOR'S JOURNEY
+
+         Horizon Mapping: `sections/section.liquid` with `image`, `_heading`,
+
+         `text`, `button`, and 3 nested `group` milestone blocks.
+
+         Scheme: Dark Forest (Deep Forest Green #34483F bg, Soft Ivory #F7F4EE text)
+
+         ====================================================================== -->
+
+    <section id="collectors-journey" class="section-spacing collectors-journey color-scheme-dark-forest" aria-labelledby="collectors-journey-heading">
+
+      <div class="container">
+
+        <div class="collectors-journey__top">
+
+          <div class="collectors-journey__intro reveal-on-scroll">
+
+            <span class="eyebrow">Consistency Over Perfection &bull; Movement Over Arrival</span>
+
+            <h2 id="collectors-journey-heading" class="section-header__title">
+
+              The Hijri Collector&rsquo;s Journey
+
+            </h2>
+
+            <p class="lead-paragraph" style="color: var(--color-ivory-muted);">
+
+              The Collector&rsquo;s Journey isn&rsquo;t about collecting magazines. It&rsquo;s about collecting moments of transformation. Every volume carries its own physical keepsake &mdash; a <strong>Collector&rsquo;s Token</strong> bearing that month&rsquo;s word to clip to a bag, keep on a desk, or return to often.
+
+            </p>
+
+            <blockquote class="collectors-journey__quote">
+
+              &ldquo;You were never meant to arrive all at once. You were meant to keep walking.&rdquo;
+
+            </blockquote>
+
+          </div>
+
+          <div class="collectors-journey__media reveal-on-scroll" data-reveal-delay="100">
+
+            <div class="collectors-journey__img-frame">
+
+              <img
+
+                src="assets/images/vol6-flatlay.png"
+
+                alt="Hijri Collector's Token keepsake alongside the monthly volume and welcome card"
+
+                width="640"
+
+                height="440"
+
+                loading="lazy"
+
+                class="collectors-journey__img"
+
+              >
+
+              <div class="collectors-journey__img-caption">
+
+                <span>Keepsake Token Included With Every Volume</span>
+
+                <span>Valid Across the Hijri Year</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3 Verified Milestone Tiers (4, 8, and 12 Volumes) -->
+
+        <div class="milestones-grid" aria-label="Collector's Journey Reward Tiers">
+
+          <!-- Tier One: 4 Volumes -->
+
+          <article class="milestone-card reveal-on-scroll">
+
+            <div>
+
+              <div class="milestone-card__header">
+
+                <span class="milestone-card__tier">Tier One</span>
+
+                <span class="milestone-card__count">4 Volumes</span>
+
+              </div>
+
+              <h3 class="milestone-card__title" style="margin-top: var(--space-md);">The Wayfarer</h3>
+
+              <p class="milestone-card__desc">
+
+                The Wayfarer is the one who has answered the call to begin. Four collected volumes mark the first stage of the journey: a commitment to pause, reflect, and take intentional steps towards Allah. This tier represents courage, direction, and the willingness to start.
+
+              </p>
+
+            </div>
+
+            <p class="milestone-card__epigraph">&ldquo;Every journey begins with a single step.&rdquo;</p>
+
+          </article>
+
+          <!-- Tier Two: 8 Volumes -->
+
+          <article class="milestone-card reveal-on-scroll" data-reveal-delay="100">
+
+            <div>
+
+              <div class="milestone-card__header">
+
+                <span class="milestone-card__tier">Tier Two</span>
+
+                <span class="milestone-card__count">8 Volumes</span>
+
+              </div>
+
+              <h3 class="milestone-card__title" style="margin-top: var(--space-md);">The Traveller</h3>
+
+              <p class="milestone-card__desc">
+
+                The Traveller has chosen to continue the path. Eight collected volumes represent perseverance, consistency, and a heart that continues seeking despite the distance still ahead. This tier honours those who keep returning, reflecting, and growing through every season.
+
+              </p>
+
+            </div>
+
+            <p class="milestone-card__epigraph">&ldquo;You've chosen to keep going, to keep seeking, to keep growing.&rdquo;</p>
+
+          </article>
+
+          <!-- Tier Three: 12 Volumes -->
+
+          <article class="milestone-card reveal-on-scroll" data-reveal-delay="200">
+
+            <div>
+
+              <div class="milestone-card__header">
+
+                <span class="milestone-card__tier">Tier Three</span>
+
+                <span class="milestone-card__count">12 Volumes</span>
+
+              </div>
+
+              <h3 class="milestone-card__title" style="margin-top: var(--space-md);">The Companion</h3>
+
+              <p class="milestone-card__desc">
+
+                The Companion has journeyed through the complete Hijri cycle. Twelve collected volumes signify steadfastness, reflection, and companionship on the path to Allah. This final tier recognises those who have walked the full journey and become keepers of its lessons.
+
+              </p>
+
+            </div>
+
+            <p class="milestone-card__epigraph">&ldquo;You've travelled the full path, and are a keeper of this sacred journey.&rdquo;</p>
+
+          </article>
+
+        </div>
+
+        <div class="collectors-journey__footer reveal-on-scroll">
+
+          <p class="collectors-journey__claim-note">
+
+            <strong>How to claim your milestone gift:</strong> Once you reach 4, 8 or 12 tokens within the Hijri year, simply email <strong>info@shophijri.com</strong> with a photo of your collected tokens and your order details, and your reward will be posted out with your next volume.
+
+          </p>
+
+          <a href="#featured-volume" class="btn btn--primary">
+
+            Discover the Collector's Journey
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 07: BEHIND THE THEMES (EDITORIAL JOURNAL)
+
+         Horizon Mapping: `sections/featured-blog-posts.liquid` with static blocks
+
+         `_featured-blog-posts-title.liquid` and `_featured-blog-posts-card.liquid`.
+
+         Scheme: Main Light (Soft Ivory #F7F4EE bg, Soft Ink #252824 text)
+
+         ====================================================================== -->
+
+    <section id="behind-the-themes" class="section-spacing color-scheme-main-light" aria-labelledby="journal-heading">
+
+      <div class="container">
+
+        <div class="section-header section-header--split reveal-on-scroll">
+
+          <div class="section-header__content">
+
+            <span class="eyebrow">Editorial Dispatches &bull; Behind the Themes</span>
+
+            <h2 id="journal-heading" class="section-header__title">
+
+              Behind the Themes
+
+            </h2>
+
+            <p class="section-header__subtitle">
+
+              Every volume of Hijri turns on a single word. This is where we tell the fuller story behind it &mdash; the history, the meaning, and why it might be just what your heart needs this month.
+
+            </p>
+
+          </div>
+
+          <a href="#behind-the-themes" class="link-editorial">
+
+            <span>Explore the Journal</span>
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+
+              <polyline points="12 5 19 12 12 19"></polyline>
+
+            </svg>
+
+          </a>
+
+        </div>
+
+        <!-- 3 Real Published Articles from /blogs/behind-the-themes -->
+
+        <div class="journal-grid">
+
+          <!-- Article 1: Vol 6 -->
+
+          <article class="article-card reveal-on-scroll">
+
+            <a href="#behind-the-themes" class="article-card__media" tabindex="-1" aria-hidden="true">
+
+              <span class="article-card__volume-pill">Jumada al-Thani &bull; Shukr</span>
+
+              <img
+
+                src="assets/images/article-vol6.png"
+
+                alt="Gratitude for the Emptiness &bull; Vol 6 editorial artwork"
+
+                width="600"
+
+                height="750"
+
+                loading="lazy"
+
+                class="article-card__img"
+
+              >
+
+            </a>
+
+            <div class="article-card__meta">
+
+              <time datetime="2026-10-11">October 11, 2026</time>
+
+              <span>&bull;</span>
+
+              <span>By Masuma Abdul-Muhit</span>
+
+            </div>
+
+            <h3 class="article-card__title">
+
+              <a href="#behind-the-themes">
+
+                Gratitude for the Emptiness &bull; Vol 6
+
+              </a>
+
+            </h3>
+
+            <p class="article-card__excerpt">
+
+              My children and I have a daily practice; we do our morning adhkar, then we thank Allah for as many random things we can think of &mdash; learning to see the life we already have as full.
+
+            </p>
+
+            <a href="#behind-the-themes" class="link-editorial" style="align-self: flex-start;">
+
+              <span>Read Essay</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+          </article>
+
+          <!-- Article 2: Vol 5 -->
+
+          <article class="article-card reveal-on-scroll" data-reveal-delay="100">
+
+            <a href="#behind-the-themes" class="article-card__media" tabindex="-1" aria-hidden="true">
+
+              <span class="article-card__volume-pill">Jumada al-Uwla &bull; Sabr</span>
+
+              <img
+
+                src="assets/images/article-vol5.png"
+
+                alt="The Long, Dry Wait &bull; Vol 5 editorial artwork"
+
+                width="600"
+
+                height="750"
+
+                loading="lazy"
+
+                class="article-card__img"
+
+              >
+
+            </a>
+
+            <div class="article-card__meta">
+
+              <time datetime="2026-09-12">September 12, 2026</time>
+
+              <span>&bull;</span>
+
+              <span>By Masuma Abdul-Muhit</span>
+
+            </div>
+
+            <h3 class="article-card__title">
+
+              <a href="#behind-the-themes">
+
+                The Long, Dry Wait &bull; Vol 5
+
+              </a>
+
+            </h3>
+
+            <p class="article-card__excerpt">
+
+              Sabr asks you to stay rooted through the dryness, certain of water you cannot yet see. You are not asked to enjoy the waiting. You are asked to wait with Him.
+
+            </p>
+
+            <a href="#behind-the-themes" class="link-editorial" style="align-self: flex-start;">
+
+              <span>Read Essay</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+          </article>
+
+          <!-- Article 3: Vol 4 -->
+
+          <article class="article-card reveal-on-scroll" data-reveal-delay="200">
+
+            <a href="#behind-the-themes" class="article-card__media" tabindex="-1" aria-hidden="true">
+
+              <span class="article-card__volume-pill">Rabi al-Thani &bull; Tazkiya</span>
+
+              <img
+
+                src="assets/images/article-vol4.jpg"
+
+                alt="The Cultivated Inner Garden &bull; Vol 4 editorial artwork"
+
+                width="600"
+
+                height="750"
+
+                loading="lazy"
+
+                class="article-card__img"
+
+              >
+
+            </a>
+
+            <div class="article-card__meta">
+
+              <time datetime="2026-08-13">August 13, 2026</time>
+
+              <span>&bull;</span>
+
+              <span>By Masuma Abdul-Muhit</span>
+
+            </div>
+
+            <h3 class="article-card__title">
+
+              <a href="#behind-the-themes">
+
+                The Cultivated Inner Garden &bull; Vol 4
+
+              </a>
+
+            </h3>
+
+            <p class="article-card__excerpt">
+
+              Tired of meeting the same fault in the mirror? Tazkiya is the quiet work of purifying the heart &mdash; one weed pulled, one good thing watered, at a time.
+
+            </p>
+
+            <a href="#behind-the-themes" class="link-editorial" style="align-self: flex-start;">
+
+              <span>Read Essay</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 08: MEET THE FOUNDER
+
+         Horizon Mapping: `sections/section.liquid` with `image`, `group`,
+
+         `_heading`, `text`, and `button` blocks.
+
+         Scheme: Warm Alternate (Warm Oat #E8DFD1 bg, Soft Ink #252824 text)
+
+         ====================================================================== -->
+
+    <section id="meet-the-founder" class="section-spacing color-scheme-warm-oat" aria-labelledby="founder-heading">
+
+      <div class="container founder-story__grid">
+
+        <!-- Left: Editorial Founder Study / Origin Artwork (Note: Live site has no personal photo of Masuma, using authentic Origin Essay artwork IMG_8505 / Vol 2 study) -->
+
+        <div class="founder-story__visual reveal-on-scroll">
+
+          <div class="founder-story__frame">
+
+            <img
+
+              src="assets/images/vol2-detail.jpg"
+
+              alt="Hijri editorial manuscript pages and reflective study desk curated by Masuma Abdul-Muhit"
+
+              width="600"
+
+              height="750"
+
+              loading="lazy"
+
+              class="founder-story__img"
+
+            >
+
+            <div class="founder-story__monogram-card">
+
+              <span>Authored, Edited &amp; Designed in the UK</span>
+
+              <span>Aalimiyyah &amp; Coaching Practice</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right: Authentic Verified Biography & Motivation -->
+
+        <div class="founder-story__content reveal-on-scroll" data-reveal-delay="100">
+
+          <span class="eyebrow">Meet the Founder</span>
+
+          <h2 id="founder-heading" class="section-header__title">
+
+            Where sacred scholarship meets the everyday Muslim heart.
+
+          </h2>
+
+          <blockquote class="founder-story__Pullquote">
+
+            &ldquo;I didn&rsquo;t want a faith that only came alive twice a year. I wanted a rhythm &mdash; something gentle, rooted, and tangible &mdash; that could hold the heart steady through all twelve months of the lunar calendar.&rdquo;
+
+          </blockquote>
+
+          <div class="founder-story__body">
+
+            <p>
+
+              My name is <strong>Masuma Abdul-Muhit</strong>. I spent over a decade studying and teaching the classical Islamic sciences (<em>Aalimiyyah</em>), and today I work as a life coach specialising in women&rsquo;s wellbeing, success, and family life.
+
+            </p>
+
+            <p>
+
+              I created Hijri because I found myself drifting through the year, a little lost in the quiet months between Ramadan and Dhul Hijjah. Hijri was born at the meeting point of my two worlds &mdash; timeless sacred knowledge and the lived, everyday realities of the modern Muslim &mdash; reviewed alongside qualified scholars so what reaches your hands is both authentically rooted and written from the heart.
+
+            </p>
+
+          </div>
+
+          <div class="founder-story__signature">
+
+            <div class="founder-story__name">Masuma Abdul-Muhit</div>
+
+            <div class="founder-story__role">Founder, Author &amp; Editor of Hijri</div>
+
+          </div>
+
+          <a href="#meet-the-founder" class="btn btn--secondary">
+
+            Read the Full Story
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 09: READER TESTIMONIALS
+
+         Horizon Mapping: `sections/slideshow.liquid` with `blocks/_slide.liquid`
+
+         (replaces the live site's custom AI block `<ai-carousel-1791483083a8e4f24c>`).
+
+         Scheme: Main Light (Soft Ivory #F7F4EE bg, Soft Ink #252824 text)
+
+         ====================================================================== -->
+
+    <section id="reader-testimonials" class="section-spacing color-scheme-main-light" aria-labelledby="testimonials-heading">
+
+      <div class="container">
+
+        <div class="section-header section-header--split reveal-on-scroll">
+
+          <div class="section-header__content">
+
+            <span class="eyebrow">Letters From Our Readers</span>
+
+            <h2 id="testimonials-heading" class="section-header__title">
+
+              Held in hands, kept near hearts.
+
+            </h2>
+
+          </div>
+
+        </div>
+
+        <div
+
+          class="testimonials-wrapper reveal-on-scroll"
+
+          data-testimonial-slideshow
+
+          role="region"
+
+          aria-roledescription="carousel"
+
+          aria-label="Genuine reader testimonials"
+
+        >
+
+          <div class="visually-hidden" aria-live="polite" data-testimonial-status>
+
+            Showing reader reflection 1 of 3
+
+          </div>
+
+          <div class="testimonials-stage">
+
+            <!-- Slide 1: Abida, 28 -->
+
+            <article
+
+              class="testimonial-slide is-active"
+
+              data-testimonial-slide
+
+              role="group"
+
+              aria-roledescription="slide"
+
+              aria-label="1 of 3"
+
+              aria-hidden="false"
+
+            >
+
+              <div class="testimonial-slide__media">
+
+                <img
+
+                  src="assets/images/testimonial-1.jpg"
+
+                  alt="Reader holding their printed issue of Hijri magazine"
+
+                  width="640"
+
+                  height="850"
+
+                  loading="lazy"
+
+                  class="testimonial-slide__img"
+
+                >
+
+              </div>
+
+              <div class="testimonial-slide__content">
+
+                <span class="testimonial-slide__quote-mark" aria-hidden="true">&ldquo;</span>
+
+                <blockquote class="testimonial-slide__blockquote">
+
+                  &ldquo;For the first time ever I don&rsquo;t feel guilty about my relationship with Allah. I feel hopeful and confident that I&rsquo;m making steps in the right direction. And Hijri is the reason why.&rdquo;
+
+                </blockquote>
+
+                <div class="testimonial-slide__attribution">
+
+                  <div>
+
+                    <div class="testimonial-slide__author">Abida, 28</div>
+
+                    <div class="testimonial-slide__context">Hijri Print Reader</div>
+
+                  </div>
+
+                  <span class="badge badge--gold">Verified Reader</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <!-- Slide 2: Safa, 34 -->
+
+            <article
+
+              class="testimonial-slide"
+
+              data-testimonial-slide
+
+              role="group"
+
+              aria-roledescription="slide"
+
+              aria-label="2 of 3"
+
+              aria-hidden="true"
+
+            >
+
+              <div class="testimonial-slide__media">
+
+                <img
+
+                  src="assets/images/testimonial-3.jpg"
+
+                  alt="Hijri magazine Whisper reflection section photographed by reader"
+
+                  width="640"
+
+                  height="850"
+
+                  loading="lazy"
+
+                  class="testimonial-slide__img"
+
+                >
+
+              </div>
+
+              <div class="testimonial-slide__content">
+
+                <span class="testimonial-slide__quote-mark" aria-hidden="true">&ldquo;</span>
+
+                <blockquote class="testimonial-slide__blockquote">
+
+                  &ldquo;I feel like the whisper section is reading my mind! I never would have asked myself these questions or gotten to where I am right now in my journey without Hijri. Jazakallah!&rdquo;
+
+                </blockquote>
+
+                <div class="testimonial-slide__attribution">
+
+                  <div>
+
+                    <div class="testimonial-slide__author">Safa, 34</div>
+
+                    <div class="testimonial-slide__context">Hijri Print Reader</div>
+
+                  </div>
+
+                  <span class="badge badge--gold">Verified Reader</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+            <!-- Slide 3: F.R., 30 -->
+
+            <article
+
+              class="testimonial-slide"
+
+              data-testimonial-slide
+
+              role="group"
+
+              aria-roledescription="slide"
+
+              aria-label="3 of 3"
+
+              aria-hidden="true"
+
+            >
+
+              <div class="testimonial-slide__media">
+
+                <img
+
+                  src="assets/images/testimonial-2.jpg"
+
+                  alt="Hijri magazine spread on a quiet morning table"
+
+                  width="640"
+
+                  height="850"
+
+                  loading="lazy"
+
+                  class="testimonial-slide__img"
+
+                >
+
+              </div>
+
+              <div class="testimonial-slide__content">
+
+                <span class="testimonial-slide__quote-mark" aria-hidden="true">&ldquo;</span>
+
+                <blockquote class="testimonial-slide__blockquote">
+
+                  &ldquo;Your words have helped me through one of the toughest periods of life I&rsquo;ve ever been through.&rdquo;
+
+                </blockquote>
+
+                <div class="testimonial-slide__attribution">
+
+                  <div>
+
+                    <div class="testimonial-slide__author">F.R., 30</div>
+
+                    <div class="testimonial-slide__context">Hijri Print Reader</div>
+
+                  </div>
+
+                  <span class="badge badge--gold">Verified Reader</span>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+          <!-- Manual Accessible Slideshow Controls -->
+
+          <div class="testimonials-controls">
+
+            <div class="testimonials-dots" role="tablist" aria-label="Select reader reflection">
+
+              <button
+
+                type="button"
+
+                role="tab"
+
+                class="testimonial-dot"
+
+                aria-label="Reflection 1: Abida, 28"
+
+                aria-selected="true"
+
+                data-testimonial-dot
+
+              ></button>
+
+              <button
+
+                type="button"
+
+                role="tab"
+
+                class="testimonial-dot"
+
+                aria-label="Reflection 2: Safa, 34"
+
+                aria-selected="false"
+
+                data-testimonial-dot
+
+              ></button>
+
+              <button
+
+                type="button"
+
+                role="tab"
+
+                class="testimonial-dot"
+
+                aria-label="Reflection 3: F.R., 30"
+
+                aria-selected="false"
+
+                data-testimonial-dot
+
+              ></button>
+
+            </div>
+
+            <div class="testimonials-arrows">
+
+              <button
+
+                type="button"
+
+                class="btn-icon btn-icon--bordered"
+
+                aria-label="Previous reader reflection"
+
+                data-testimonial-prev
+
+              >
+
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                  <polyline points="15 18 9 12 15 6"></polyline>
+
+                </svg>
+
+              </button>
+
+              <button
+
+                type="button"
+
+                class="btn-icon btn-icon--bordered"
+
+                aria-label="Next reader reflection"
+
+                data-testimonial-next
+
+              >
+
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+
+                  <polyline points="9 18 15 12 9 6"></polyline>
+
+                </svg>
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 10: FREQUENTLY ASKED QUESTIONS
+
+         Horizon Mapping: `sections/section.liquid` with `blocks/accordion.liquid`
+
+         and child `blocks/_accordion-row.liquid` blocks.
+
+         Uses native `<details name="hijri-faq">` for searchable hidden content.
+
+         Scheme: Clean White (#FFFFFF bg, #252824 text)
+
+         ====================================================================== -->
+
+    <section id="faqs" class="section-spacing color-scheme-clean-white" aria-labelledby="faq-heading">
+
+      <div class="container faq-section__layout">
+
+        <div class="faq-section__intro reveal-on-scroll">
+
+          <span class="eyebrow">Clarity &amp; Reassurance</span>
+
+          <h2 id="faq-heading" class="section-header__title">
+
+            Frequently asked questions
+
+          </h2>
+
+          <p class="section-header__subtitle">
+
+            Everything you need to know about subscribing, delivery and how Hijri works.
+
+          </p>
+
+          <div class="faq-section__contact-card">
+
+            <strong>Need help with an existing order or milestone?</strong>
+
+            <p>Our small team is always happy to assist with subscriptions, address changes, or token rewards.</p>
+
+            <a href="mailto:info@shophijri.com" class="link-editorial">
+
+              <span>Contact Us (info@shophijri.com)</span>
+
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                <polyline points="12 5 19 12 12 19"></polyline>
+
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="accordion-list reveal-on-scroll" data-reveal-delay="100">
+
+          <!-- FAQ 1 -->
+
+          <details class="accordion-item" name="hijri-faq" open>
+
+            <summary class="accordion-summary">
+
+              <span>When will my volume arrive?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Pre-orders close on the 12th of each month, and your volume is dispatched within 7&ndash;12 working days after that date. UK orders are sent by Royal Mail 2nd Class, so allow up to 4 days from dispatch for it to reach your door.
+
+              </p>
+
+            </div>
+
+          </details>
+
+          <!-- FAQ 2 -->
+
+          <details class="accordion-item" name="hijri-faq">
+
+            <summary class="accordion-summary">
+
+              <span>Can I skip a month or cancel?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Yes. You can pause or cancel your subscription at any time through your account or by getting in touch with us. Just make the change before the 12th of the month so it takes effect before your next volume is prepared.
+
+              </p>
+
+            </div>
+
+          </details>
+
+          <!-- FAQ 3 -->
+
+          <details class="accordion-item" name="hijri-faq">
+
+            <summary class="accordion-summary">
+
+              <span>Is delivery really free?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Yes. Delivery is included in the price on every order, in the UK and internationally.
+
+              </p>
+
+            </div>
+
+          </details>
+
+          <!-- FAQ 4 -->
+
+          <details class="accordion-item" name="hijri-faq">
+
+            <summary class="accordion-summary">
+
+              <span>Can I buy a single volume?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Yes. Single volumes (&pound;14.99) are available to order while the monthly pre-order window is open. Once the window closes on the 12th, that volume is not available for single purchase again, though limited archive copies of select earlier issues may occasionally appear in our 1448 Archive.
+
+              </p>
+
+            </div>
+
+          </details>
+
+          <!-- FAQ 5 -->
+
+          <details class="accordion-item" name="hijri-faq">
+
+            <summary class="accordion-summary">
+
+              <span>Do you offer refunds?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Because every volume is made to order, we don't offer refunds or exchanges and all sales are final. Your subscription itself can be paused or cancelled at any time for future volumes.
+
+              </p>
+
+            </div>
+
+          </details>
+
+          <!-- FAQ 6 -->
+
+          <details class="accordion-item" name="hijri-faq">
+
+            <summary class="accordion-summary">
+
+              <span>What is the Collector's Journey?</span>
+
+              <span class="accordion-icon" aria-hidden="true">
+
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+
+                </svg>
+
+              </span>
+
+            </summary>
+
+            <div class="accordion-content">
+
+              <p>
+
+                Every volume comes with a physical Collector's Token bearing that month's theme. As you collect tokens across the Hijri year, you move through three tiers &mdash; The Wayfarer (4 volumes), The Traveller (8 volumes), and The Companion (12 volumes) &mdash; unlocking exclusive milestone gifts along the way.
+
+              </p>
+
+            </div>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ======================================================================
+
+         SECTION 11: FINAL SUBSCRIPTION CTA
+
+         Horizon Mapping: `sections/section.liquid` with `_heading`, `text`,
+
+         and `button` blocks.
+
+         Scheme: Dark Forest (Deep Forest Green #34483F bg, Soft Ivory #F7F4EE text)
+
+         ====================================================================== -->
+
+    <section class="section-spacing final-cta color-scheme-dark-forest" aria-labelledby="final-cta-heading">
+
+      <div class="container final-cta__inner reveal-on-scroll">
+
+        <span class="eyebrow">Begin With Volume 6 &bull; Jumada al-Thani | Shukr</span>
+
+        <h2 id="final-cta-heading" class="final-cta__title">
+
+          Your next chapter begins here.
+
+        </h2>
+
+        <p class="final-cta__subtitle">
+
+          Walk through the Islamic lunar year one month, one spiritual theme, and one quiet turning of the heart at a time &mdash; with 40 A4 pages of reflection, classical wisdom, and guided journaling posted to your door.
+
+        </p>
+
+        <div class="final-cta__actions">
+
+          <a href="#featured-volume" class="btn btn--primary btn--lg">
+
+            Start Your Subscription
+
+          </a>
+
+          <a href="#whats-inside" class="btn btn--secondary btn--lg">
+
+            Explore What's Inside
+
+          </a>
+
+        </div>
+
+        <ul class="final-cta__reassurance" aria-label="Subscription terms summary">
+
+          <li>&pound;11.99/month subscription (save 20%)</li>
+
+          <li aria-hidden="true">&bull;</li>
+
+          <li>Free UK &amp; international delivery</li>
+
+          <li aria-hidden="true">&bull;</li>
+
+          <li>Pause, skip or cancel before the 12th</li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+
+       SECTION 12: NEWSLETTER & FOOTER
+
+       Horizon Mapping: `sections/footer.liquid` with `logo`, `text`, `menu`,
+
+       `email-signup`, and `_divider` blocks.
+
+       Scheme: Dark Forest (Deep Forest Green #34483F bg, Soft Ivory #F7F4EE text)
+
+       ======================================================================== -->
+
+  <footer class="site-footer color-scheme-dark-forest" role="contentinfo">
+
+    <div class="container">
+
+      <div class="site-footer__top">
+
+        <!-- Column 1: Brand Identity -->
+
+        <div>
+
+          <a href="#top" aria-label="Hijri by Masuma Abdul-Muhit">
+
+            <img
+
+              src="assets/images/logo-ivory.png"
+
+              alt="Hijri by Masuma Abdul-Muhit"
+
+              width="178"
+
+              height="50"
+
+              loading="lazy"
+
+              class="site-footer__brand-logo"
+
+            >
+
+          </a>
+
+          <p class="site-footer__brand-desc">
+
+            A limited-edition monthly Islamic print periodical exploring the timeless concepts of our faith, sans the screen. Authored, edited and designed by Masuma Abdul-Muhit.
+
+          </p>
+
+          <a href="mailto:info@shophijri.com" class="site-footer__contact-mail">
+
+            info@shophijri.com
+
+          </a>
+
+        </div>
+
+        <!-- Column 2: Shop & Issues (`blocks/menu.liquid`) -->
+
+        <div>
+
+          <h3 class="site-footer__heading">The Publication</h3>
+
+          <ul class="site-footer__links">
+
+            <li><a href="#featured-volume" class="site-footer__link">Current Issue: Vol. 6 Shukr</a></li>
+
+            <li><a href="#featured-volume" class="site-footer__link">Monthly Subscription</a></li>
+
+            <li><a href="#whats-inside" class="site-footer__link">What's Inside Every Volume</a></li>
+
+            <li><a href="#featured-volume" class="site-footer__link">Shop All Volumes</a></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Column 3: The Journey & Reader Portal (`blocks/menu.liquid`) -->
+
+        <div>
+
+          <h3 class="site-footer__heading">The Journey</h3>
+
+          <ul class="site-footer__links">
+
+            <li><a href="#collectors-journey" class="site-footer__link">Collector's Journey</a></li>
+
+            <li><a href="#how-it-works" class="site-footer__link">Midway Moments</a></li>
+
+            <li><a href="#behind-the-themes" class="site-footer__link">Behind the Themes Journal</a></li>
+
+            <li><a href="#meet-the-founder" class="site-footer__link">About Hijri &amp; Masuma</a></li>
+
+            <li><a href="#faqs" class="site-footer__link">Contact &amp; FAQs</a></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Column 4: Newsletter Signup (`blocks/email-signup.liquid`) -->
+
+        <div>
+
+          <h3 class="site-footer__heading">Letters From Hijri</h3>
+
+          <p class="newsletter-box__desc">
+
+            Sign up to save on your first purchase, receive monthly pre-order reminders before the 12th, and read bonus editorial reflections.
+
+          </p>
+
+          <form id="footer-newsletter-form" class="newsletter-form" aria-label="Newsletter signup">
+
+            <div class="newsletter-form__group">
+
+              <label for="newsletter-email" class="visually-hidden">Email address</label>
+
+              <input
+
+                type="email"
+
+                id="newsletter-email"
+
+                name="contact[email]"
+
+                placeholder="Email address"
+
+                required
+
+                autocomplete="email"
+
+                class="newsletter-form__input"
+
+              >
+
+              <button type="submit" class="btn btn--primary">
+
+                Join
+
+              </button>
+
+            </div>
+
+            <p id="newsletter-feedback" class="newsletter-form__feedback" role="status" aria-live="polite" hidden></p>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Utilities & Verified Store Policies -->
+
+      <div class="site-footer__bottom">
+
+        <div>
+
+          &copy; 2026 Hijri by Masuma Abdul-Muhit. Powered by Shopify Horizon.
+
+        </div>
+
+        <ul class="site-footer__policies" aria-label="Store policies">
+
+          <li><a href="#faqs">Privacy policy</a></li>
+
+          <li><a href="#faqs">Refund policy</a></li>
+
+          <li><a href="#faqs">Shipping policy</a></li>
+
+          <li><a href="#faqs">Cancellation policy</a></li>
+
+          <li><a href="#faqs">Contact information</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  </div><!-- /#theme-horizon -->
+
+  <!-- ========================================================================
+
+       OPTION 2: PRESTIGE BY MAESTROOO
+
+       Luxury Editorial E-Commerce Direction (~$380 USD Theme Store)
+
+       ======================================================================== -->
+
+  <div id="theme-prestige" class="theme-container" data-theme-container="prestige" aria-hidden="true">
+
+    <!-- 01. PRESTIGE HEADER & LUXURY ANNOUNCEMENT -->
+
+    <header class="prestige-header">
+
+      <div class="prestige-announcement">
+
+        Free Delivery on All Orders (UK &amp; International) &bull; Volume 6 Shukr Pre-Orders Open (Closes 12 Nov) &mdash; <a href="#prestige-product" style="color: var(--color-gold); text-decoration: underline;">Reserve Issue</a>
+
+      </div>
+
+      <div class="prestige-container">
+
+        <div class="prestige-nav-wrapper">
+          <div class="prestige-nav-left">
+            <button type="button" class="btn-icon prestige-mobile-toggle" data-drawer-open="prestige-mobile-drawer" aria-label="Open navigation menu">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <line x1="3" y1="7" x2="21" y2="7"></line>
+                <line x1="3" y1="17" x2="21" y2="17"></line>
+              </svg>
+            </button>
+            <a href="#theme-prestige" class="prestige-logo-link" aria-label="Hijri homepage">
+              <img src="assets/images/logo.png" alt="Hijri" width="145" height="42" style="object-fit: contain; filter: brightness(0.15);">
+            </a>
+          </div>
+          <nav class="prestige-menu" aria-label="Prestige primary navigation">
+            <a href="#prestige-hero" aria-current="page">Home</a>
+            <a href="#prestige-product">Shop</a>
+            <a href="#prestige-collector">Collector's Journey</a>
+            <a href="#prestige-journey">Midway Moments</a>
+            <a href="#prestige-journal">Journal</a>
+            <a href="#prestige-founder">About</a>
+            <a href="#prestige-faqs">Contact</a>
+          </nav>
+          <div class="prestige-nav-right">
+            <button type="button" class="btn-icon" data-drawer-open="search-drawer" aria-label="Search collection">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button type="button" class="btn-icon" data-drawer-open="cart-drawer" aria-label="View shopping bag" style="position: relative;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="site-header__cart-count">1</span>
+            </button>
+            <a href="#prestige-product" class="prestige-btn-luxury prestige-header-cta">
+              Subscribe
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 02. PRESTIGE IMMERSIVE FULL-WIDTH HERO -->
+
+    <section class="prestige-hero" id="prestige-hero">
+
+      <div class="prestige-hero__backdrop">
+
+        <img src="assets/images/vol6-flatlay.png" alt="Hijri Volume 6 - Shukr Flatlay Presentation" loading="eager">
+
+      </div>
+
+      <div class="prestige-hero__overlay"></div>
+
+      <div class="prestige-container">
+
+        <div class="prestige-hero__panel">
+
+          <span class="prestige-eyebrow">A Monthly Print Periodical for the Soul</span>
+
+          <h1>One month. One theme. One step closer to Allah.</h1>
+
+          <p>
+
+            Hijri is a 40-page A4 monthly print publication crafted to re-center you in an increasingly fast-paced world. Delivered to your doorstep each lunar month with guided journaling, scholarly reflections, and collector's tokens.
+
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-md); align-items: center;">
+
+            <a href="#prestige-product" class="prestige-btn-luxury">
+
+              Subscribe Monthly &mdash; &pound;11.99
+
+            </a>
+
+            <a href="#prestige-inside" style="font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-ink); text-decoration: underline; text-underline-offset: 4px;">
+
+              Explore Shukr Volume
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 03. PRESTIGE WHAT'S INSIDE — HIGH-END SPLIT LOOKBOOK -->
+
+    <section class="prestige-section" id="prestige-inside">
+
+      <div class="prestige-container">
+
+        <div class="prestige-lookbook-grid">
+
+          <div class="prestige-lookbook-media">
+
+            <img src="assets/images/whats-inside.png" alt="What's inside every volume of Hijri" style="width: 100%; height: auto; display: block;">
+
+          </div>
+
+          <div class="prestige-lookbook-content">
+
+            <span class="prestige-eyebrow">What's Inside Every Volume</span>
+
+            <h2 class="prestige-title-large">Crafted for deep contemplation and tangible spiritual habit.</h2>
+
+            <ul class="prestige-inclusions-list">
+
+              <li class="prestige-inclusions-item">
+
+                <h3>01. 40-Page A4 Premium Magazine</h3>
+
+                <p>Printed on uncoated archival paper stock with lay-flat thread-sewn binding. Features curated essays, Qur'anic Arabic exegesis, classical poetry, and practical Islamic lifestyle reflections.</p>
+
+              </li>
+
+              <li class="prestige-inclusions-item">
+
+                <h3>02. Guided Reflection &amp; Action Prompts</h3>
+
+                <p>Structured weekly prompt spreads designed to translate contemplation into real-world spiritual habits, personal accountability check-ins, and du'a records.</p>
+
+              </li>
+
+              <li class="prestige-inclusions-item">
+
+                <h3>03. Keepsake Collector's Token</h3>
+
+                <p>A bespoke brass-finished milestone token included with every volume, marking each lunar month completed on your intentional year-long journey.</p>
+
+              </li>
+
+              <li class="prestige-inclusions-item">
+
+                <h3>04. Midway Moments Audio Companion</h3>
+
+                <p>Mid-month audio reflections and companion contemplative guides delivered directly to your inbox to sustain your spiritual rhythm between issues.</p>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 04. PRESTIGE FEATURED VOLUME — LUXURY MERCHANDISING -->
+
+    <section class="prestige-section prestige-product-showcase" id="prestige-product">
+
+      <div class="prestige-container">
+
+        <div class="prestige-product-grid">
+
+          <div class="prestige-product-gallery">
+
+            <img src="assets/images/vol6-cover.png" alt="Volume 6 Jumada al-Thani Shukr Cover" class="prestige-product-hero-img">
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-sm);">
+
+              <img src="assets/images/vol6-flatlay.png" alt="Spread preview" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border-light); cursor: pointer;">
+
+              <img src="assets/images/vol5-spread.png" alt="Interior spread" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border-light); cursor: pointer;">
+
+              <img src="assets/images/spread-1.png" alt="Reflection layout" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border-light); cursor: pointer;">
+
+            </div>
+
+          </div>
+
+          <div class="prestige-product-info">
+
+            <span class="prestige-eyebrow">Current Lunar Edition &bull; Volume 06</span>
+
+            <h2>Volume 6 &mdash; Jumada al-Thani | SHUKR</h2>
+
+            <p style="font-family: var(--font-subheading--family); font-size: 1.35rem; font-style: italic; color: var(--color-ink-muted); margin-bottom: var(--space-md);">
+
+              What Patience Planted: Cultivating Enduring Gratitude
+
+            </p>
+
+            <div class="prestige-price-row">
+
+              <span class="prestige-price-amount">&pound;11.99 GBP</span>
+
+              <span style="text-decoration: line-through; color: var(--color-ink-muted); font-size: 1.15rem;">&pound;14.99 GBP</span>
+
+              <span style="background-color: rgba(52, 72, 63, 0.1); color: var(--color-forest); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.6rem; border-radius: var(--radius-pill);">
+
+                Save 20% Monthly
+
+              </span>
+
+            </div>
+
+            <p style="font-size: 1rem; line-height: 1.7; color: var(--color-ink); margin-bottom: var(--space-xl);">
+
+              Explore the profound station of gratitude (Shukr) across 40 thoughtfully typeset pages. Features essays on recognizing subtle blessings, practical dhikr trackers, reflections on Surah Ibrahim, and our exclusive brass Shukr collector's token.
+
+            </p>
+
+            <!-- Plan Selector -->
+
+            <div style="display: grid; gap: var(--space-sm); margin-bottom: var(--space-xl);">
+
+              <div style="border: 1px solid var(--color-forest); background-color: rgba(52, 72, 63, 0.03); padding: var(--space-md); display: flex; justify-content: space-between; align-items: center;">
+
+                <div>
+
+                  <strong>Monthly Subscription</strong>
+
+                  <div style="font-size: 0.8125rem; color: var(--color-ink-muted);">Auto-renews every lunar month &bull; Pause or cancel anytime</div>
+
+                </div>
+
+                <div style="font-weight: 600; color: var(--color-forest);">&pound;11.99 / mo</div>
+
+              </div>
+
+              <div style="border: 1px solid var(--border-light); padding: var(--space-md); display: flex; justify-content: space-between; align-items: center;">
+
+                <div>
+
+                  <strong>Single Pre-Order Edition</strong>
+
+                  <div style="font-size: 0.8125rem; color: var(--color-ink-muted);">One-time purchase of Volume 6 only &bull; No renewal</div>
+
+                </div>
+
+                <div style="font-weight: 600; color: var(--color-ink);">&pound;14.99</div>
+
+              </div>
+
+            </div>
+
+            <button type="button" class="prestige-btn-luxury" style="width: 100%;" data-drawer-open="cart-drawer">
+
+              Subscribe &mdash; &pound;11.99 / Month
+
+            </button>
+
+            <div style="display: flex; align-items: center; gap: 0.65rem; margin-top: var(--space-lg); font-size: 0.8125rem; color: var(--color-ink-muted);">
+
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-forest);"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+
+              <span>Worldwide Free Shipping &bull; Dispatched by the 1st of the lunar month</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 05. PRESTIGE HOW IT WORKS — RESTRAINED TIMELINE -->
+
+    <section class="prestige-section prestige-process" id="prestige-journey">
+
+      <div class="prestige-container">
+
+        <span class="prestige-eyebrow">The Rhythm of the Lunar Year</span>
+
+        <h2 class="prestige-title-large">How your monthly Hijri subscription works.</h2>
+
+        <div class="prestige-timeline-grid">
+
+          <div class="prestige-timeline-item">
+
+            <span class="prestige-timeline-num">Phase 01</span>
+
+            <h3>Subscribe Before the Crescent</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Join before the 12th of each Gregorian month to secure the upcoming lunar volume before print allocations close.</p>
+
+          </div>
+
+          <div class="prestige-timeline-item">
+
+            <span class="prestige-timeline-num">Phase 02</span>
+
+            <h3>Curated Delivery to Your Door</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Your 40-page issue arrives in a protective custom mailer alongside your monthly collector's milestone token with free worldwide delivery.</p>
+
+          </div>
+
+          <div class="prestige-timeline-item">
+
+            <span class="prestige-timeline-num">Phase 03</span>
+
+            <h3>A Month of Contemplative Study</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Engage with four weekly themed chapters, journaling exercises, and guided action prompts tailored to the spiritual season.</p>
+
+          </div>
+
+          <div class="prestige-timeline-item">
+
+            <span class="prestige-timeline-num">Phase 04</span>
+
+            <h3>Flexible Management Anytime</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Skip a month, gift an issue, or cancel anytime effortlessly with one click from your subscriber portal.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 06. PRESTIGE COLLECTOR'S JOURNEY — HIGH JEWELRY EDITORIAL -->
+
+    <section class="prestige-section prestige-collector" id="prestige-collector">
+
+      <div class="prestige-container">
+
+        <div class="prestige-collector-header">
+
+          <span class="prestige-eyebrow" style="color: var(--color-gold);">The Collector's Journey</span>
+
+          <h2 class="prestige-title-large" style="color: var(--color-ivory);">A year of intentional living, preserved as an heirloom.</h2>
+
+          <p style="font-size: 1.0625rem; line-height: 1.65; color: var(--color-ivory-muted); margin-top: var(--space-md);">
+
+            Collect all 12 lunar volumes throughout the Hijri year. As your spiritual journey deepens, your milestone tokens unlock exclusive collector rewards.
+
+          </p>
+
+        </div>
+
+        <div class="prestige-collector-card-grid">
+
+          <div class="prestige-tier-box">
+
+            <div>
+
+              <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold);">Tier 01 &bull; Volumes 1&ndash;4</span>
+
+              <h3>The Wayfarer</h3>
+
+              <p style="color: var(--color-ivory-muted); font-size: 0.9375rem; line-height: 1.65;">Commence your lunar journey. Receive your introductory keepsake display tray to hold your monthly brass tokens.</p>
+
+            </div>
+
+            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid rgba(183, 155, 106, 0.25); font-style: italic; color: var(--color-gold); font-size: 0.875rem;">
+
+              Includes Heirloom Display Tray
+
+            </div>
+
+          </div>
+
+          <div class="prestige-tier-box">
+
+            <div>
+
+              <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold);">Tier 02 &bull; Volumes 5&ndash;8</span>
+
+              <h3>The Traveller</h3>
+
+              <p style="color: var(--color-ivory-muted); font-size: 0.9375rem; line-height: 1.65;">Deepen your contemplative practice. Unlock the mid-year archival slipcase to house your growing collection of editions.</p>
+
+            </div>
+
+            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid rgba(183, 155, 106, 0.25); font-style: italic; color: var(--color-gold); font-size: 0.875rem;">
+
+              Includes Mid-Year Archival Slipcase
+
+            </div>
+
+          </div>
+
+          <div class="prestige-tier-box">
+
+            <div>
+
+              <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-gold);">Tier 03 &bull; Volumes 9&ndash;12</span>
+
+              <h3>The Companion</h3>
+
+              <p style="color: var(--color-ivory-muted); font-size: 0.9375rem; line-height: 1.65;">Complete the full 12-month lunar cycle. Receive the master hand-bound gold-embossed annual anthology box.</p>
+
+            </div>
+
+            <div style="margin-top: var(--space-xl); padding-top: var(--space-md); border-top: 1px solid rgba(183, 155, 106, 0.25); font-style: italic; color: var(--color-gold); font-size: 0.875rem;">
+
+              Includes Master Gold-Embossed Box
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 07. PRESTIGE BEHIND THE THEMES — EDITORIAL JOURNAL -->
+
+    <section class="prestige-section" id="prestige-journal">
+
+      <div class="prestige-container">
+
+        <span class="prestige-eyebrow">From the Hijri Journal</span>
+
+        <h2 class="prestige-title-large">Behind the themes and creative contemplations.</h2>
+
+        <div class="prestige-journal-grid">
+
+          <article class="prestige-journal-card">
+
+            <div style="overflow: hidden; margin-bottom: var(--space-md); border: 1px solid var(--border-light);">
+
+              <img src="assets/images/article-vol6.png" alt="Cultivating Gratitude in Times of Scarcity" loading="lazy">
+
+            </div>
+
+            <span style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold);">Volume 6 Shukr &bull; 5 min read</span>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.5rem; margin-block: 0.35rem;">Cultivating Gratitude in Times of Scarcity</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">How the prophetic paradigm of Shukr reframes our perception of lack and opens doorways to abundance.</p>
+
+          </article>
+
+          <article class="prestige-journal-card">
+
+            <div style="overflow: hidden; margin-bottom: var(--space-md); border: 1px solid var(--border-light);">
+
+              <img src="assets/images/article-vol5.png" alt="The Architecture of Sabr" loading="lazy">
+
+            </div>
+
+            <span style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold);">Volume 5 Sabr &bull; 6 min read</span>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.5rem; margin-block: 0.35rem;">The Architecture of Sabr: Reflections on Enduring Grace</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">Moving beyond passive endurance toward active, dignified perseverance rooted in divine trust.</p>
+
+          </article>
+
+          <article class="prestige-journal-card">
+
+            <div style="overflow: hidden; margin-bottom: var(--space-md); border: 1px solid var(--border-light);">
+
+              <img src="assets/images/article-vol4.jpg" alt="Tawakkul Reflections" loading="lazy">
+
+            </div>
+
+            <span style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold);">Volume 4 Tawakkul &bull; 4 min read</span>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.5rem; margin-block: 0.35rem;">Tawakkul: Finding Grounding in Uncertain Horizons</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">Understanding surrender not as inaction, but as an intentional anchoring in divine wisdom.</p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 08. PRESTIGE MEET THE FOUNDER — EDITORIAL DESK STUDY -->
+
+    <section class="prestige-section prestige-founder-section" id="prestige-founder">
+
+      <div class="prestige-container">
+
+        <div class="prestige-founder-grid">
+
+          <div class="prestige-founder-media">
+            <img src="assets/images/vol2-detail.jpg" alt="Hijri editorial manuscript pages and reflective study desk curated by Masuma Abdul-Muhit" loading="lazy">
+          </div>
+
+          <div class="prestige-founder-content">
+
+            <span class="prestige-eyebrow">Founder's Note</span>
+
+            <h2>A publication born from a longing for unhurried contemplation.</h2>
+
+            <p>
+
+              In an era of relentless algorithmic distraction and fragmented attention, our spiritual lives often suffer from the same hurried pace. Hijri was created to offer an antidote: a tactile, physical publication that honors the sacred rhythm of time and invites you to pause, reflect, and cultivate an enduring inner sanctuary.
+
+            </p>
+
+            <p>
+
+              Every page is designed with meticulous care to honor classical scholarship while meeting the realities of modern Muslim life. We hope this journal becomes your quiet companion through every lunar cycle.
+
+            </p>
+
+            <div class="prestige-founder-signature">
+
+              Masuma Abdul-Muhit &mdash; Founder &amp; Creative Director
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 09. PRESTIGE TESTIMONIAL QUOTATION HERO -->
+
+    <section class="prestige-section" id="prestige-testimonials">
+
+      <div class="prestige-container">
+
+        <div class="prestige-quote-hero">
+
+          <span class="prestige-eyebrow">Reader Reflections</span>
+
+          <blockquote>
+
+            &ldquo;Opening Hijri each month has become my most sacred personal ritual. The paper quality, the depth of reflection, and the quiet dignity of each volume bring an immense calm to my hectic work week.&rdquo;
+
+          </blockquote>
+
+          <div class="prestige-quote-author">Sarah K., London &bull; Annual Subscriber</div>
+
+        </div>
+
+        <div class="prestige-testimonials-grid">
+
+          <div class="prestige-testimonial-card">
+
+            <p>&ldquo;Unlike endless digital reminders that induce anxiety, Hijri sits quietly on my bedside table, inviting me in whenever I have ten minutes to breathe. The guided prompts are deeply therapeutic.&rdquo;</p>
+
+            <cite>Dr. Tariq M., Manchester</cite>
+
+          </div>
+
+          <div class="prestige-testimonial-card">
+
+            <p>&ldquo;The collector's journey gives our family something shared to anticipate every lunar cycle. My teenagers look forward to unboxing the new theme and discussing the reflection prompts over weekend tea.&rdquo;</p>
+
+            <cite>Amina H., Birmingham</cite>
+
+          </div>
+
+          <div class="prestige-testimonial-card">
+
+            <p>&ldquo;The design and printing are truly museum-grade. Every month's token is a tangible milestone in my year of spiritual growth. Hijri has transformed how I connect with Islamic time.&rdquo;</p>
+
+            <cite>Zainab B., Dubai</cite>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 10. PRESTIGE FAQS — RESTRAINED ACCORDION -->
+
+    <section class="prestige-section prestige-faqs-section" id="prestige-faqs">
+
+      <div class="prestige-container">
+
+        <div class="prestige-faqs-header">
+
+          <span class="prestige-eyebrow">Common Enquiries</span>
+
+          <h2 class="prestige-title-large">Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="prestige-accordion-list">
+
+          <details class="prestige-accordion-details">
+
+            <summary>When will my monthly volume arrive?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Subscriptions close on the 12th of each Gregorian month. All editions are dispatched simultaneously in protective custom packaging via tracked international postal services to ensure they reach your doorstep before the new lunar crescent appears.
+
+            </div>
+
+          </details>
+
+          <details class="prestige-accordion-details">
+
+            <summary>How does the monthly subscription renewal work?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Your subscription automatically renews on the 1st of each calendar month at &pound;11.99 GBP with free worldwide shipping. You will receive an email notification before each renewal.
+
+            </div>
+
+          </details>
+
+          <details class="prestige-accordion-details">
+
+            <summary>Can I skip a month or cancel anytime?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Yes, absolutely. You can pause, skip an upcoming lunar volume, or cancel your subscription at any time with a single click inside your subscriber portal before the 12th of the month. There are no cancellation fees or hidden commitments.
+
+            </div>
+
+          </details>
+
+          <details class="prestige-accordion-details">
+
+            <summary>Is international delivery truly included at no extra charge?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Yes. We believe access to intentional spiritual literature should have no geographic barriers. Worldwide tracked shipping is completely free for all subscribers across the UK, Europe, North America, the Middle East, and beyond.
+
+            </div>
+
+          </details>
+
+          <details class="prestige-accordion-details">
+
+            <summary>How do I receive the Collector's Journey rewards?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Milestone rewards (the brass token display tray, archival slipcase, and gold-embossed annual anthology box) are automatically bundled and shipped alongside your 4th, 8th, and 12th volumes as long as your subscription remains active.
+
+            </div>
+
+          </details>
+
+          <details class="prestige-accordion-details">
+
+            <summary>Can I purchase past volumes individually?</summary>
+
+            <div class="prestige-accordion-content">
+
+              Previous volumes are occasionally released in very limited archival batches for one-off purchase at &pound;14.99 GBP, subject to remaining warehouse stock. Active subscribers receive priority allocation for all archival releases.
+
+            </div>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 11. PRESTIGE FINAL SUBSCRIPTION CTA -->
+
+    <section class="prestige-section prestige-cta-banner">
+
+      <div class="prestige-container">
+
+        <div class="prestige-cta-box">
+
+          <span class="prestige-eyebrow" style="color: var(--color-gold);">Begin Your Journey</span>
+
+          <h2>Begin your intentional lunar journey today.</h2>
+
+          <p>
+
+            Subscribe now to receive Volume 6: Shukr with free worldwide shipping. Pre-orders close on the 12th of this month.
+
+          </p>
+
+          <a href="#prestige-product" class="prestige-btn-luxury" style="background-color: var(--color-gold); border-color: var(--color-gold); color: var(--color-ink);">
+
+            Join Hijri &mdash; &pound;11.99 / Month
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 12. PRESTIGE FOOTER & NEWSLETTER -->
+
+    <footer class="prestige-footer">
+
+      <div class="prestige-container">
+
+        <div class="prestige-footer-grid">
+
+          <div>
+
+            <img src="assets/images/logo-ivory.png" alt="Hijri" width="140" style="margin-bottom: var(--space-md);">
+
+            <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-ivory-muted); max-width: 32ch;">
+
+              A 40-page monthly Islamic print publication designed to bring calm, reflection, and sacred rhythm to modern life.
+
+            </p>
+
+          </div>
+
+          <div class="prestige-footer-col">
+
+            <h4>Navigation</h4>
+
+            <ul>
+
+              <li><a href="#prestige-inside">What's Inside</a></li>
+
+              <li><a href="#prestige-journey">The Journey</a></li>
+
+              <li><a href="#prestige-product">Current Issue</a></li>
+
+              <li><a href="#prestige-collector">Collector's Keepsake</a></li>
+
+              <li><a href="#prestige-journal">Journal</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="prestige-footer-col">
+
+            <h4>Information</h4>
+
+            <ul>
+
+              <li><a href="#prestige-faqs">Shipping &amp; Delivery</a></li>
+
+              <li><a href="#prestige-faqs">Pause or Cancel</a></li>
+
+              <li><a href="#prestige-faqs">Collector Milestones</a></li>
+
+              <li><a href="#prestige-founder">Founder's Story</a></li>
+
+              <li><a href="#prestige-faqs">Frequently Asked Questions</a></li>
+
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h4 style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--space-md);">
+
+              Midway Moments
+
+            </h4>
+
+            <p style="font-size: 0.8125rem; line-height: 1.6; color: var(--color-ivory-muted); margin-bottom: var(--space-md);">
+
+              Receive contemplative excerpts, lunar calendar updates, and subscriber announcements.
+
+            </p>
+
+            <form style="display: flex; gap: var(--space-xs);" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hijri.');">
+
+              <input type="email" placeholder="Enter your email" required style="flex: 1; padding: 0.65rem 0.85rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(183,155,106,0.3); color: var(--color-ivory); font-size: 0.8125rem;">
+
+              <button type="submit" class="prestige-btn-luxury" style="padding: 0.65rem 1rem; font-size: 0.75rem;">Join</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="prestige-footer-bottom">
+
+          <div>&copy; 2026 Hijri by Masuma Abdul-Muhit. Powered by Maestrooo Prestige.</div>
+
+          <div style="display: flex; gap: var(--space-lg);">
+
+            <a href="#prestige-faqs">Privacy Policy</a>
+
+            <a href="#prestige-faqs">Terms of Service</a>
+
+            <a href="#prestige-faqs">Refund Policy</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div><!-- /#theme-prestige -->
+
+  <!-- ========================================================================
+
+       OPTION 3: PUBLISHER BY SHOPIFY
+
+       Avant-Garde Literary Independent Publishing Aesthetic (Official Free Theme)
+
+       ======================================================================== -->
+
+  <div id="theme-publisher" class="theme-container" data-theme-container="publisher" aria-hidden="true">
+
+    <!-- 01. PUBLISHER HEADER & LITERARY ANNOUNCEMENT -->
+
+    <header class="pub-header">
+
+      <div class="pub-announcement">
+
+        FREE WORLDWIDE DELIVERY &bull; ISSUE NO. 06 / 1448 &bull; PRE-ORDERS CLOSE 12 NOV &bull; <a href="#pub-catalogue" style="color: var(--color-gold); text-decoration: underline;">RESERVE ISSUE</a>
+
+      </div>
+
+      <div class="pub-container">
+
+        <div class="pub-header-row">
+          <div class="pub-logo-wrap">
+            <button type="button" class="btn-icon pub-mobile-toggle" data-drawer-open="pub-mobile-drawer" aria-label="Open index menu">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+            <a href="#theme-publisher" class="pub-logo-link" aria-label="Hijri homepage">
+              <img src="assets/images/logo.png" alt="Hijri" width="160" height="45" style="object-fit: contain; filter: brightness(0.15);">
+            </a>
+          </div>
+          <nav class="pub-nav-links" aria-label="Publisher primary navigation">
+            <a href="#pub-hero" aria-current="page">Home</a>
+            <a href="#pub-catalogue">Shop</a>
+            <a href="#pub-anthology">Collector's Journey</a>
+            <a href="#pub-methodology">Midway Moments</a>
+            <a href="#pub-essays">Journal</a>
+            <a href="#pub-colophon">About</a>
+            <a href="#pub-faqs">Contact</a>
+          </nav>
+          <div class="pub-nav-right">
+            <button type="button" class="btn-icon" data-drawer-open="search-drawer" aria-label="Search index">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+            <button type="button" class="btn-icon" data-drawer-open="cart-drawer" aria-label="View bag" style="position: relative;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              <span class="site-header__cart-count">1</span>
+            </button>
+            <a href="#pub-catalogue" class="pub-btn-solid pub-header-cta">
+              Subscribe
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 02. PUBLISHER ASYMMETRICAL TYPOGRAPHY-FIRST HERO -->
+
+    <section class="pub-section" id="pub-hero" style="padding-top: 2rem;">
+
+      <div class="pub-container">
+
+        <div class="pub-hero-grid">
+
+          <div class="pub-hero-text">
+
+            <span class="pub-kicker">PERIODICAL ARCHIVE // ISSUE NO. 06</span>
+
+            <h1 class="pub-display-headline">
+
+              One month. <em>One theme.</em> One step closer to Allah.
+
+            </h1>
+
+            <p>
+
+              Hijri is a 40-page A4 monthly print publication crafted to re-center you in an increasingly fast-paced world. Delivered to your doorstep each lunar month with guided journaling, scholarly reflections, and collector's tokens.
+
+            </p>
+
+            <div style="display: flex; gap: var(--space-md); align-items: center; flex-wrap: wrap;">
+
+              <a href="#pub-catalogue" class="pub-btn-solid">
+
+                Subscribe Monthly &mdash; &pound;11.99
+
+              </a>
+
+              <a href="#pub-contents" style="font-family: monospace; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-ink); text-decoration: underline;">
+
+                [ View Inclusions &darr; ]
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="pub-hero-art">
+
+            <div class="pub-hero-art-frame">
+
+              <img src="assets/images/vol6-flatlay.png" alt="Hijri Periodical Volume 6 Shukr Flatlay">
+
+              <div class="pub-hero-art-caption">
+
+                <span>Fig. 01 &mdash; Vol 06 / Shukr</span>
+
+                <span>40pp / 120gsm Uncoated</span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 03. PUBLISHER WHAT'S INSIDE — EDITORIAL TABLE OF CONTENTS -->
+
+    <section class="pub-section" id="pub-contents">
+
+      <div class="pub-container">
+
+        <div class="pub-inside-grid">
+
+          <div>
+
+            <div style="border: 1px solid var(--color-ink); padding: var(--space-md); background-color: var(--color-white);">
+
+              <img src="assets/images/whats-inside.png" alt="What's Inside Every Volume" style="width: 100%; height: auto; display: block;">
+
+              <div style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; margin-top: var(--space-xs); color: var(--color-ink-muted); text-align: right;">
+
+                Plate 02 &bull; Artifacts of Lunar Reflection
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div>
+
+            <span class="pub-kicker">TABLE OF CONTENTS // INCLUSIONS</span>
+
+            <h2 class="pub-display-headline" style="font-size: clamp(2rem, 3.5vw, 3.4rem); margin-bottom: var(--space-md);">
+
+              Crafted for deep contemplation and tangible spiritual habit.
+
+            </h2>
+
+            <div class="pub-feature-table">
+
+              <div class="pub-feature-row">
+
+                <span class="pub-feature-num">01</span>
+
+                <div class="pub-feature-body">
+
+                  <h3>40-Page A4 Premium Magazine</h3>
+
+                  <p>Printed on uncoated archival paper stock with lay-flat thread-sewn binding. Features curated essays, Qur'anic Arabic exegesis, classical poetry, and practical Islamic lifestyle reflections.</p>
+
+                </div>
+
+              </div>
+
+              <div class="pub-feature-row">
+
+                <span class="pub-feature-num">02</span>
+
+                <div class="pub-feature-body">
+
+                  <h3>Guided Reflection &amp; Action Prompts</h3>
+
+                  <p>Structured weekly prompt spreads designed to translate contemplation into real-world spiritual habits, personal accountability check-ins, and du'a records.</p>
+
+                </div>
+
+              </div>
+
+              <div class="pub-feature-row">
+
+                <span class="pub-feature-num">03</span>
+
+                <div class="pub-feature-body">
+
+                  <h3>Keepsake Collector's Token</h3>
+
+                  <p>A bespoke brass-finished milestone token included with every volume, marking each lunar month completed on your intentional year-long journey.</p>
+
+                </div>
+
+              </div>
+
+              <div class="pub-feature-row">
+
+                <span class="pub-feature-num">04</span>
+
+                <div class="pub-feature-body">
+
+                  <h3>Midway Moments Audio Companion</h3>
+
+                  <p>Mid-month audio reflections and companion contemplative guides delivered directly to your inbox to sustain your spiritual rhythm between issues.</p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 04. PUBLISHER FEATURED VOLUME — BOOKSHOP CATALOGUE STYLE -->
+
+    <section class="pub-section" id="pub-catalogue" style="background-color: var(--color-white);">
+
+      <div class="pub-container">
+
+        <span class="pub-kicker">PERIODICAL CATALOGUE &bull; VOL 06</span>
+
+        <div class="pub-catalogue-box" style="margin-top: var(--space-lg);">
+
+          <div class="pub-catalogue-layout">
+
+            <div class="pub-catalogue-cover">
+
+              <img src="assets/images/vol6-cover.png" alt="Volume 6 Shukr Book Cover">
+
+              <div style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; margin-top: var(--space-sm); color: var(--color-ink-muted); display: flex; justify-content: space-between;">
+
+                <span>ISBN: 978-HIJRI-06</span>
+
+                <span>EDITION: LIMITED FIRST PRINT</span>
+
+              </div>
+
+            </div>
+
+            <div>
+
+              <div style="font-family: monospace; font-size: 0.8125rem; letter-spacing: 0.1em; color: var(--color-forest); text-transform: uppercase; margin-bottom: var(--space-xs);">
+
+                MONTH: JUMADA AL-THANI 1448
+
+              </div>
+
+              <h2 style="font-family: var(--font-heading--family); font-size: clamp(2.2rem, 3.5vw, 3.2rem); margin-bottom: var(--space-xs);">
+
+                Volume 6 &mdash; Jumada al-Thani | SHUKR
+
+              </h2>
+
+              <div style="font-family: var(--font-subheading--family); font-size: 1.35rem; font-style: italic; color: var(--color-gold); margin-bottom: var(--space-lg);">
+
+                What Patience Planted: Cultivating Enduring Gratitude
+
+              </div>
+
+              <p style="font-size: 1rem; line-height: 1.7; color: var(--color-ink); margin-bottom: var(--space-xl);">
+
+                Explore the profound station of gratitude (Shukr) across 40 thoughtfully typeset pages. Features essays on recognizing subtle blessings, practical dhikr trackers, reflections on Surah Ibrahim, and our exclusive brass Shukr collector's token.
+
+              </p>
+
+              <!-- Catalogue Pricing Box -->
+
+              <div style="border: 2px solid var(--color-ink); padding: var(--space-lg); margin-bottom: var(--space-xl); background-color: var(--color-ivory);">
+
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-xs);">
+
+                  <span style="font-family: monospace; font-size: 0.875rem; text-transform: uppercase; font-weight: 700;">PLAN: MONTHLY SUBSCRIPTION</span>
+
+                  <span style="font-family: var(--font-heading--family); font-size: 1.85rem; font-weight: 600; color: var(--color-forest);">&pound;11.99 GBP</span>
+
+                </div>
+
+                <div style="font-size: 0.8125rem; color: var(--color-ink-muted); margin-bottom: var(--space-md);">
+
+                  Regular price: &pound;14.99 GBP (Save 20% on auto-renewal). Worldwide shipping included.
+
+                </div>
+
+                <button type="button" class="pub-btn-solid" style="width: 100%; text-align: center;" data-drawer-open="cart-drawer">
+
+                  Subscribe &mdash; &pound;11.99 / Month
+
+                </button>
+
+              </div>
+
+              <div class="pub-meta-colophon">
+
+                <div>DIMENSIONS: 210 &times; 297 MM (A4 FORMAT)</div>
+
+                <div>PAGE COUNT: 40 PAGES THREAD-SEWN LAY-FLAT</div>
+
+                <div>PAPER: 120GSM UNCOATED FSC CERTIFIED ARCHIVAL STOCK</div>
+
+                <div>DISTRIBUTION: FREE WORLDWIDE TRACKED DISPATCH</div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 05. PUBLISHER HOW IT WORKS — NUMBERED CHRONOLOGY -->
+
+    <section class="pub-section pub-how-it-works" id="pub-methodology">
+
+      <div class="pub-container">
+
+        <span class="pub-kicker">METHODOLOGY // 4 PHASES</span>
+
+        <h2 class="pub-display-headline" style="font-size: clamp(2rem, 3.6vw, 3.5rem);">
+
+          How your monthly Hijri subscription works.
+
+        </h2>
+
+        <div class="pub-chronology-list">
+
+          <div class="pub-chronology-item">
+
+            <div class="pub-chronology-big-num">01</div>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.35rem; margin-bottom: 0.35rem;">Subscribe Before the Crescent</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Join before the 12th of each Gregorian month to secure the upcoming lunar volume before print allocations close.</p>
+
+          </div>
+
+          <div class="pub-chronology-item">
+
+            <div class="pub-chronology-big-num">02</div>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.35rem; margin-bottom: 0.35rem;">Curated Delivery to Your Door</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Your 40-page issue arrives in a protective custom mailer alongside your monthly collector's milestone token with free worldwide delivery.</p>
+
+          </div>
+
+          <div class="pub-chronology-item">
+
+            <div class="pub-chronology-big-num">03</div>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.35rem; margin-bottom: 0.35rem;">A Month of Contemplative Study</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Engage with four weekly themed chapters, journaling exercises, and guided action prompts tailored to the spiritual season.</p>
+
+          </div>
+
+          <div class="pub-chronology-item">
+
+            <div class="pub-chronology-big-num">04</div>
+
+            <h3 style="font-family: var(--font-heading--family); font-size: 1.35rem; margin-bottom: 0.35rem;">Flexible Management Anytime</h3>
+
+            <p style="font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-muted);">Skip a month, gift an issue, or cancel anytime effortlessly with one click from your subscriber portal.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 06. PUBLISHER COLLECTOR'S JOURNEY — LITERARY ANTHOLOGY -->
+
+    <section class="pub-section pub-collector" id="pub-anthology">
+
+      <div class="pub-container">
+
+        <span class="pub-kicker">HEIRLOOM ARCHIVE</span>
+
+        <h2 class="pub-display-headline" style="font-size: clamp(2.2rem, 3.8vw, 3.6rem);">
+
+          A year of intentional living, preserved as an heirloom.
+
+        </h2>
+
+        <p style="font-size: 1.0625rem; line-height: 1.65; color: var(--color-ivory-muted); max-width: 65ch;">
+
+          Collect all 12 lunar volumes throughout the Hijri year. As your spiritual journey deepens, your milestone tokens unlock exclusive collector rewards.
+
+        </p>
+
+        <div class="pub-tiers-triptych">
+
+          <div class="pub-tier-col">
+
+            <div>
+
+              <span style="font-family: monospace; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold);">TIER 01 // VOLUMES 1&ndash;4</span>
+
+              <h3>The Wayfarer</h3>
+
+              <p>Commence your lunar journey. Receive your introductory keepsake display tray to hold your monthly brass tokens.</p>
+
+            </div>
+
+            <div class="pub-tier-quote">&ldquo;The journey of a thousand leagues begins with a single step.&rdquo;</div>
+
+          </div>
+
+          <div class="pub-tier-col">
+
+            <div>
+
+              <span style="font-family: monospace; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold);">TIER 02 // VOLUMES 5&ndash;8</span>
+
+              <h3>The Traveller</h3>
+
+              <p>Deepen your contemplative practice. Unlock the mid-year archival slipcase to house your growing collection of editions.</p>
+
+            </div>
+
+            <div class="pub-tier-quote">&ldquo;Patience is the foundation upon which reflection flourishes.&rdquo;</div>
+
+          </div>
+
+          <div class="pub-tier-col">
+
+            <div>
+
+              <span style="font-family: monospace; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold);">TIER 03 // VOLUMES 9&ndash;12</span>
+
+              <h3>The Companion</h3>
+
+              <p>Complete the full 12-month lunar cycle. Receive the master hand-bound gold-embossed annual anthology box.</p>
+
+            </div>
+
+            <div class="pub-tier-quote">&ldquo;A full year gathered, an heirloom preserved for generations.&rdquo;</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 07. PUBLISHER BEHIND THE THEMES — ESSAYS INDEX -->
+
+    <section class="pub-section" id="pub-essays">
+
+      <div class="pub-container">
+
+        <span class="pub-kicker">CRITICAL ESSAYS</span>
+
+        <h2 class="pub-display-headline" style="font-size: clamp(2rem, 3.5vw, 3.2rem);">
+
+          Behind the themes and creative contemplations.
+
+        </h2>
+
+        <div class="pub-articles-index">
+
+          <article class="pub-article-item">
+
+            <img src="assets/images/article-vol6.png" alt="Cultivating Gratitude in Times of Scarcity" loading="lazy">
+
+            <div style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-ink-muted);">ESSAY 01 &bull; VOL 06 &bull; 5 MIN READ</div>
+
+            <h3>Cultivating Gratitude in Times of Scarcity</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">How the prophetic paradigm of Shukr reframes our perception of lack and opens doorways to abundance.</p>
+
+          </article>
+
+          <article class="pub-article-item">
+
+            <img src="assets/images/article-vol5.png" alt="The Architecture of Sabr" loading="lazy">
+
+            <div style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-ink-muted);">ESSAY 02 &bull; VOL 05 &bull; 6 MIN READ</div>
+
+            <h3>The Architecture of Sabr: Reflections on Enduring Grace</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">Moving beyond passive endurance toward active, dignified perseverance rooted in divine trust.</p>
+
+          </article>
+
+          <article class="pub-article-item">
+
+            <img src="assets/images/article-vol4.jpg" alt="Tawakkul: Finding Grounding" loading="lazy">
+
+            <div style="font-family: monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--color-ink-muted);">ESSAY 03 &bull; VOL 04 &bull; 4 MIN READ</div>
+
+            <h3>Tawakkul: Finding Grounding in Uncertain Horizons</h3>
+
+            <p style="font-size: 0.9375rem; color: var(--color-ink-muted); line-height: 1.6;">Understanding surrender not as inaction, but as an intentional anchoring in divine wisdom.</p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 08. PUBLISHER MEET THE FOUNDER — COLOPHON & STATEMENT -->
+
+    <section class="pub-section pub-founder-section" id="pub-colophon">
+
+      <div class="pub-container">
+
+        <div class="pub-founder-layout">
+
+          <div class="pub-founder-frame">
+            <img src="assets/images/vol2-detail.jpg" alt="Hijri editorial manuscript pages and reflective study desk curated by Masuma Abdul-Muhit" loading="lazy">
+          </div>
+
+          <div class="pub-founder-bio">
+
+            <span class="pub-kicker">DIRECTOR'S STATEMENT</span>
+
+            <h2>A publication born from a longing for unhurried contemplation.</h2>
+
+            <p>
+
+              In an era of relentless algorithmic distraction and fragmented attention, our spiritual lives often suffer from the same hurried pace. Hijri was created to offer an antidote: a tactile, physical publication that honors the sacred rhythm of time and invites you to pause, reflect, and cultivate an enduring inner sanctuary.
+
+            </p>
+
+            <p>
+
+              Every page is designed with meticulous care to honor classical scholarship while meeting the realities of modern Muslim life. We hope this journal becomes your quiet companion through every lunar cycle.
+
+            </p>
+
+            <div class="pub-founder-credits">
+
+              FOUNDER &amp; CREATIVE DIRECTOR: MASUMA ABDUL-MUHIT / PUBLISHED IN LONDON
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 09. PUBLISHER READER EPIGRAPH -->
+
+    <section class="pub-section pub-epigraph-section" id="pub-epigraph">
+
+      <div class="pub-container">
+
+        <div class="pub-epigraph-box">
+
+          <span class="pub-kicker" style="margin-bottom: var(--space-md);">COMMUNITY VOICES</span>
+
+          <blockquote>
+
+            &ldquo;Opening Hijri each month has become my most sacred personal ritual. The paper quality, the depth of reflection, and the quiet dignity of each volume bring an immense calm to my hectic work week.&rdquo;
+
+          </blockquote>
+
+          <div class="pub-epigraph-source">Sarah K., London &mdash; Annual Subscriber</div>
+
+        </div>
+
+        <div class="pub-testimonials-triptych">
+
+          <div class="pub-testimonial-col">
+
+            <p>&ldquo;Unlike endless digital reminders that induce anxiety, Hijri sits quietly on my bedside table, inviting me in whenever I have ten minutes to breathe. The guided prompts are deeply therapeutic.&rdquo;</p>
+
+            <cite>Dr. Tariq M. / Manchester</cite>
+
+          </div>
+
+          <div class="pub-testimonial-col">
+
+            <p>&ldquo;The collector's journey gives our family something shared to anticipate every lunar cycle. My teenagers look forward to unboxing the new theme and discussing the reflection prompts over weekend tea.&rdquo;</p>
+
+            <cite>Amina H. / Birmingham</cite>
+
+          </div>
+
+          <div class="pub-testimonial-col">
+
+            <p>&ldquo;The design and printing are truly museum-grade. Every month's token is a tangible milestone in my year of spiritual growth. Hijri has transformed how I connect with Islamic time.&rdquo;</p>
+
+            <cite>Zainab B. / Dubai</cite>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 10. PUBLISHER FAQS — LITERARY ACCORDION -->
+
+    <section class="pub-section pub-faqs-section" id="pub-faqs">
+
+      <div class="pub-container">
+
+        <div style="text-align: center; margin-bottom: var(--space-3xl);">
+
+          <span class="pub-kicker">ENQUIRIES &amp; PROTOCOLS</span>
+
+          <h2 class="pub-display-headline" style="font-size: clamp(2rem, 3.6vw, 3.5rem);">
+
+            Frequently Asked Questions
+
+          </h2>
+
+        </div>
+
+        <div class="pub-faqs-container">
+
+          <details class="pub-faq-item">
+
+            <summary>Q.01 &mdash; When will my monthly volume arrive?</summary>
+
+            <div class="pub-faq-answer">
+
+              Subscriptions close on the 12th of each Gregorian month. All editions are dispatched simultaneously in protective custom packaging via tracked international postal services to ensure they reach your doorstep before the new lunar crescent appears.
+
+            </div>
+
+          </details>
+
+          <details class="pub-faq-item">
+
+            <summary>Q.02 &mdash; How does the monthly subscription renewal work?</summary>
+
+            <div class="pub-faq-answer">
+
+              Your subscription automatically renews on the 1st of each calendar month at &pound;11.99 GBP with free worldwide shipping. You will receive an email notification before each renewal.
+
+            </div>
+
+          </details>
+
+          <details class="pub-faq-item">
+
+            <summary>Q.03 &mdash; Can I skip a month or cancel anytime?</summary>
+
+            <div class="pub-faq-answer">
+
+              Yes, absolutely. You can pause, skip an upcoming lunar volume, or cancel your subscription at any time with a single click inside your subscriber portal before the 12th of the month. There are no cancellation fees or hidden commitments.
+
+            </div>
+
+          </details>
+
+          <details class="pub-faq-item">
+
+            <summary>Q.04 &mdash; Is international delivery truly included at no extra charge?</summary>
+
+            <div class="pub-faq-answer">
+
+              Yes. We believe access to intentional spiritual literature should have no geographic barriers. Worldwide tracked shipping is completely free for all subscribers across the UK, Europe, North America, the Middle East, and beyond.
+
+            </div>
+
+          </details>
+
+          <details class="pub-faq-item">
+
+            <summary>Q.05 &mdash; How do I receive the Collector's Journey rewards?</summary>
+
+            <div class="pub-faq-answer">
+
+              Milestone rewards (the brass token display tray, archival slipcase, and gold-embossed annual anthology box) are automatically bundled and shipped alongside your 4th, 8th, and 12th volumes as long as your subscription remains active.
+
+            </div>
+
+          </details>
+
+          <details class="pub-faq-item">
+
+            <summary>Q.06 &mdash; Can I purchase past volumes individually?</summary>
+
+            <div class="pub-faq-answer">
+
+              Previous volumes are occasionally released in very limited archival batches for one-off purchase at &pound;14.99 GBP, subject to remaining warehouse stock. Active subscribers receive priority allocation for all archival releases.
+
+            </div>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 11. PUBLISHER FINAL CTA — ANTHOLOGY CALL -->
+
+    <section class="pub-section pub-cta-panel">
+
+      <div class="pub-container">
+
+        <div class="pub-cta-inner">
+
+          <span class="pub-kicker" style="color: var(--color-gold); border-color: var(--color-gold);">LUNAR DISPATCH // 1448</span>
+
+          <h2>Begin your intentional lunar journey today.</h2>
+
+          <p>
+
+            Subscribe now to receive Volume 6: Shukr with free worldwide shipping. Pre-orders close on the 12th of this month.
+
+          </p>
+
+          <a href="#pub-catalogue" class="pub-btn-ivory">
+
+            Join Hijri &mdash; &pound;11.99 / Month
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 12. PUBLISHER COLOPHON FOOTER -->
+
+    <footer class="pub-colophon-footer">
+
+      <div class="pub-container">
+
+        <div class="pub-footer-grid">
+
+          <div>
+
+            <img src="assets/images/logo-ivory.png" alt="Hijri" width="140" style="margin-bottom: var(--space-md);">
+
+            <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-ivory-muted); max-width: 32ch;">
+
+              A 40-page monthly Islamic print publication designed to bring calm, reflection, and sacred rhythm to modern life.
+
+            </p>
+
+          </div>
+
+          <div class="pub-footer-col">
+
+            <h4>Index</h4>
+
+            <ul>
+
+              <li><a href="#pub-contents">Table of Contents</a></li>
+
+              <li><a href="#pub-methodology">Methodology</a></li>
+
+              <li><a href="#pub-catalogue">Current Edition</a></li>
+
+              <li><a href="#pub-anthology">Anthology</a></li>
+
+              <li><a href="#pub-essays">Essays</a></li>
+
+            </ul>
+
+          </div>
+
+          <div class="pub-footer-col">
+
+            <h4>Protocols</h4>
+
+            <ul>
+
+              <li><a href="#pub-faqs">Shipping &amp; Delivery</a></li>
+
+              <li><a href="#pub-faqs">Pause or Cancel</a></li>
+
+              <li><a href="#pub-faqs">Collector Milestones</a></li>
+
+              <li><a href="#pub-colophon">Director's Statement</a></li>
+
+              <li><a href="#pub-faqs">Frequently Asked Questions</a></li>
+
+            </ul>
+
+          </div>
+
+          <div>
+
+            <h4 style="font-family: monospace; font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-gold); margin-bottom: var(--space-md);">
+
+              Midway Moments
+
+            </h4>
+
+            <p style="font-size: 0.8125rem; line-height: 1.6; color: var(--color-ivory-muted); margin-bottom: var(--space-md);">
+
+              Receive contemplative excerpts, lunar calendar updates, and subscriber announcements.
+
+            </p>
+
+            <form style="display: flex; gap: var(--space-xs);" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hijri.');">
+
+              <input type="email" placeholder="Enter your email" required style="flex: 1; padding: 0.65rem 0.85rem; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.2); color: var(--color-ivory); font-size: 0.8125rem; font-family: monospace;">
+
+              <button type="submit" class="pub-btn-ivory" style="padding: 0.65rem 1rem; font-size: 0.75rem;">Join</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <div class="pub-footer-colophon">
+
+          <div>&copy; 2026 HIJRI BY MASUMA ABDUL-MUHIT. POWERED BY SHOPIFY PUBLISHER.</div>
+
+          <div style="display: flex; gap: var(--space-lg);">
+
+            <a href="#pub-faqs">PRIVACY</a>
+
+            <a href="#pub-faqs">TERMS</a>
+
+            <a href="#pub-faqs">DISPATCH</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div><!-- /#theme-publisher -->
+
+  <!-- ========================================================================
+
+       PERSISTENT THEME SWITCHER
+
+       Allows instant comparison between:
+
+       1. Horizon (Free)
+
+       2. Prestige (Paid)
+
+       3. Publisher (Free)
+
+       ======================================================================== -->
+
+  <aside class="theme-switcher-bar" id="theme-switcher-bar" aria-label="Theme comparison selector">
+
+    <div class="theme-switcher__label-group">
+
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+
+      <span>Theme:</span>
+
+    </div>
+
+    <div class="theme-switcher__controls" role="group" aria-label="Select Shopify theme direction">
+
+      <button type="button" class="theme-btn is-active" data-theme-target="horizon" aria-pressed="true">
+
+        <span>1. Horizon</span>
+
+        <span class="theme-btn__badge">Free</span>
+
+      </button>
+
+      <button type="button" class="theme-btn" data-theme-target="prestige" aria-pressed="false">
+
+        <span>2. Prestige</span>
+
+        <span class="theme-btn__badge">Paid</span>
+
+      </button>
+
+      <button type="button" class="theme-btn" data-theme-target="publisher" aria-pressed="false">
+
+        <span>3. Publisher</span>
+
+        <span class="theme-btn__badge">Free</span>
+
+      </button>
+
+    </div>
+
+    <button type="button" class="theme-switcher__info-trigger" id="theme-info-trigger" aria-label="View theme architectural details" aria-expanded="false">
+
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+
+    </button>
+
+  </aside>
+
+  <!-- Popover details for active theme -->
+
+  <div class="theme-switcher__popover" id="theme-info-popover" role="dialog" aria-labelledby="theme-popover-title">
+
+    <div class="theme-switcher__popover-title" id="theme-popover-title">Option 1: Horizon (Free)</div>
+
+    <p class="theme-switcher__popover-summary" id="theme-popover-summary">Clean, modular, and conversion-focused. Balanced two-column compositions, native Shopify section blocks, and structured subscription journeys.</p>
+
+    <div class="theme-switcher__popover-specs" id="theme-popover-specs">
+
+      <div>&bull; Architecture: Shopify Horizon v3.5.1+ (OS 2.0 Theme Blocks)</div>
+
+      <div>&bull; Key Strength: 100% native Theme Editor maintainability with zero custom Liquid required</div>
+
+      <div>&bull; Conversion Focus: Clear product pricing hierarchy and modular inclusion cards</div>
+
+    </div>
+
+  </div>
+
+  <div class="theme-switcher__announcer" id="theme-switcher-announcer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ========================================================================
+
+       INTERACTIVE DRAWERS (Mobile Navigation, Predictive Search, Cart Preview)
+
+       Mirrors Horizon's native `<header-drawer>`, `<search-modal>`, `<cart-drawer-component>`
+
+       ======================================================================== -->
+
+  <div class="drawer-backdrop" data-drawer-backdrop aria-hidden="true"></div>
+
+  <!-- 1. Mobile Navigation Drawer -->
+
+  <aside
+
+    id="mobile-nav-drawer"
+
+    class="side-drawer side-drawer--left"
+
+    data-drawer
+
+    role="dialog"
+
+    aria-modal="true"
+
+    aria-hidden="true"
+
+    aria-labelledby="mobile-nav-title"
+
+  >
+
+    <div class="side-drawer__header">
+
+      <span id="mobile-nav-title" class="side-drawer__title">Menu</span>
+
+      <button type="button" class="btn-icon" aria-label="Close menu" data-drawer-close>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+
+        </svg>
+
+      </button>
+
+    </div>
+
+    <div class="side-drawer__body">
+
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a href="#top" class="mobile-nav__link" data-mobile-nav-link>Home</a></li>
+        <li class="mobile-nav__item"><a href="#featured-volume" class="mobile-nav__link" data-mobile-nav-link>Shop</a></li>
+        <li class="mobile-nav__item"><a href="#collectors-journey" class="mobile-nav__link" data-mobile-nav-link>Collector's Journey</a></li>
+        <li class="mobile-nav__item"><a href="#how-it-works" class="mobile-nav__link" data-mobile-nav-link>Midway Moments</a></li>
+        <li class="mobile-nav__item"><a href="#behind-the-themes" class="mobile-nav__link" data-mobile-nav-link>Journal</a></li>
+        <li class="mobile-nav__item"><a href="#meet-the-founder" class="mobile-nav__link" data-mobile-nav-link>About</a></li>
+        <li class="mobile-nav__item"><a href="#faqs" class="mobile-nav__link" data-mobile-nav-link>Contact</a></li>
+      </ul>
+
+      <div class="mobile-nav__meta">
+
+        <p><strong>Pre-orders close on the 12th of each month.</strong></p>
+
+        <p style="margin-top: 0.35rem;">Free delivery on all UK &amp; international orders.</p>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- 2. Prestige Luxury Mobile Navigation Drawer -->
+  <aside
+    id="prestige-mobile-drawer"
+    class="side-drawer side-drawer--left prestige-drawer"
+    data-drawer
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="prestige-mobile-title"
+  >
+    <div class="side-drawer__header prestige-drawer__header">
+      <span id="prestige-mobile-title" class="prestige-drawer__title">Menu</span>
+      <button type="button" class="btn-icon" aria-label="Close menu" data-drawer-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="side-drawer__body prestige-drawer__body">
+      <nav class="prestige-drawer__nav" aria-label="Prestige mobile navigation">
+        <ul class="prestige-drawer__list">
+          <li class="prestige-drawer__item">
+            <a href="#prestige-hero" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">01</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-product" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">02</span>
+              <span>Shop</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-collector" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">03</span>
+              <span>Collector's Journey</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-journey" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">04</span>
+              <span>Midway Moments</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-journal" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">05</span>
+              <span>Journal</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-founder" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">06</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="prestige-drawer__item">
+            <a href="#prestige-faqs" class="prestige-drawer__link" data-mobile-nav-link>
+              <span class="prestige-drawer__num">07</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="prestige-drawer__footer">
+        <a href="#prestige-product" class="prestige-btn-luxury" style="width: 100%; text-align: center; margin-bottom: var(--space-md);" data-mobile-nav-link>
+          Subscribe Monthly &mdash; &pound;11.99
+        </a>
+        <div style="font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold); font-weight: 600; margin-bottom: 0.25rem;">
+          Worldwide Tracked Shipping
+        </div>
+        <div style="font-size: 0.8125rem; color: var(--color-ink-muted);">
+          Pre-orders close on the 12th. Auto-renews monthly; pause or cancel anytime.
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 3. Publisher Avant-Garde Literary Mobile Navigation Drawer -->
+  <aside
+    id="pub-mobile-drawer"
+    class="side-drawer side-drawer--left pub-drawer"
+    data-drawer
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="pub-mobile-title"
+  >
+    <div class="side-drawer__header pub-drawer__header">
+      <div style="font-family: monospace; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold);">
+        [ ISSUE NO. 06 / 1448 ]
+      </div>
+      <button type="button" class="btn-icon" aria-label="Close menu" data-drawer-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="side-drawer__body pub-drawer__body">
+      <div class="pub-drawer__colophon-bar">
+        <span id="pub-mobile-title">INDEX // NAVIGATION</span>
+        <span>40PP / 120GSM</span>
+      </div>
+      <nav class="pub-drawer__nav" aria-label="Publisher mobile navigation">
+        <ul class="pub-drawer__list">
+          <li class="pub-drawer__item">
+            <a href="#pub-hero" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">01</span>
+              <span class="pub-drawer__text">Home</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-catalogue" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">02</span>
+              <span class="pub-drawer__text">Shop</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-anthology" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">03</span>
+              <span class="pub-drawer__text">Collector's Journey</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-methodology" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">04</span>
+              <span class="pub-drawer__text">Midway Moments</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-essays" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">05</span>
+              <span class="pub-drawer__text">Journal</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-colophon" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">06</span>
+              <span class="pub-drawer__text">About</span>
+            </a>
+          </li>
+          <li class="pub-drawer__item">
+            <a href="#pub-faqs" class="pub-drawer__link" data-mobile-nav-link>
+              <span class="pub-drawer__code">07</span>
+              <span class="pub-drawer__text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="pub-drawer__footer">
+        <a href="#pub-catalogue" class="pub-btn-solid" style="width: 100%; text-align: center; margin-bottom: var(--space-md);" data-mobile-nav-link>
+          Subscribe Monthly &mdash; &pound;11.99
+        </a>
+        <div class="pub-drawer__specs">
+          <div>DISTRIBUTION: FREE TRACKED WORLDWIDE</div>
+          <div>PRE-ORDERS: CLOSES 12TH GREGORIAN</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+
+
+  <!-- 2. Search Drawer -->
+
+  <aside
+
+    id="search-drawer"
+
+    class="side-drawer side-drawer--right"
+
+    data-drawer
+
+    role="dialog"
+
+    aria-modal="true"
+
+    aria-hidden="true"
+
+    aria-labelledby="search-drawer-title"
+
+  >
+
+    <div class="side-drawer__header">
+
+      <span id="search-drawer-title" class="side-drawer__title">Search Hijri</span>
+
+      <button type="button" class="btn-icon" aria-label="Close search" data-drawer-close>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+
+        </svg>
+
+      </button>
+
+    </div>
+
+    <div class="side-drawer__body">
+
+      <form action="#featured-volume" method="get" role="search" onsubmit="event.preventDefault();">
+
+        <label for="predictive-search-input" class="visually-hidden">Search volumes and essays</label>
+
+        <div style="display: flex; gap: var(--space-xs); margin-bottom: var(--space-xl);">
+
+          <input
+
+            type="search"
+
+            id="predictive-search-input"
+
+            name="q"
+
+            placeholder="Search volumes, themes (Shukr, Sabr, Tazkiya)..."
+
+            style="flex: 1; padding: 0.85rem 1rem; border: 1px solid var(--border-light-strong); background: var(--color-white); border-radius: var(--radius-sm);"
+
+          >
+
+          <button type="submit" class="btn btn--primary" data-drawer-close>Search</button>
+
+        </div>
+
+      </form>
+
+      <p style="font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-ink-muted); margin-bottom: var(--space-md);">
+
+        Available Volumes &amp; Archive
+
+      </p>
+
+      <ul style="display: grid; gap: var(--space-md);">
+
+        <li>
+
+          <a href="#featured-volume" data-mobile-nav-link style="display: flex; gap: var(--space-md); align-items: center;">
+
+            <img src="assets/images/vol6-cover.png" alt="" width="56" height="70" style="object-fit: cover; border-radius: var(--radius-sm);">
+
+            <div>
+
+              <div style="font-family: var(--font-heading--family); font-size: 1.15rem; font-weight: 600;">Volume 6 &mdash; Jumada al-Thani | SHUKR</div>
+
+              <div style="font-size: var(--text-xs); color: var(--color-ink-muted);">Current Pre-Order &bull; &pound;11.99/mo or &pound;14.99 single</div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a href="#behind-the-themes" data-mobile-nav-link style="display: flex; gap: var(--space-md); align-items: center;">
+
+            <img src="assets/images/vol5-cover.jpg" alt="" width="56" height="70" style="object-fit: cover; border-radius: var(--radius-sm);">
+
+            <div>
+
+              <div style="font-family: var(--font-heading--family); font-size: 1.15rem; font-weight: 600;">Volume 5 &mdash; Jumada al-Uwla | SABR</div>
+
+              <div style="font-size: var(--text-xs); color: var(--color-ink-muted);">1448 Archive &bull; &pound;14.99 GBP</div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+        <li>
+
+          <a href="#behind-the-themes" data-mobile-nav-link style="display: flex; gap: var(--space-md); align-items: center;">
+
+            <img src="assets/images/vol4-cover.jpg" alt="" width="56" height="70" style="object-fit: cover; border-radius: var(--radius-sm);">
+
+            <div>
+
+              <div style="font-family: var(--font-heading--family); font-size: 1.15rem; font-weight: 600;">Volume 4 &mdash; Rabi al-Thani | TAZKIYA</div>
+
+              <div style="font-size: var(--text-xs); color: var(--color-ink-muted);">1448 Archive &bull; &pound;14.99 GBP</div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </aside>
+
+  <!-- 3. Cart Drawer Preview (`<cart-drawer-component>`) -->
+
+  <aside
+
+    id="cart-drawer"
+
+    class="side-drawer side-drawer--right"
+
+    data-drawer
+
+    role="dialog"
+
+    aria-modal="true"
+
+    aria-hidden="true"
+
+    aria-labelledby="cart-drawer-title"
+
+  >
+
+    <div class="side-drawer__header">
+
+      <span id="cart-drawer-title" class="side-drawer__title">Your Reading Bag</span>
+
+      <button type="button" class="btn-icon" aria-label="Close bag" data-drawer-close>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+
+        </svg>
+
+      </button>
+
+    </div>
+
+    <div class="side-drawer__body">
+
+      <div style="display: flex; gap: var(--space-md); padding-bottom: var(--space-lg); border-bottom: 1px solid var(--border-light);">
+
+        <img
+
+          src="assets/images/vol6-cover.png"
+
+          alt="Volume 6 - Jumada al-Thani | SHUKR"
+
+          width="84"
+
+          height="105"
+
+          style="object-fit: cover; border-radius: var(--radius-sm); border: 1px solid var(--border-light);"
+
+        >
+
+        <div style="flex: 1;">
+
+          <div style="font-family: var(--font-heading--family); font-size: 1.25rem; font-weight: 600;">
+
+            Volume 6 &mdash; Jumada al-Thani | SHUKR
+
+          </div>
+
+          <p id="cart-preview-plan" style="font-size: var(--text-xs); color: var(--color-ink-muted); margin-top: 0.25rem; margin-bottom: 0.5rem;">
+
+            Monthly Subscription (Deliver every month &bull; Auto-renews, skip or cancel anytime)
+
+          </p>
+
+          <div id="cart-preview-price" style="font-weight: 600; color: var(--color-forest);">
+
+            &pound;11.99 GBP
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div style="margin-top: var(--space-lg); padding: var(--space-md); background-color: var(--color-white); border: 1px solid var(--border-light); border-radius: var(--radius-sm); font-size: var(--text-xs); color: var(--color-ink-muted);">
+
+        <strong>Subscribed &amp; Saved:</strong> You have selected the monthly subscription plan (&pound;11.99/month, saving 20%). Delivery is free worldwide. Auto-renews each lunar month; pause, skip or cancel anytime before the 12th.
+
+      </div>
+
+    </div>
+
+    <div class="side-drawer__footer">
+
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-xs);">
+
+        <span style="font-size: var(--text-small); color: var(--color-ink-muted);">Shipping (UK &amp; International)</span>
+
+        <span style="font-size: var(--text-small); font-weight: 600; color: var(--color-forest);">FREE</span>
+
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-md);">
+
+        <span style="font-weight: 600;">Estimated Total</span>
+
+        <span id="cart-preview-subtotal" style="font-family: var(--font-heading--family); font-size: 1.5rem; font-weight: 600;">&pound;11.99 GBP</span>
+
+      </div>
+
+      <button type="button" class="btn btn--primary btn--full" data-drawer-close>
+
+        Continue Shopping
+
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- Modular Vanilla JavaScript (Works directly over file:// without build step) -->
+
+  <script src="js/navigation.js"></script>
+
+  <script src="js/interactions.js"></script>
+
+  <script src="js/animations.js"></script>
+
+  <script src="js/theme-switcher.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+/* ==========================================================================
+   SHOP HIJRI — DESIGN TOKENS & HORIZON COLOR SCHEMES (variables.css)
+   Mapped to Shopify Horizon v3.5+ / v4.x Color Schemes & Theme Settings
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. Core Approved Brand Palette
+     ------------------------------------------------------------------------ */
+  --color-ivory: #F7F4EE;
+  --color-oat: #E8DFD1;
+  --color-forest: #34483F;
+  --color-gold: #B79B6A;
+  --color-ink: #252824;
+  --color-white: #FFFFFF;
+
+  /* Supporting Tints & States (WCAG AA Verified) */
+  --color-forest-hover: #273730;
+  --color-forest-deep: #1E2B25;
+  --color-gold-light: #D4BFA0;
+  --color-gold-muted: rgba(183, 155, 106, 0.22);
+  --color-ink-muted: #525750;
+  --color-ink-subtle: #6E736B;
+  --color-ivory-muted: rgba(247, 244, 238, 0.84);
+  --color-ivory-subtle: rgba(247, 244, 238, 0.65);
+
+  /* Semantic Borders & Dividers */
+  --border-light: rgba(37, 40, 36, 0.12);
+  --border-light-strong: rgba(37, 40, 36, 0.22);
+  --border-dark: rgba(247, 244, 238, 0.16);
+  --border-gold: rgba(183, 155, 106, 0.45);
+
+  /* Default Active Scheme Tokens (Scheme 1: Main Light) */
+  --bg-surface: var(--color-ivory);
+  --bg-elevated: var(--color-white);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-muted);
+  --text-heading: var(--color-ink);
+  --accent-decorative: var(--color-gold);
+  --border-hairline: var(--border-light);
+
+  --btn-primary-bg: var(--color-forest);
+  --btn-primary-text: var(--color-ivory);
+  --btn-primary-hover-bg: var(--color-forest-hover);
+  --btn-primary-hover-text: var(--color-white);
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-ink);
+  --btn-secondary-border: var(--color-ink);
+  --btn-secondary-hover-bg: var(--color-ink);
+  --btn-secondary-hover-text: var(--color-ivory);
+
+  /* ------------------------------------------------------------------------
+     2. Editorial Typography System (Horizon Font Variables Compatible)
+     ------------------------------------------------------------------------ */
+  --font-heading--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-subheading--family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body--family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-accent--family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Fluid Desktop -> Mobile Type Scale */
+  --text-h1: clamp(2.65rem, 4.4vw + 1rem, 4.5rem);       /* ~42px to 72px */
+  --text-h2: clamp(2.1rem, 2.8vw + 0.85rem, 2.95rem);    /* ~34px to 47px */
+  --text-h3: clamp(1.45rem, 1.5vw + 0.75rem, 1.9rem);    /* ~23px to 30px */
+  --text-h4: clamp(1.2rem, 0.8vw + 0.85rem, 1.4rem);     /* ~19px to 22px */
+  --text-lead: clamp(1.08rem, 0.45vw + 0.95rem, 1.22rem);/* ~17.5px to 19.5px */
+  --text-body: clamp(1rem, 0.2vw + 0.94rem, 1.0625rem);  /* 16px to 17px */
+  --text-small: 0.875rem;                                /* 14px */
+  --text-xs: 0.8125rem;                                  /* 13px */
+
+  /* Line Heights */
+  --lh-tight: 1.08;
+  --lh-heading: 1.16;
+  --lh-subheading: 1.28;
+  --lh-body: 1.65;
+  --lh-snug: 1.42;
+
+  /* Letter Spacing */
+  --ls-tight: -0.015em;
+  --ls-normal: 0em;
+  --ls-wide: 0.08em;
+  --ls-eyebrow: 0.14em;
+
+  /* ------------------------------------------------------------------------
+     3. Layout, Spacing & Grid Tokens
+     ------------------------------------------------------------------------ */
+  --container-max-width: 1320px;
+  --container-narrow: 920px;
+  --container-reading: 65ch;
+  --gutter-inline: clamp(1.25rem, 4vw, 3rem);
+
+  --space-2xs: 0.25rem;  /* 4px */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 0.75rem;   /* 12px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4.5rem;   /* 72px */
+  --space-4xl: 6rem;     /* 96px */
+
+  --section-padding-y: clamp(4.25rem, 7.5vw, 7rem);
+  --section-padding-y-compact: clamp(3rem, 5vw, 4.75rem);
+
+  /* ------------------------------------------------------------------------
+     4. Borders, Radii, Shadows & Transitions
+     ------------------------------------------------------------------------ */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-pill: 999px;
+
+  --shadow-subtle: 0 12px 32px -8px rgba(25, 28, 24, 0.07);
+  --shadow-editorial: 0 24px 48px -12px rgba(15, 22, 19, 0.22);
+  --shadow-book: 0 18px 38px -6px rgba(14, 20, 17, 0.34), 0 4px 12px rgba(14, 20, 17, 0.16);
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 180ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 320ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================================
+   SHOPIFY HORIZON NATIVE COLOUR SCHEMES
+   Mapped directly to Horizon's scheme classes (.color-scheme-*)
+   ========================================================================== */
+
+/* Scheme 1: Main Light (Soft Ivory #F7F4EE background, Soft Ink #252824 text) */
+.color-scheme-main-light {
+  --bg-surface: var(--color-ivory);
+  --bg-elevated: var(--color-white);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-muted);
+  --text-heading: var(--color-ink);
+  --accent-decorative: var(--color-gold);
+  --border-hairline: var(--border-light);
+
+  --btn-primary-bg: var(--color-forest);
+  --btn-primary-text: var(--color-ivory);
+  --btn-primary-hover-bg: var(--color-forest-hover);
+  --btn-primary-hover-text: var(--color-white);
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-ink);
+  --btn-secondary-border: var(--border-light-strong);
+  --btn-secondary-hover-bg: var(--color-ink);
+  --btn-secondary-hover-text: var(--color-ivory);
+
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+/* Scheme 2: Warm Alternate (Warm Oat #E8DFD1 background, Soft Ink #252824 text) */
+.color-scheme-warm-oat {
+  --bg-surface: var(--color-oat);
+  --bg-elevated: var(--color-ivory);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-muted);
+  --text-heading: var(--color-ink);
+  --accent-decorative: var(--color-forest);
+  --border-hairline: rgba(37, 40, 36, 0.14);
+
+  --btn-primary-bg: var(--color-forest);
+  --btn-primary-text: var(--color-ivory);
+  --btn-primary-hover-bg: var(--color-forest-hover);
+  --btn-primary-hover-text: var(--color-white);
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-ink);
+  --btn-secondary-border: var(--color-ink);
+  --btn-secondary-hover-bg: var(--color-ink);
+  --btn-secondary-hover-text: var(--color-ivory);
+
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+/* Scheme 3: Dark Forest (Deep Forest Green #34483F background, Soft Ivory #F7F4EE text) */
+.color-scheme-dark-forest {
+  --bg-surface: var(--color-forest);
+  --bg-elevated: rgba(255, 255, 255, 0.05);
+  --text-primary: var(--color-ivory);
+  --text-secondary: var(--color-ivory-muted);
+  --text-heading: var(--color-ivory);
+  --accent-decorative: var(--color-gold);
+  --border-hairline: var(--border-dark);
+
+  --btn-primary-bg: var(--color-ivory);
+  --btn-primary-text: var(--color-forest);
+  --btn-primary-hover-bg: var(--color-white);
+  --btn-primary-hover-text: var(--color-forest-deep);
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-ivory);
+  --btn-secondary-border: rgba(247, 244, 238, 0.38);
+  --btn-secondary-hover-bg: rgba(247, 244, 238, 0.1);
+  --btn-secondary-hover-text: var(--color-white);
+
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+/* Scheme 4: Clean White (Pure White #FFFFFF background, Soft Ink #252824 text) */
+.color-scheme-clean-white {
+  --bg-surface: var(--color-white);
+  --bg-elevated: var(--color-ivory);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-ink-muted);
+  --text-heading: var(--color-ink);
+  --accent-decorative: var(--color-gold);
+  --border-hairline: var(--border-light);
+
+  --btn-primary-bg: var(--color-forest);
+  --btn-primary-text: var(--color-ivory);
+  --btn-primary-hover-bg: var(--color-forest-hover);
+  --btn-primary-hover-text: var(--color-white);
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--color-ink);
+  --btn-secondary-border: var(--border-light-strong);
+  --btn-secondary-hover-bg: var(--color-ink);
+  --btn-secondary-hover-text: var(--color-ivory);
+
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+}

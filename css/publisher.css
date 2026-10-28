@@ -1,0 +1,824 @@
+/* ==========================================================================
+   OPTION 3: PUBLISHER BY SHOPIFY (publisher.css)
+   Avant-garde independent publishing, literary typography & brutalist precision
+   Adapted strictly to approved palette: Ivory, Oat, Forest, Gold, Ink, White
+   ========================================================================== */
+
+#theme-publisher {
+  font-family: var(--font-body--family);
+  background-color: var(--color-ivory);
+  color: var(--color-ink);
+}
+
+#theme-publisher .pub-container {
+  width: 100%;
+  max-width: 1380px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+#theme-publisher .pub-section {
+  padding-block: clamp(4.5rem, 8vw, 7.5rem);
+  border-bottom: 1px solid rgba(37, 40, 36, 0.16);
+}
+
+#theme-publisher .pub-kicker {
+  display: inline-block;
+  font-family: var(--font-accent--family);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-forest);
+  margin-bottom: var(--space-md);
+  border-left: 3px solid var(--color-gold);
+  padding-left: 0.65rem;
+}
+
+#theme-publisher .pub-display-headline {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.8rem, 5.5vw, 5.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  font-weight: 400;
+  margin-bottom: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 01: MINIMALIST LITERARY HEADER
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-header {
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  background-color: var(--color-ivory);
+  border-bottom: 2px solid var(--color-ink);
+}
+
+#theme-publisher .pub-announcement {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(183, 155, 106, 0.3);
+}
+
+#theme-publisher .pub-header .pub-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1380px;
+  padding-inline: clamp(1rem, 2vw, 2rem);
+  margin-inline: auto;
+}
+
+#theme-publisher .pub-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 1.2vw, 1.5rem);
+  padding-block: 0.85rem;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#theme-publisher .pub-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+#theme-publisher .pub-logo-link img {
+  width: clamp(120px, 10vw, 145px);
+  height: auto;
+  max-height: 40px;
+}
+
+#theme-publisher .pub-nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.35rem, 0.9vw, 1.2rem);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 1;
+}
+
+#theme-publisher .pub-nav-links a {
+  font-size: clamp(0.6875rem, 0.8vw, 0.78125rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  color: var(--color-ink);
+  transition: color var(--transition-fast);
+}
+
+#theme-publisher .pub-nav-links a:hover,
+#theme-publisher .pub-nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#theme-publisher .pub-nav-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 0.6vw, 0.75rem);
+  flex-shrink: 0;
+}
+
+#theme-publisher .pub-nav-right .btn-icon {
+  width: 38px;
+  height: 38px;
+}
+
+#theme-publisher .pub-header .pub-btn-solid.pub-header-cta {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.06em !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  display: inline-flex;
+}
+
+#theme-publisher .pub-mobile-toggle {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 02: ASYMMETRICAL TYPOGRAPHY-FIRST HERO
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: clamp(2.5rem, 5vw, 5.5rem);
+  align-items: center;
+  padding-block: clamp(3.5rem, 6vw, 6rem);
+}
+
+#theme-publisher .pub-hero-text h1 em {
+  font-family: var(--font-heading--family);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-gold);
+}
+
+#theme-publisher .pub-hero-text p {
+  font-size: clamp(1.1rem, 1.2vw, 1.35rem);
+  line-height: 1.55;
+  color: var(--color-ink);
+  max-width: 50ch;
+  margin-bottom: var(--space-2xl);
+  border-left: 1px solid var(--color-ink);
+  padding-left: var(--space-lg);
+}
+
+#theme-publisher .pub-btn-solid {
+  display: inline-block;
+  padding: 1rem 2.25rem;
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-ink);
+  transition: all var(--transition-fast);
+}
+
+#theme-publisher .pub-btn-solid:hover {
+  background-color: var(--color-forest);
+  border-color: var(--color-forest);
+  color: var(--color-white);
+}
+
+#theme-publisher .pub-hero-art-frame {
+  position: relative;
+  border: 1px solid var(--color-ink);
+  padding: var(--space-md);
+  background-color: var(--color-white);
+}
+
+#theme-publisher .pub-hero-art-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+#theme-publisher .pub-hero-art-caption {
+  font-size: 0.75rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: var(--space-sm);
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 03: WHAT'S INSIDE — EDITORIAL INDEX
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-inside-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+#theme-publisher .pub-feature-table {
+  border-top: 2px solid var(--color-ink);
+  margin-top: var(--space-xl);
+}
+
+#theme-publisher .pub-feature-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-lg);
+  padding-block: var(--space-lg);
+  border-bottom: 1px solid rgba(37, 40, 36, 0.16);
+}
+
+#theme-publisher .pub-feature-num {
+  font-family: var(--font-heading--family);
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+#theme-publisher .pub-feature-body h3 {
+  font-family: var(--font-heading--family);
+  font-size: 1.45rem;
+  margin-bottom: 0.25rem;
+}
+
+#theme-publisher .pub-feature-body p {
+  font-size: 0.9375rem;
+  color: var(--color-ink-muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 04: FEATURED VOLUME — BOOKSHOP CATALOGUE STYLE
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-catalogue-box {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-ink);
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+#theme-publisher .pub-catalogue-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: start;
+}
+
+#theme-publisher .pub-catalogue-cover img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--border-light);
+}
+
+#theme-publisher .pub-meta-colophon {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--color-ink);
+  font-family: monospace;
+  font-size: 0.78125rem;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 05: HOW IT WORKS — NUMBERED CHRONOLOGY
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-how-it-works {
+  background-color: var(--color-oat);
+}
+
+#theme-publisher .pub-chronology-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+#theme-publisher .pub-chronology-item {
+  border-top: 2px solid var(--color-forest);
+  padding-top: var(--space-lg);
+}
+
+#theme-publisher .pub-chronology-big-num {
+  font-family: var(--font-heading--family);
+  font-size: 3rem;
+  line-height: 0.9;
+  color: var(--color-forest);
+  margin-bottom: var(--space-sm);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 06: COLLECTOR'S JOURNEY — LITERARY ANTHOLOGY
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-collector {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+}
+
+#theme-publisher .pub-collector .pub-kicker {
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+}
+
+#theme-publisher .pub-collector h2 {
+  color: var(--color-ivory);
+}
+
+#theme-publisher .pub-tiers-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-3xl);
+}
+
+#theme-publisher .pub-tier-col {
+  border: 1px solid rgba(247, 244, 238, 0.2);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#theme-publisher .pub-tier-col h3 {
+  font-family: var(--font-heading--family);
+  font-size: 2rem;
+  color: var(--color-ivory);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+#theme-publisher .pub-tier-col p {
+  color: var(--color-ivory-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+#theme-publisher .pub-tier-quote {
+  font-family: var(--font-heading--family);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-gold-light);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(247, 244, 238, 0.15);
+  margin-top: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 07: EDITORIAL ESSAYS (MAGAZINE INDEX STYLE)
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-articles-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  margin-top: var(--space-2xl);
+}
+
+#theme-publisher .pub-article-item {
+  border-top: 1px solid var(--color-ink);
+  padding-top: var(--space-md);
+}
+
+#theme-publisher .pub-article-item img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  margin-bottom: var(--space-md);
+}
+
+#theme-publisher .pub-article-item h3 {
+  font-family: var(--font-heading--family);
+  font-size: 1.65rem;
+  line-height: 1.22;
+  margin-block: var(--space-xs);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 08: MEET THE FOUNDER — COLOPHON & STATEMENT
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-founder-section {
+  background-color: var(--color-oat);
+}
+
+#theme-publisher .pub-founder-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+#theme-publisher .pub-founder-frame {
+  border: 1px solid var(--color-ink);
+  padding: var(--space-md);
+  background-color: var(--color-white);
+}
+
+#theme-publisher .pub-founder-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+#theme-publisher .pub-founder-bio h2 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  line-height: 1.15;
+  margin-bottom: var(--space-lg);
+}
+
+#theme-publisher .pub-founder-bio p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  margin-bottom: var(--space-md);
+}
+
+#theme-publisher .pub-founder-credits {
+  font-family: monospace;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-ink-muted);
+  margin-top: var(--space-lg);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-ink);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 09: READER EPIGRAPH
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-epigraph-section {
+  text-align: center;
+  padding-block: clamp(4rem, 7vw, 6rem);
+  background-color: var(--color-ivory);
+}
+
+#theme-publisher .pub-epigraph-box {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+#theme-publisher .pub-epigraph-box blockquote {
+  font-family: var(--font-heading--family);
+  font-size: clamp(1.75rem, 3vw, 2.6rem);
+  line-height: 1.35;
+  font-style: italic;
+  margin-bottom: var(--space-lg);
+  color: var(--color-ink);
+}
+
+#theme-publisher .pub-epigraph-source {
+  font-family: monospace;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-gold);
+}
+
+#theme-publisher .pub-testimonials-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-3xl);
+  text-align: left;
+}
+
+#theme-publisher .pub-testimonial-col {
+  border-top: 1px solid var(--color-ink);
+  padding-top: var(--space-md);
+}
+
+#theme-publisher .pub-testimonial-col p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+#theme-publisher .pub-testimonial-col cite {
+  font-family: monospace;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 10: FAQS — LITERARY INDEX
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-faqs-section {
+  background-color: var(--color-white);
+}
+
+#theme-publisher .pub-faqs-container {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+#theme-publisher .pub-faq-item {
+  border-bottom: 1px solid var(--color-ink);
+}
+
+#theme-publisher .pub-faq-item:first-child {
+  border-top: 2px solid var(--color-ink);
+}
+
+#theme-publisher .pub-faq-item summary {
+  padding-block: 1.35rem;
+  font-family: var(--font-heading--family);
+  font-size: 1.35rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color var(--transition-fast);
+  color: var(--color-ink);
+  user-select: none;
+}
+
+#theme-publisher .pub-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+#theme-publisher .pub-faq-item summary::marker {
+  display: none;
+}
+
+#theme-publisher .pub-faq-item summary:hover {
+  color: var(--color-forest);
+}
+
+#theme-publisher .pub-faq-item summary::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--color-ink);
+  border-bottom: 2px solid var(--color-ink);
+  transform: rotate(45deg);
+  transition: transform var(--transition-base), border-color var(--transition-fast);
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+}
+
+#theme-publisher .pub-faq-item:hover summary::after {
+  border-color: var(--color-forest);
+}
+
+#theme-publisher .pub-faq-item[open] summary::after {
+  transform: rotate(-135deg);
+  border-color: var(--color-gold);
+}
+
+#theme-publisher .pub-faq-answer {
+  padding-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+  max-width: 70ch;
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 11: FINAL CTA — ANTHOLOGY CALL
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-cta-panel {
+  background-color: var(--color-forest);
+  color: var(--color-ivory);
+  text-align: center;
+  border-bottom: 2px solid var(--color-ink);
+}
+
+#theme-publisher .pub-cta-inner {
+  max-width: 800px;
+  margin-inline: auto;
+  padding-block: var(--space-2xl);
+}
+
+#theme-publisher .pub-cta-inner h2 {
+  font-family: var(--font-heading--family);
+  font-size: clamp(2.6rem, 4.8vw, 4.2rem);
+  color: var(--color-ivory);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+#theme-publisher .pub-cta-inner p {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--color-ivory-muted);
+  margin-bottom: var(--space-2xl);
+}
+
+#theme-publisher .pub-btn-ivory {
+  display: inline-block;
+  padding: 1.1rem 2.5rem;
+  background-color: var(--color-ivory);
+  color: var(--color-forest);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-ivory);
+  transition: all var(--transition-fast);
+}
+
+#theme-publisher .pub-btn-ivory:hover {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER 12: COLOPHON FOOTER
+   -------------------------------------------------------------------------- */
+#theme-publisher .pub-colophon-footer {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+  padding-block: var(--space-3xl) var(--space-xl);
+}
+
+#theme-publisher .pub-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+}
+
+#theme-publisher .pub-footer-col h4 {
+  font-family: monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-lg);
+}
+
+#theme-publisher .pub-footer-col ul {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+#theme-publisher .pub-footer-col a {
+  font-size: 0.875rem;
+  color: var(--color-ivory-muted);
+}
+
+#theme-publisher .pub-footer-col a:hover {
+  color: var(--color-ivory);
+  text-decoration: underline;
+}
+
+#theme-publisher .pub-footer-colophon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-xl);
+  border-top: 1px dashed rgba(247, 244, 238, 0.2);
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--color-ivory-muted);
+}
+
+/* --------------------------------------------------------------------------
+   PUBLISHER LITERARY MOBILE DRAWER
+   -------------------------------------------------------------------------- */
+.pub-drawer {
+  background-color: var(--color-ivory);
+  border-right: 2px solid var(--color-ink);
+}
+
+.pub-drawer__header {
+  border-bottom: 2px solid var(--color-ink);
+  padding: 1.15rem 1.5rem;
+  background-color: var(--color-ivory);
+}
+
+.pub-drawer__colophon-bar {
+  display: flex;
+  justify-content: space-between;
+  font-family: monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-ink);
+  color: var(--color-ink-muted);
+}
+
+.pub-drawer__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.pub-drawer__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+}
+
+.pub-drawer__link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 0.85rem;
+  border-bottom: 1px solid rgba(37, 40, 36, 0.2);
+  color: var(--color-ink);
+  transition: padding-left var(--transition-fast);
+}
+
+.pub-drawer__link:hover {
+  padding-left: 0.35rem;
+  text-decoration: underline;
+}
+
+.pub-drawer__code {
+  font-family: var(--font-heading--family);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--color-gold);
+  min-width: 1.75rem;
+}
+
+.pub-drawer__text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pub-drawer__footer {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--color-ink);
+}
+
+.pub-drawer__specs {
+  font-family: monospace;
+  font-size: 0.6875rem;
+  color: var(--color-ink-muted);
+  line-height: 1.6;
+}
+
+/* Responsive Publisher Adjustments */
+@media (max-width: 1024px) {
+  #theme-publisher .pub-nav-links {
+    display: none;
+  }
+
+  #theme-publisher .pub-mobile-toggle {
+    display: inline-flex;
+  }
+
+  #theme-publisher .pub-header-cta {
+    display: none;
+  }
+
+  #theme-publisher .pub-hero-grid,
+  #theme-publisher .pub-inside-grid,
+  #theme-publisher .pub-catalogue-layout,
+  #theme-publisher .pub-founder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  #theme-publisher .pub-chronology-list,
+  #theme-publisher .pub-tiers-triptych,
+  #theme-publisher .pub-articles-index,
+  #theme-publisher .pub-testimonials-triptych,
+  #theme-publisher .pub-footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  #theme-publisher .pub-footer-colophon {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <rect width="600" height="600" fill="#F7F4EE"/>
+  <rect x="36" y="36" width="528" height="528" stroke="#B79B6A" stroke-width="1.5" stroke-opacity="0.65"/>
+  <circle cx="300" cy="240" r="96" stroke="#34483F" stroke-width="1.5" fill="#E8DFD1" fill-opacity="0.45"/>
+  <path d="M318 176C282 184 256 216 256 254C256 298 292 334 336 334C350 334 363 330 374 323C357 341 333 352 306 352C255 352 214 311 214 260C214 214 248 176 292 169C301 168 310 171 318 176Z" fill="#34483F" fill-opacity="0.85"/>
+  <text x="300" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#252824" letter-spacing="2">MASUMA ABDUL-MUHIT</text>
+  <text x="300" y="454" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#525750" letter-spacing="4">AALIMAH • LIFE COACH • AUTHOR OF HIJRI</text>
+</svg>

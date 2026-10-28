@@ -1,0 +1,187 @@
+/* ==========================================================================
+   SHOP HIJRI — RESPONSIVE BREAKPOINTS (responsive.css)
+   Desktop -> Tablet (<= 1024px) -> Mobile (<= 768px) -> Small Mobile (<= 480px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet & Compact Desktop (<= 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .site-header__inner {
+    grid-template-columns: auto 1fr auto;
+    min-height: 68px;
+  }
+
+  .site-header__mobile-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .site-header__logo-link {
+    justify-self: center;
+  }
+
+  .site-header__logo-img {
+    height: 46px;
+  }
+
+  .hero-editorial::before {
+    display: none;
+  }
+
+  .hero-editorial__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-editorial__visual {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .whats-inside__layout,
+  .featured-volume__grid,
+  .collectors-journey__top,
+  .founder-story__grid,
+  .faq-section__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .product-gallery,
+  .faq-section__intro {
+    position: static;
+  }
+
+  .journey-steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl) var(--space-xl);
+  }
+
+  .journey-steps::before {
+    display: none;
+  }
+
+  .milestones-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-footer__top {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Portrait & Phablet (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .announcement-bar {
+    font-size: 0.72rem;
+    padding-block: 0.55rem;
+  }
+
+  .announcement-bar__hide-mobile {
+    display: none;
+  }
+
+  .currency-selector {
+    display: none;
+  }
+
+  .hero-editorial {
+    padding-block: var(--space-2xl) var(--space-3xl);
+  }
+
+  .hero-editorial__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-md);
+  }
+
+  .hero-editorial__actions .link-editorial {
+    justify-content: center;
+    padding-block: var(--space-xs);
+  }
+
+  .hero-editorial__main-frame {
+    grid-column: 1 / 13;
+  }
+
+  .hero-editorial__floating-card {
+    grid-column: 2 / 12;
+    margin-bottom: -1rem;
+  }
+
+  .whats-inside__features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .journey-steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    border-left: 1px solid rgba(37, 40, 36, 0.18);
+    padding-left: var(--space-lg);
+    margin-left: var(--space-xs);
+  }
+
+  .testimonial-slide.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-slide__media {
+    min-height: 260px;
+    max-height: 300px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer__top {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .newsletter-form__group {
+    flex-direction: column;
+  }
+
+  .site-footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Mobile Devices (<= 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .plan-option__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+
+  .plan-option__perks {
+    padding-left: 0;
+  }
+
+  .product-details__price-bar {
+    flex-wrap: wrap;
+  }
+
+  .product-details__price-note {
+    width: 100%;
+    margin-left: 0;
+  }
+}
