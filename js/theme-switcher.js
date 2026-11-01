@@ -4,6 +4,7 @@
  * 1. Horizon (Free)
  * 2. Prestige (Paid)
  * 3. Publisher (Free)
+ * 4. The Artisan Edition (Bespoke)
  * Persists selection via localStorage, maintains scroll context, and provides ARIA announcements.
  */
 
@@ -51,6 +52,16 @@ window.ShopHijri.initThemeSwitcher = function initThemeSwitcher() {
         'Architecture: Shopify Publisher (Online Store 2.0)',
         'Key Strength: Distinctive literary identity tailored for independent magazines and print journals',
         'Conversion Focus: Editorial storytelling with prominent bookshop catalogue merchandising'
+      ]
+    },
+    artisan: {
+      name: '04 | The Artisan Edition',
+      tier: 'Bespoke • Handcrafted Editorial Direction',
+      summary: 'Warm, tactile independent publishing house aesthetic. Features unbleached paper surfaces, ink brown & oxide red pigments, Fraunces editorial typography, original botanical SVG illustrations, and open-book spread previews.',
+      specs: [
+        'Architecture: Hybrid Shopify OS 2.0 (Native product/header/footer + Custom Liquid editorial sections)',
+        'Key Strength: Unmistakably handcrafted human personality that feels like visiting an independent studio',
+        'Conversion Focus: Paper-framed folio showcase, interactive interior spread reader, and transparent subscription selector'
       ]
     }
   };

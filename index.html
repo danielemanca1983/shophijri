@@ -16,13 +16,13 @@
 
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <!-- Editorial Typography: Cormorant Garamond & DM Sans -->
+  <!-- Editorial Typography: Cormorant Garamond, Fraunces, Caveat & DM Sans -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
 
   <!-- Modular Stylesheets (No External Frameworks) -->
 
@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="css/prestige.css">
 
   <link rel="stylesheet" href="css/publisher.css">
+
+  <link rel="stylesheet" href="css/artisan.css">
 
 </head>
 
@@ -4349,6 +4351,1430 @@
 
   <!-- ========================================================================
 
+       OPTION 4: THE ARTISAN EDITION (BESPOKE HANDCRAFTED EDITORIAL DIRECTION)
+
+       Inspired by independent publishing houses, letterpress printing,
+       botanical ink illustrations, and natural unbleached paper surfaces.
+
+       ======================================================================== -->
+
+  <div id="theme-artisan" class="theme-container" data-theme-container="artisan" aria-hidden="true">
+
+    <!-- ======================================================================
+         SECTION 01: EDITORIAL NAVIGATION & PUBLISHING IMPRINT BAR
+         ====================================================================== -->
+    <aside class="art-imprint-bar" role="region" aria-label="Studio announcement">
+      <div class="art-container art-imprint-bar__inner">
+        <span>Free Delivery on All Orders (UK &amp; International)</span>
+        <span class="art-imprint-bar__ornament" aria-hidden="true">&#10087;</span>
+        <span>
+          Volume 6 <strong>Shukr</strong> Pre-Orders Open (Closes 12 Nov) &mdash;
+          <a href="#artisan-publications" class="art-imprint-bar__link">Reserve Issue</a>
+        </span>
+        <span class="art-imprint-bar__ornament announcement-bar__hide-mobile" aria-hidden="true">&#10087;</span>
+        <span class="announcement-bar__hide-mobile">Vol 5 Sabr Dispatched from 19/10</span>
+      </div>
+    </aside>
+
+    <header class="art-header">
+      <div class="art-container art-header__inner">
+        <!-- Left: Mobile Menu Trigger + Original Brand Logo -->
+        <div class="art-header__brand">
+          <button
+            type="button"
+            class="art-icon-btn art-header__mobile-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="artisan-mobile-drawer"
+            data-drawer-open="artisan-mobile-drawer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="12" x2="18" y2="12"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+          </button>
+
+          <a href="#artisan-top" class="art-header__logo-link" aria-label="Hijri by Masuma Abdul-Muhit &mdash; Home">
+            <img
+              src="assets/images/logo.png"
+              alt="Hijri by Masuma Abdul-Muhit"
+              width="156"
+              height="44"
+              class="art-header__logo-img"
+            >
+          </a>
+        </div>
+
+        <!-- Center: Mandatory Preserved 7-Item Navigation Structure -->
+        <nav class="art-nav" aria-label="Artisan Edition primary navigation">
+          <ul class="art-nav__list">
+            <li class="art-nav__item"><a href="#artisan-top" class="art-nav__link" aria-current="page">Home</a></li>
+            <li class="art-nav__item"><a href="#artisan-publications" class="art-nav__link">Shop</a></li>
+            <li class="art-nav__item"><a href="#artisan-collections" class="art-nav__link">Collector's Journey</a></li>
+            <li class="art-nav__item"><a href="#artisan-rhythm" class="art-nav__link">Midway Moments</a></li>
+            <li class="art-nav__item"><a href="#artisan-story" class="art-nav__link">Journal</a></li>
+            <li class="art-nav__item"><a href="#artisan-intro" class="art-nav__link">About</a></li>
+            <li class="art-nav__item"><a href="#artisan-faqs" class="art-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right: Utility Controls (Currency, Search, Account, Cart) -->
+        <div class="art-header__utilities">
+          <label for="artisan-currency" class="visually-hidden">Select Country and Currency</label>
+          <select id="artisan-currency" class="art-currency-select" aria-label="Country and currency">
+            <option value="GBP" selected>GBP &pound;</option>
+            <option value="USD">USD $</option>
+            <option value="CAD">CAD $</option>
+            <option value="AUD">AUD $</option>
+          </select>
+
+          <button
+            type="button"
+            class="art-icon-btn"
+            aria-label="Open search"
+            aria-expanded="false"
+            aria-controls="search-drawer"
+            data-drawer-open="search-drawer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="20" y1="20" x2="16.2" y2="16.2"></line>
+            </svg>
+          </button>
+
+          <a
+            href="#artisan-rhythm"
+            class="art-icon-btn"
+            aria-label="Reader account and Midway Moments login"
+            title="Reader Account Login"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </a>
+
+          <button
+            type="button"
+            class="art-icon-btn art-icon-btn--cart"
+            aria-label="View bag (1 item)"
+            aria-expanded="false"
+            aria-controls="cart-drawer"
+            data-drawer-open="cart-drawer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="art-cart-badge" aria-hidden="true">1</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <!-- ====================================================================
+           SECTION 02: SIGNATURE EDITORIAL HERO (ASYMMETRICAL STUDIO DESK)
+           ==================================================================== -->
+      <section id="artisan-top" class="art-hero" aria-labelledby="artisan-hero-heading">
+        <div class="art-container art-hero__grid">
+          <!-- Left Column: Expressive Editorial Statement -->
+          <div class="reveal-on-scroll">
+            <div class="art-hero__top-meta">
+              <span class="art-index-label" style="margin-bottom: 0;">
+                <span class="art-index-label__num">01</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>Discover</span>
+              </span>
+              <span class="art-stamp">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"></path>
+                </svg>
+                <span>Thoughtfully created</span>
+              </span>
+            </div>
+
+            <h1 id="artisan-hero-heading" class="art-hero__title">
+              Twelve months. <em>One journey</em> back to yourself.
+            </h1>
+
+            <p class="art-hero__lead">
+              One meaningful theme each lunar month, explored through Qur&rsquo;anic reflection, classical scholarship and guided journaling &mdash; printed on 40 A4 pages of uncoated paper and posted to your door, sans the screen.
+            </p>
+
+            <div class="art-hero__cta-row">
+              <a href="#artisan-publications" class="art-btn art-btn--primary">
+                <span>Reserve Volume 6 (Shukr)</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </a>
+              <a href="#artisan-inside" class="art-ink-link">
+                <span>Turn the pages inside</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Printed Colophon Reassurance Ledger -->
+            <div class="art-hero__colophon-ledger" aria-label="Publication specifications and subscription terms">
+              <div class="art-hero__ledger-item">
+                <span class="art-hero__ledger-label">Monthly Subscription</span>
+                <span class="art-hero__ledger-value">&pound;11.99 / mo <small style="font-size: 0.78rem; color: var(--art-oxide);">(Save 20%)</small></span>
+              </div>
+              <div class="art-hero__ledger-item">
+                <span class="art-hero__ledger-label">Print Edition</span>
+                <span class="art-hero__ledger-value">40 A4 Pages &bull; 120gsm</span>
+              </div>
+              <div class="art-hero__ledger-item">
+                <span class="art-hero__ledger-label">Worldwide Postage</span>
+                <span class="art-hero__ledger-value">Free Delivery Included</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Tactile Publication & Paper Layers -->
+          <div class="art-hero__stage reveal-on-scroll" data-reveal-delay="100">
+            <div class="art-hero__backing-sheet" aria-hidden="true"></div>
+
+            <!-- Botanical Sketch & Handwritten Annotation -->
+            <div class="art-hero__annotation">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M10 38C18 30 26 20 38 10"></path>
+                <path d="M20 28C15 24 14 17 19 13C24 17 24 23 20 28Z" fill="rgba(135, 148, 122, 0.2)"></path>
+                <path d="M28 20C33 24 39 23 42 18C37 15 32 16 28 20Z" fill="rgba(135, 148, 122, 0.2)"></path>
+                <path d="M15 33C11 30 10 25 13 21"></path>
+              </svg>
+              <div>
+                <div class="art-hand-note">No. 06 &mdash; What Patience Planted</div>
+                <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--art-ink-muted);">
+                  Jumada al-Thani &bull; Pre-orders close 12 Nov
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Featured Publication Cover -->
+            <div class="art-hero__cover-sheet">
+              <img
+                src="assets/images/vol6-cover.png"
+                alt="Hijri Volume 6: Jumada al-Thani &mdash; Shukr (Gratitude) printed A4 magazine cover"
+                width="720"
+                height="900"
+                class="art-hero__cover-img"
+              >
+              <div class="art-hero__cover-caption">
+                <span>Vol. 6 &mdash; Jumada al-Thani | SHUKR</span>
+                <span>350gsm Matte Cover</span>
+              </div>
+            </div>
+
+            <!-- Overlapping Interior Spread Sheet -->
+            <div class="art-hero__spread-card">
+              <img
+                src="assets/images/spread-1.png"
+                alt="Interior guided reflection and classical scholarship spread inside Hijri"
+                width="340"
+                height="255"
+                class="art-hero__spread-img"
+              >
+              <div class="art-hero__spread-meta">
+                <span>Interior Spread</span>
+                <span>Scholar Checked</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hand-Drawn Divider 1: Botanical Olive & Fig Sprig -->
+      <div class="art-divider" aria-hidden="true">
+        <svg viewBox="0 0 500 36" fill="none">
+          <path d="M10 18C110 17 175 19 215 18" stroke="#342B27" stroke-opacity="0.28" stroke-width="1" stroke-linecap="round"/>
+          <path d="M285 18C325 19 390 17 490 18" stroke="#342B27" stroke-opacity="0.28" stroke-width="1" stroke-linecap="round"/>
+          <path d="M226 22C238 14 258 14 274 18" stroke="#87947A" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M242 16C239 10 243 6 249 8C249 13 246 16 242 16Z" fill="#87947A" fill-opacity="0.35" stroke="#87947A" stroke-width="1.2"/>
+          <path d="M258 17C261 23 257 27 251 25C251 20 254 17 258 17Z" fill="#87947A" fill-opacity="0.35" stroke="#87947A" stroke-width="1.2"/>
+          <circle cx="250" cy="18" r="2.5" fill="#A34E3F"/>
+        </svg>
+      </div>
+
+      <!-- ====================================================================
+           SECTION 03: A PERSONAL INTRODUCTION TO SHOP HIJRI (OUR STORY)
+           ==================================================================== -->
+      <section id="artisan-intro" class="art-section art-intro" aria-labelledby="artisan-intro-heading">
+        <div class="art-container">
+          <div class="art-intro__sheet reveal-on-scroll">
+            <div class="art-intro__grid">
+              <!-- Left: Authentic Manuscript & Study Desk Photography -->
+              <div class="art-intro__visual">
+                <div class="art-intro__photo-frame">
+                  <img
+                    src="assets/images/vol2-detail.jpg"
+                    alt="Hijri editorial manuscript pages and reflective study desk curated by Masuma Abdul-Muhit"
+                    width="600"
+                    height="750"
+                    loading="lazy"
+                    class="art-intro__photo"
+                  >
+                  <div class="art-intro__photo-caption">
+                    <span>Authored, Edited &amp; Designed in the UK</span>
+                    <span>Aalimiyyah &amp; Coaching</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Intimate Studio Introduction -->
+              <div>
+                <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-bottom: 0.85rem;">
+                  <span class="art-index-label" style="margin-bottom: 0;">
+                    <span class="art-index-label__num">02</span>
+                    <span class="art-index-label__dash" aria-hidden="true"></span>
+                    <span>Our Story</span>
+                  </span>
+                  <span class="art-stamp art-stamp--sage">From our studio</span>
+                </div>
+
+                <h2 id="artisan-intro-heading" class="art-intro__title">
+                  Where sacred scholarship meets the everyday Muslim heart.
+                </h2>
+
+                <blockquote class="art-intro__quote">
+                  &ldquo;I didn&rsquo;t want a faith that only came alive twice a year. I wanted a rhythm &mdash; something gentle, rooted, and tangible &mdash; that could hold the heart steady through all twelve months of the lunar calendar.&rdquo;
+                </blockquote>
+
+                <div class="art-intro__body">
+                  <p>
+                    My name is <strong>Masuma Abdul-Muhit</strong>. I spent over a decade studying and teaching the classical Islamic sciences (<em>Aalimiyyah</em>), and today I work as a life coach specialising in women&rsquo;s wellbeing, success, and family life.
+                  </p>
+                  <p>
+                    I created Hijri because I found myself drifting through the year, a little lost in the quiet months between Ramadan and Dhul Hijjah. Hijri was born at the meeting point of my two worlds &mdash; timeless sacred knowledge and the lived, everyday realities of the modern Muslim &mdash; reviewed alongside qualified scholars so what reaches your hands is both authentically rooted and written from the heart.
+                  </p>
+                </div>
+
+                <div class="art-intro__signoff">
+                  <div>
+                    <div class="art-intro__author-name">Masuma Abdul-Muhit</div>
+                    <div class="art-intro__author-role">Founder, Author &amp; Editor of Hijri</div>
+                    <div class="art-hand-note" style="margin-top: 0.25rem;">Written to be read slowly, pen in hand.</div>
+                  </div>
+                  <a href="#artisan-story" class="art-ink-link">
+                    <span>Read Behind the Themes</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14"></path>
+                      <path d="M13 6l6 6-6 6"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hand-Drawn Divider 2: Traditional Bookprinter's Octagram & Nib Rule -->
+      <div class="art-divider" aria-hidden="true">
+        <svg viewBox="0 0 500 36" fill="none">
+          <path d="M25 18H215" stroke="#342B27" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 3"/>
+          <path d="M285 18H475" stroke="#342B27" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 3"/>
+          <rect x="242" y="10" width="16" height="16" stroke="#C9A56C" stroke-width="1.3"/>
+          <rect x="242" y="10" width="16" height="16" transform="rotate(45 250 18)" stroke="#A34E3F" stroke-width="1.3"/>
+          <circle cx="250" cy="18" r="2.2" fill="#342B27"/>
+        </svg>
+      </div>
+
+      <!-- ====================================================================
+           SECTION 04: DISCOVER THE PUBLICATIONS (BESPOKE EDITORIAL FOLIO)
+           ==================================================================== -->
+      <section id="artisan-publications" class="art-section" aria-labelledby="artisan-pub-heading">
+        <div class="art-container">
+          <div class="art-publications__header reveal-on-scroll">
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">03</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>The Publications</span>
+              </span>
+              <h2 id="artisan-pub-heading" class="art-publications__title">
+                Current &amp; Archival Print Editions
+              </h2>
+              <p class="art-publications__subtitle">
+                Each volume of Hijri is printed in a single seasonal run before the 12th of the month. Start with our current pre-order issue or explore earlier volumes from the 1448 lunar year.
+              </p>
+            </div>
+            <span class="art-stamp art-stamp--ochre">Made with intention</span>
+          </div>
+
+          <!-- Primary Featured Publication Folio: Volume 6 (Shukr) -->
+          <div class="art-folio reveal-on-scroll">
+            <!-- Left: Interactive Paper-Mounted Product Gallery -->
+            <div class="art-folio__gallery" aria-label="Volume 6 product gallery">
+              <div class="art-folio__stage">
+                <img
+                  id="artisan-main-image"
+                  src="assets/images/vol6-cover.png"
+                  alt="Volume 6 - Jumada al-Thani | SHUKR front cover"
+                  width="720"
+                  height="900"
+                  loading="lazy"
+                  class="art-folio__main-img"
+                >
+                <span id="artisan-main-caption" class="art-folio__stage-caption">
+                  Plate I &mdash; Volume 6 Cover: Jumada al-Thani | Shukr
+                </span>
+              </div>
+
+              <div class="art-folio__thumbs" role="tablist" aria-label="Choose publication view">
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  class="art-folio__thumb"
+                  data-artisan-thumb
+                  data-src="assets/images/vol6-cover.png"
+                  data-alt="Volume 6 - Jumada al-Thani | SHUKR front cover"
+                  data-caption="Plate I &mdash; Volume 6 Cover: Jumada al-Thani | Shukr"
+                >
+                  <img src="assets/images/vol6-cover.png" alt="Cover thumbnail" width="150" height="150" loading="lazy">
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  class="art-folio__thumb"
+                  data-artisan-thumb
+                  data-src="assets/images/vol6-flatlay.png"
+                  data-alt="Volume 6 flatlay with collector's token, welcome card and envelope"
+                  data-caption="Plate II &mdash; Complete Parcel: Magazine, Welcome Letter &amp; Collector's Token"
+                >
+                  <img src="assets/images/vol6-flatlay.png" alt="Flatlay thumbnail" width="150" height="150" loading="lazy">
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  class="art-folio__thumb"
+                  data-artisan-thumb
+                  data-src="assets/images/spread-1.png"
+                  data-alt="Interior editorial spread inside Hijri magazine"
+                  data-caption="Plate III &mdash; Interior Spread: Qur'anic Reflection &amp; Classical Scholarship"
+                >
+                  <img src="assets/images/spread-1.png" alt="Interior spread 1 thumbnail" width="150" height="150" loading="lazy">
+                </button>
+                <button
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  class="art-folio__thumb"
+                  data-artisan-thumb
+                  data-src="assets/images/spread-2.png"
+                  data-alt="Guided journaling and self-accounting spread inside Hijri"
+                  data-caption="Plate IV &mdash; Guided Journaling: Intention, Reflection &amp; Action"
+                >
+                  <img src="assets/images/spread-2.png" alt="Interior spread 2 thumbnail" width="150" height="150" loading="lazy">
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Editorial Folio Details & Subscription / Single Selector -->
+            <div>
+              <div class="art-folio__meta-top">
+                <span class="art-stamp">Current Pre-Order &bull; Limited Print Run</span>
+                <span id="artisan-price-badge" class="art-stamp art-stamp--ochre">Save 20% Monthly</span>
+              </div>
+
+              <h3 class="art-folio__title">
+                Volume 6 &mdash; Jumada al-Thani | SHUKR
+              </h3>
+              <p class="art-folio__epigraph">
+                &ldquo;What Patience Planted&rdquo;
+              </p>
+
+              <div class="art-folio__price-row" aria-live="polite">
+                <span id="artisan-price-current" class="art-folio__price-current">&pound;11.99 GBP</span>
+                <span id="artisan-price-compare" class="art-folio__price-compare">&pound;14.99 GBP</span>
+                <span class="art-folio__price-shipping">Free UK &amp; International Delivery Included</span>
+              </div>
+
+              <div class="art-folio__desc">
+                <p>
+                  Volume 6 explores <strong>Shukr &mdash; gratitude</strong>: the quiet, active seeing that reveals the life you already have as full, long before anything new arrives. It is the other half of faith, the harvest after the long wait.
+                </p>
+                <p>
+                  Through Qur&rsquo;anic reflection, the wisdom of the classical scholars of the heart, guided journaling and small daily practices, this volume walks you through the season of thanks: to see the favours that have gone invisible because they never failed you, and to trace every gift back to its Giver.
+                </p>
+                <blockquote>
+                  &ldquo;Shukr is not the arrival of more, but the opening of your eyes to how much was always, extravagantly, here. You are not behind. You are in abundance.&rdquo;
+                </blockquote>
+              </div>
+
+              <!-- Transparent Selling Plan Selector -->
+              <form aria-label="Purchase options for Volume 6">
+                <fieldset class="art-plans">
+                  <legend class="art-plans__legend">Select How You Would Like to Read</legend>
+
+                  <!-- Option 1: Monthly Subscription -->
+                  <label class="art-plan-card is-selected" data-artisan-plan="subscription">
+                    <div class="art-plan-card__top">
+                      <span class="art-plan-card__radio-label">
+                        <input
+                          type="radio"
+                          name="artisan_purchase_plan"
+                          value="subscription"
+                          checked
+                          class="art-plan-card__radio"
+                        >
+                        <span>Monthly Subscription &mdash; Deliver Every Month</span>
+                      </span>
+                      <span class="art-plan-card__price">&pound;11.99 / mo</span>
+                    </div>
+                    <ul class="art-plan-card__perks">
+                      <li>&bull; Save 20% every lunar month + free worldwide delivery</li>
+                      <li>&bull; Collect every monthly Token toward 4, 8 &amp; 12-volume rewards</li>
+                      <li>&bull; Auto-renews; pause, skip a month, or cancel anytime before the 12th</li>
+                    </ul>
+                  </label>
+
+                  <!-- Option 2: Single Volume -->
+                  <label class="art-plan-card" data-artisan-plan="onetime">
+                    <div class="art-plan-card__top">
+                      <span class="art-plan-card__radio-label">
+                        <input
+                          type="radio"
+                          name="artisan_purchase_plan"
+                          value="onetime"
+                          class="art-plan-card__radio"
+                        >
+                        <span>One-Time Purchase &mdash; Single Volume Only</span>
+                      </span>
+                      <span class="art-plan-card__price">&pound;14.99</span>
+                    </div>
+                    <ul class="art-plan-card__perks">
+                      <li>&bull; Start with Volume 6 (Shukr) with no ongoing commitment</li>
+                    </ul>
+                  </label>
+                </fieldset>
+
+                <button type="submit" id="artisan-submit-btn" class="art-btn art-btn--primary" style="width: 100%; padding-block: 1.1rem; font-size: 1rem;">
+                  <span id="artisan-submit-text">Subscribe &mdash; &pound;11.99 / month</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="M13 6l6 6-6 6"></path>
+                  </svg>
+                </button>
+              </form>
+
+              <div class="art-folio__colophon-note" aria-label="Pre-order and dispatch schedule">
+                <div><strong>Pre-orders close:</strong> 12 November 2026 (once closed, single volumes are never reprinted).</div>
+                <div><strong>Dispatch window:</strong> Within 7&ndash;12 working days of the pre-order window closing via Royal Mail 2nd Class.</div>
+                <div><strong>Specifications:</strong> 40 pages, A4, 120gsm inner pages, 350gsm cover &mdash; includes Collector&rsquo;s Token &amp; Midway Moments access.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Complementary Archive Editions & Complete Parcel Trio -->
+          <div class="art-complementary-header reveal-on-scroll">
+            <div>
+              <h3 style="font-size: 1.65rem;">From the 1448 Lunar Archive &amp; Studio Table</h3>
+              <p style="font-size: 0.92rem; color: var(--art-ink-muted);">Earlier issues from this lunar cycle alongside the complete monthly parcel.</p>
+            </div>
+            <button type="button" class="art-ink-link" data-drawer-open="search-drawer">
+              <span>Search Complete 1448 Archive</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"></path>
+                <path d="M13 6l6 6-6 6"></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="art-complementary-grid">
+            <!-- Complementary Item 1: Vol 5 Sabr -->
+            <article class="art-edition-card reveal-on-scroll">
+              <div>
+                <a href="#artisan-story" class="art-edition-card__media" style="display: block;">
+                  <img src="assets/images/vol5-cover.jpg" alt="Volume 5: Jumada al-Uwla &mdash; Sabr cover" width="500" height="625" loading="lazy">
+                </a>
+                <span class="art-edition-card__tag">1448 Archive &bull; Issue 05</span>
+                <h4 class="art-edition-card__title">
+                  <a href="#artisan-story">Volume 5 &mdash; Jumada al-Uwla | SABR</a>
+                </h4>
+                <p class="art-edition-card__excerpt">
+                  Staying rooted through the long, dry wait &mdash; exploring patience, endurance, and waiting with Allah.
+                </p>
+              </div>
+              <div class="art-edition-card__footer">
+                <span>&pound;14.99 GBP</span>
+                <a href="#artisan-story" class="art-ink-link" style="font-size: 0.8125rem;">Read Theme Notes</a>
+              </div>
+            </article>
+
+            <!-- Complementary Item 2: Vol 4 Tazkiya (Staggered) -->
+            <article class="art-edition-card reveal-on-scroll" data-reveal-delay="80">
+              <div>
+                <a href="#artisan-story" class="art-edition-card__media" style="display: block;">
+                  <img src="assets/images/vol4-cover.jpg" alt="Volume 4: Rabi al-Thani &mdash; Tazkiya cover" width="500" height="625" loading="lazy">
+                </a>
+                <span class="art-edition-card__tag">1448 Archive &bull; Issue 04</span>
+                <h4 class="art-edition-card__title">
+                  <a href="#artisan-story">Volume 4 &mdash; Rabi al-Thani | TAZKIYA</a>
+                </h4>
+                <p class="art-edition-card__excerpt">
+                  The cultivated inner garden &mdash; the quiet work of purifying the heart, one weed pulled and one good seed watered at a time.
+                </p>
+              </div>
+              <div class="art-edition-card__footer">
+                <span>&pound;14.99 GBP</span>
+                <a href="#artisan-story" class="art-ink-link" style="font-size: 0.8125rem;">Read Theme Notes</a>
+              </div>
+            </article>
+
+            <!-- Complementary Item 3: The Complete Monthly Parcel -->
+            <article class="art-edition-card reveal-on-scroll" data-reveal-delay="160">
+              <div>
+                <a href="#artisan-inside" class="art-edition-card__media" style="display: block;">
+                  <img src="assets/images/whats-inside.png" alt="Complete Hijri parcel flatlay with token, welcome letter, and 12-month journey print" width="500" height="625" loading="lazy">
+                </a>
+                <span class="art-edition-card__tag">Included With Every Issue</span>
+                <h4 class="art-edition-card__title">
+                  <a href="#artisan-inside">The Complete Monthly Parcel</a>
+                </h4>
+                <p class="art-edition-card__excerpt">
+                  Every volume arrives with a welcome letter, the 12-month lunar journey print, a physical Collector&rsquo;s Token, and Midway Moments access.
+                </p>
+              </div>
+              <div class="art-edition-card__footer">
+                <span>&pound;11.99 / mo</span>
+                <a href="#artisan-inside" class="art-ink-link" style="font-size: 0.8125rem;">A Closer Look</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 05: THE STORY BEHIND THE WORK (BEHIND THE THEMES & RHYTHM)
+           ==================================================================== -->
+      <section id="artisan-story" class="art-section art-craft-section" aria-labelledby="artisan-story-heading">
+        <div class="art-container">
+          <div class="art-craft-intro reveal-on-scroll">
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">04</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>The Story Behind the Work</span>
+              </span>
+              <h2 id="artisan-story-heading" style="font-size: clamp(2.1rem, 3.2vw + 0.6rem, 3rem); line-height: 1.14;">
+                Every volume turns on a single word.
+              </h2>
+            </div>
+            <div>
+              <p style="color: var(--art-ink-muted); font-size: 1.04rem; margin-bottom: 0.75rem;">
+                This is where we tell the fuller story behind each lunar issue &mdash; the classical scholarship, the lived meaning, and why a single spiritual theme might be just what your heart needs this month.
+              </p>
+              <span class="art-hand-note">Authored with care &amp; checked by scholars</span>
+            </div>
+          </div>
+
+          <!-- 3 Authentic Behind the Themes Essays -->
+          <div class="art-essays-grid">
+            <!-- Essay 1: Vol 6 Shukr -->
+            <article class="art-essay-card reveal-on-scroll">
+              <a href="#artisan-publications" class="art-essay-card__img-wrap">
+                <span class="art-essay-card__volume">Jumada al-Thani &bull; Shukr</span>
+                <img
+                  src="assets/images/article-vol6.png"
+                  alt="Gratitude for the Emptiness &bull; Vol 6 editorial artwork"
+                  width="600"
+                  height="750"
+                  loading="lazy"
+                  class="art-essay-card__img"
+                >
+              </a>
+              <div class="art-essay-card__meta">
+                <time datetime="2026-10-11">October 11, 2026</time> &bull; By Masuma Abdul-Muhit
+              </div>
+              <h3 class="art-essay-card__title">
+                <a href="#artisan-publications">Gratitude for the Emptiness &bull; Vol 6</a>
+              </h3>
+              <p class="art-essay-card__excerpt">
+                My children and I have a daily practice; we do our morning adhkar, then we thank Allah for as many random things we can think of &mdash; learning to see the life we already have as full.
+              </p>
+              <a href="#artisan-publications" class="art-ink-link" style="align-self: flex-start;">
+                <span>Explore Volume 6</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </a>
+            </article>
+
+            <!-- Essay 2: Vol 5 Sabr -->
+            <article class="art-essay-card reveal-on-scroll" data-reveal-delay="80">
+              <a href="#artisan-publications" class="art-essay-card__img-wrap">
+                <span class="art-essay-card__volume">Jumada al-Uwla &bull; Sabr</span>
+                <img
+                  src="assets/images/article-vol5.png"
+                  alt="The Long, Dry Wait &bull; Vol 5 editorial artwork"
+                  width="600"
+                  height="750"
+                  loading="lazy"
+                  class="art-essay-card__img"
+                >
+              </a>
+              <div class="art-essay-card__meta">
+                <time datetime="2026-09-12">September 12, 2026</time> &bull; By Masuma Abdul-Muhit
+              </div>
+              <h3 class="art-essay-card__title">
+                <a href="#artisan-publications">The Long, Dry Wait &bull; Vol 5</a>
+              </h3>
+              <p class="art-essay-card__excerpt">
+                Sabr asks you to stay rooted through the dryness, certain of water you cannot yet see. You are not asked to enjoy the waiting. You are asked to wait with Him.
+              </p>
+              <a href="#artisan-publications" class="art-ink-link" style="align-self: flex-start;">
+                <span>Read Theme Dispatch</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </a>
+            </article>
+
+            <!-- Essay 3: Vol 4 Tazkiya -->
+            <article class="art-essay-card reveal-on-scroll" data-reveal-delay="160">
+              <a href="#artisan-publications" class="art-essay-card__img-wrap">
+                <span class="art-essay-card__volume">Rabi al-Thani &bull; Tazkiya</span>
+                <img
+                  src="assets/images/article-vol4.jpg"
+                  alt="The Cultivated Inner Garden &bull; Vol 4 editorial artwork"
+                  width="600"
+                  height="750"
+                  loading="lazy"
+                  class="art-essay-card__img"
+                >
+              </a>
+              <div class="art-essay-card__meta">
+                <time datetime="2026-08-13">August 13, 2026</time> &bull; By Masuma Abdul-Muhit
+              </div>
+              <h3 class="art-essay-card__title">
+                <a href="#artisan-publications">The Cultivated Inner Garden &bull; Vol 4</a>
+              </h3>
+              <p class="art-essay-card__excerpt">
+                Tired of meeting the same fault in the mirror? Tazkiya is the quiet work of purifying the heart &mdash; one weed pulled, one good thing watered, at a time.
+              </p>
+              <a href="#artisan-publications" class="art-ink-link" style="align-self: flex-start;">
+                <span>Read Theme Dispatch</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="M13 6l6 6-6 6"></path>
+                </svg>
+              </a>
+            </article>
+          </div>
+
+          <!-- The Gentle Monthly Rhythm & Midway Moments -->
+          <div id="artisan-rhythm" class="art-rhythm-band reveal-on-scroll">
+            <div class="art-rhythm-band__header">
+              <div>
+                <span class="art-stamp art-stamp--sage" style="margin-bottom: 0.45rem;">A Gentle Monthly Rhythm</span>
+                <h3 style="font-size: 1.75rem;">How the Hijri journey unfolds each month</h3>
+                <p style="font-size: 0.92rem; color: var(--art-ink-muted);">
+                  Designed for busy lives &mdash; as little as a few quiet minutes with your tea. No streaks, no guilt, and no catching up if you miss a day.
+                </p>
+              </div>
+              <a href="#artisan-publications" class="art-btn art-btn--secondary">
+                <span>Join Before the 12th</span>
+              </a>
+            </div>
+
+            <ol class="art-rhythm-steps" aria-label="Four steps of the Hijri monthly subscription">
+              <li class="art-rhythm-step">
+                <span class="art-rhythm-step__num">I.</span>
+                <h4 class="art-rhythm-step__title">Subscribe</h4>
+                <p class="art-rhythm-step__desc">
+                  Join before the monthly pre-order window closes on the 12th. Delivery is free worldwide, and you can pause, skip a month, or cancel anytime.
+                </p>
+              </li>
+              <li class="art-rhythm-step">
+                <span class="art-rhythm-step__num">II.</span>
+                <h4 class="art-rhythm-step__title">We post it</h4>
+                <p class="art-rhythm-step__desc">
+                  Pre-orders close on the 12th of each month, and your limited-edition print volume is dispatched within 7&ndash;12 working days to your door.
+                </p>
+              </li>
+              <li class="art-rhythm-step">
+                <span class="art-rhythm-step__num">III.</span>
+                <h4 class="art-rhythm-step__title">Read and reflect</h4>
+                <p class="art-rhythm-step__desc">
+                  40 A4 pages of Qur&rsquo;anic reflection, classical scholarship and guided journaling. Collect a token with every volume toward milestone gifts.
+                </p>
+              </li>
+              <li class="art-rhythm-step">
+                <span class="art-rhythm-step__num">IV.</span>
+                <h4 class="art-rhythm-step__title">Midway Moments</h4>
+                <p class="art-rhythm-step__desc">
+                  Halfway through the month, readers receive a short exclusive video reflection from Masuma to revisit the theme and check in with your heart.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 06: EXPLORE BY COLLECTION (BOOKMARK & COLLECTOR'S JOURNEY)
+           ==================================================================== -->
+      <section id="artisan-collections" class="art-section" aria-labelledby="artisan-collections-heading">
+        <div class="art-container">
+          <div class="art-collections-top reveal-on-scroll">
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">05</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>Explore &amp; Collect</span>
+              </span>
+              <h2 id="artisan-collections-heading" style="font-size: clamp(2.1rem, 3.2vw + 0.6rem, 3rem); line-height: 1.14; margin-bottom: 1rem;">
+                The Hijri Collector&rsquo;s Journey
+              </h2>
+              <p style="font-size: 1.05rem; color: var(--art-ink-muted); margin-bottom: 1rem;">
+                The Collector&rsquo;s Journey isn&rsquo;t about collecting magazines. It&rsquo;s about collecting moments of transformation. Every volume carries its own physical keepsake &mdash; a <strong>Collector&rsquo;s Token</strong> bearing that month&rsquo;s word to clip to a bag, keep on a desk, or return to often.
+              </p>
+              <blockquote style="font-family: var(--art-font-serif); font-style: italic; font-size: 1.25rem; color: var(--art-oxide); border-left: 2px solid var(--art-oxide); padding-left: 1rem; margin-bottom: 1.25rem;">
+                &ldquo;You were never meant to arrive all at once. You were meant to keep walking.&rdquo;
+              </blockquote>
+              <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                <a href="#artisan-publications" class="art-btn art-btn--primary">
+                  <span>Start Collecting With Vol. 6</span>
+                </a>
+                <button type="button" class="art-btn art-btn--secondary" data-drawer-open="search-drawer">
+                  <span>Browse 1448 Archive</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="art-corner-frame">
+              <img
+                src="assets/images/archive-banner.png"
+                alt="Hijri printed editions and Collector's Token keepsakes across the lunar year"
+                width="640"
+                height="440"
+                loading="lazy"
+                style="width: 100%; aspect-ratio: 16 / 11; object-fit: cover;"
+              >
+              <div style="display: flex; justify-content: space-between; padding-top: 0.65rem; font-size: 0.75rem; color: var(--art-ink-muted);">
+                <span>Keepsake Token Included With Every Volume</span>
+                <span>Valid Across the Hijri Year</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Bookmark-Inspired Milestone Blocks -->
+          <div class="art-bookmarks-grid" aria-label="Collector's Journey Milestone Tiers">
+            <!-- Bookmark 1: 4 Volumes -->
+            <article class="art-bookmark-card reveal-on-scroll">
+              <div class="art-bookmark-card__ribbon" aria-hidden="true">04</div>
+              <div>
+                <span class="art-bookmark-card__tier">Tier One &bull; 4 Volumes</span>
+                <h3 class="art-bookmark-card__title">The Wayfarer</h3>
+                <p class="art-bookmark-card__desc">
+                  The Wayfarer is the one who has answered the call to begin. Four collected volumes mark the first stage of the journey: a commitment to pause, reflect, and take intentional steps towards Allah. This tier represents courage, direction, and the willingness to start.
+                </p>
+              </div>
+              <p class="art-bookmark-card__quote">&ldquo;Every journey begins with a single step.&rdquo;</p>
+            </article>
+
+            <!-- Bookmark 2: 8 Volumes -->
+            <article class="art-bookmark-card reveal-on-scroll" data-reveal-delay="80">
+              <div class="art-bookmark-card__ribbon" aria-hidden="true">08</div>
+              <div>
+                <span class="art-bookmark-card__tier" style="color: var(--art-sage);">Tier Two &bull; 8 Volumes</span>
+                <h3 class="art-bookmark-card__title">The Traveller</h3>
+                <p class="art-bookmark-card__desc">
+                  The Traveller has chosen to continue the path. Eight collected volumes represent perseverance, consistency, and a heart that continues seeking despite the distance still ahead. This tier honours those who keep returning, reflecting, and growing through every season.
+                </p>
+              </div>
+              <p class="art-bookmark-card__quote">&ldquo;You&rsquo;ve chosen to keep going, to keep seeking, to keep growing.&rdquo;</p>
+            </article>
+
+            <!-- Bookmark 3: 12 Volumes -->
+            <article class="art-bookmark-card reveal-on-scroll" data-reveal-delay="160">
+              <div class="art-bookmark-card__ribbon" aria-hidden="true">12</div>
+              <div>
+                <span class="art-bookmark-card__tier" style="color: var(--art-ink);">Tier Three &bull; 12 Volumes</span>
+                <h3 class="art-bookmark-card__title">The Companion</h3>
+                <p class="art-bookmark-card__desc">
+                  The Companion has journeyed through the complete Hijri cycle. Twelve collected volumes signify steadfastness, reflection, and companionship on the path to Allah. This final tier recognises those who have walked the full journey and become keepers of its lessons.
+                </p>
+              </div>
+              <p class="art-bookmark-card__quote">&ldquo;You&rsquo;ve travelled the full path, and are a keeper of this sacred journey.&rdquo;</p>
+            </article>
+          </div>
+
+          <p style="margin-top: 1.75rem; font-size: 0.875rem; color: var(--art-ink-muted); text-align: center; max-width: 78ch; margin-inline: auto;">
+            <strong>How to claim your milestone gift:</strong> Once you reach 4, 8 or 12 tokens within the Hijri year, simply email <a href="mailto:info@shophijri.com" style="color: var(--art-oxide); text-decoration: underline;">info@shophijri.com</a> with a photo of your collected tokens and your order details, and your reward will be posted out with your next volume.
+          </p>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 07: A CLOSER LOOK INSIDE (INTERACTIVE OPEN BOOK SPREAD)
+           ==================================================================== -->
+      <section id="artisan-inside" class="art-section art-inside-section" aria-labelledby="artisan-inside-heading">
+        <div class="art-container">
+          <div class="art-inside-header reveal-on-scroll">
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">06</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>A Closer Look Inside</span>
+              </span>
+              <h2 id="artisan-inside-heading" style="font-size: clamp(2.1rem, 3.2vw + 0.6rem, 3rem); line-height: 1.12;">
+                Made to be held in your hands &amp; annotated in the margins.
+              </h2>
+            </div>
+            <span class="art-stamp art-stamp--ochre">A closer look</span>
+          </div>
+
+          <!-- Open Book Interactive Spread Presentation -->
+          <div class="art-open-book reveal-on-scroll">
+            <!-- Left Page: Interactive Spread Plate Viewer -->
+            <div class="art-open-book__left-page">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--art-ink-muted);">
+                  <span>Folio Preview &bull; 40 A4 Pages</span>
+                  <span>120gsm Uncoated Stock</span>
+                </div>
+
+                <div class="art-open-book__plate-wrap">
+                  <img
+                    id="artisan-spread-preview-img"
+                    src="assets/images/spread-1.png"
+                    alt="Interior spread of Hijri magazine showing Qur'anic reflection and classical scholarship"
+                    width="680"
+                    height="510"
+                    loading="lazy"
+                    class="art-open-book__plate-img"
+                  >
+                </div>
+
+                <p id="artisan-spread-preview-caption" style="font-family: var(--art-font-serif); font-style: italic; font-size: 0.95rem; color: var(--art-ink-muted); margin-top: 0.65rem;">
+                  Spread I &mdash; Qur&rsquo;anic Reflection &amp; Classical Scholars of the Heart
+                </p>
+              </div>
+
+              <!-- Interactive Spread Selector Tabs -->
+              <div>
+                <div style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--art-ink-muted); margin-bottom: 0.45rem;">
+                  Select a page spread to inspect:
+                </div>
+                <div class="art-open-book__tabs" role="tablist" aria-label="Inspect publication spreads">
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="true"
+                    class="art-spread-tab"
+                    data-artisan-spread-tab
+                    data-src="assets/images/spread-1.png"
+                    data-alt="Interior spread of Hijri magazine showing Qur'anic reflection and classical scholarship"
+                    data-caption="Spread I &mdash; Qur'anic Reflection &amp; Classical Scholars of the Heart"
+                  >
+                    01. Sacred Scholarship
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    class="art-spread-tab"
+                    data-artisan-spread-tab
+                    data-src="assets/images/spread-2.png"
+                    data-alt="Guided journaling and self-accounting prompts inside Hijri"
+                    data-caption="Spread II &mdash; Guided Muhasabah Journaling &amp; The Whisper Section"
+                  >
+                    02. Guided Journaling
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    class="art-spread-tab"
+                    data-artisan-spread-tab
+                    data-src="assets/images/vol5-spread.png"
+                    data-alt="Open spread from Hijri Volume 5 showing editorial layout"
+                    data-caption="Spread III &mdash; Editorial Typography &amp; Reflective Exercises"
+                  >
+                    03. Reflective Layout
+                  </button>
+                  <button
+                    type="button"
+                    role="tab"
+                    aria-selected="false"
+                    class="art-spread-tab"
+                    data-artisan-spread-tab
+                    data-src="assets/images/whats-inside.png"
+                    data-alt="Complete Hijri parcel with magazine, token, welcome letter and journey print"
+                    data-caption="Spread IV &mdash; Complete Parcel: Magazine, Token &amp; 12-Month Journey Print"
+                  >
+                    04. Full Parcel Flatlay
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Page: Structured Breakdown of Every Order -->
+            <div class="art-open-book__right-page">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--art-oxide);">
+                  <span>What Comes With Every Order</span>
+                  <span>Scholar Checked</span>
+                </div>
+
+                <h3 style="color: var(--art-ink); font-size: 1.75rem; line-height: 1.2; margin-bottom: 0.5rem;">
+                  Four tactile elements in every monthly dispatch.
+                </h3>
+                <p style="font-size: 0.92rem; color: var(--art-ink-muted);">
+                  In a world of fleeting notifications and digital noise, Hijri is designed to be read slowly with a warm cup of tea and returned to throughout the lunar month.
+                </p>
+
+                <div class="art-inclusions-ledger">
+                  <div class="art-inclusion-row">
+                    <span class="art-inclusion-row__num">01.</span>
+                    <div>
+                      <h3>The 40-Page A4 Magazine</h3>
+                      <p>Articles on the month&rsquo;s spiritual theme written in light of the Qur&rsquo;an, Sunnah and classical scholars of the heart &mdash; authored by a qualified Aalimah and life coach and verified by scholars.</p>
+                    </div>
+                  </div>
+
+                  <div class="art-inclusion-row">
+                    <span class="art-inclusion-row__num">02.</span>
+                    <div>
+                      <h3>Guided Journaling &amp; Rhythm</h3>
+                      <p>Self-accounting (<em>muhasabah</em>) prompts, the signature <em>Whisper</em> reflection pages, a dhikr to carry, and a gentle daily/weekly rhythm with no streaks or guilt.</p>
+                    </div>
+                  </div>
+
+                  <div class="art-inclusion-row">
+                    <span class="art-inclusion-row__num">03.</span>
+                    <div>
+                      <h3>Token &amp; Twelve-Month Print</h3>
+                      <p>A welcome letter, a journey print mapping all twelve lunar months, and a physical Collector&rsquo;s Token bearing the month&rsquo;s word to unlock milestone rewards at 4, 8 and 12 volumes.</p>
+                    </div>
+                  </div>
+
+                  <div class="art-inclusion-row">
+                    <span class="art-inclusion-row__num">04.</span>
+                    <div>
+                      <h3>Midway Moments Video</h3>
+                      <p>Halfway through the lunar month, readers receive access to an exclusive mid-month video reflection from Masuma to check in with your heart and renew your intentions.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--art-rule-strong);">
+                <span class="art-hand-note">Printed on 120gsm uncoated paper</span>
+                <a href="#artisan-publications" class="art-btn art-btn--primary">
+                  <span>Reserve Volume 6</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="M13 6l6 6-6 6"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 08: READER FEEDBACK & SOCIAL PROOF (LETTERS FROM READERS)
+           ==================================================================== -->
+      <section id="artisan-testimonials" class="art-section" aria-labelledby="artisan-letters-heading">
+        <div class="art-container">
+          <div class="reveal-on-scroll" style="text-align: center; max-width: 680px; margin-inline: auto;">
+            <span class="art-index-label">
+              <span class="art-index-label__num">07</span>
+              <span class="art-index-label__dash" aria-hidden="true"></span>
+              <span>Letters From Readers</span>
+            </span>
+            <h2 id="artisan-letters-heading" style="font-size: clamp(2.1rem, 3.2vw + 0.6rem, 3rem); line-height: 1.14; margin-bottom: 0.65rem;">
+              Held in hands, kept near hearts.
+            </h2>
+            <p style="color: var(--art-ink-muted); font-size: 1.02rem; margin-inline: auto;">
+              Genuine reflections and photographs shared by readers walking through the lunar year with Hijri.
+            </p>
+          </div>
+
+          <div class="art-letters-grid">
+            <!-- Reader Letter 1: Abida, 28 -->
+            <article class="art-letter-card reveal-on-scroll">
+              <div>
+                <div class="art-letter-card__photo-wrap">
+                  <img
+                    src="assets/images/testimonial-1.jpg"
+                    alt="Reader holding their printed issue of Hijri magazine"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="art-letter-card__photo"
+                  >
+                </div>
+                <div class="art-letter-card__quote-ornament" aria-hidden="true">
+                  <svg width="28" height="22" viewBox="0 0 32 24" fill="currentColor">
+                    <path d="M9.5 4C5.4 6.7 3 10.6 3 15.2C3 18.8 5.4 21 8.4 21C11.1 21 13 19.1 13 16.6C13 14.1 11.1 12.4 8.8 12.4C8.1 12.4 7.3 12.6 6.9 12.8C7.4 9.9 9.5 7.2 12.2 5.5L9.5 4ZM23.5 4C19.4 6.7 17 10.6 17 15.2C17 18.8 19.4 21 22.4 21C25.1 21 27 19.1 27 16.6C27 14.1 25.1 12.4 22.8 12.4C22.1 12.4 21.3 12.6 20.9 12.8C21.4 9.9 23.5 7.2 26.2 5.5L23.5 4Z"/>
+                  </svg>
+                </div>
+                <blockquote class="art-letter-card__quote">
+                  &ldquo;For the first time ever I don&rsquo;t feel guilty about my relationship with Allah. I feel hopeful and confident that I&rsquo;m making steps in the right direction. And Hijri is the reason why.&rdquo;
+                </blockquote>
+              </div>
+              <cite class="art-letter-card__cite">
+                <div>
+                  <div class="art-letter-card__author">Abida, 28</div>
+                  <div class="art-letter-card__role">Hijri Print Reader</div>
+                </div>
+                <span class="art-stamp art-stamp--ochre" style="font-size: 0.65rem; padding: 0.2rem 0.5rem;">Verified Reader</span>
+              </cite>
+            </article>
+
+            <!-- Reader Letter 2: Safa, 34 -->
+            <article class="art-letter-card reveal-on-scroll" data-reveal-delay="80">
+              <div>
+                <div class="art-letter-card__photo-wrap">
+                  <img
+                    src="assets/images/testimonial-3.jpg"
+                    alt="Hijri magazine Whisper reflection section photographed by reader"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="art-letter-card__photo"
+                  >
+                </div>
+                <div class="art-letter-card__quote-ornament" aria-hidden="true">
+                  <svg width="28" height="22" viewBox="0 0 32 24" fill="currentColor">
+                    <path d="M9.5 4C5.4 6.7 3 10.6 3 15.2C3 18.8 5.4 21 8.4 21C11.1 21 13 19.1 13 16.6C13 14.1 11.1 12.4 8.8 12.4C8.1 12.4 7.3 12.6 6.9 12.8C7.4 9.9 9.5 7.2 12.2 5.5L9.5 4ZM23.5 4C19.4 6.7 17 10.6 17 15.2C17 18.8 19.4 21 22.4 21C25.1 21 27 19.1 27 16.6C27 14.1 25.1 12.4 22.8 12.4C22.1 12.4 21.3 12.6 20.9 12.8C21.4 9.9 23.5 7.2 26.2 5.5L23.5 4Z"/>
+                  </svg>
+                </div>
+                <blockquote class="art-letter-card__quote">
+                  &ldquo;I feel like the whisper section is reading my mind! I never would have asked myself these questions or gotten to where I am right now in my journey without Hijri. Jazakallah!&rdquo;
+                </blockquote>
+              </div>
+              <cite class="art-letter-card__cite">
+                <div>
+                  <div class="art-letter-card__author">Safa, 34</div>
+                  <div class="art-letter-card__role">Hijri Print Reader</div>
+                </div>
+                <span class="art-stamp art-stamp--ochre" style="font-size: 0.65rem; padding: 0.2rem 0.5rem;">Verified Reader</span>
+              </cite>
+            </article>
+
+            <!-- Reader Letter 3: F.R., 30 -->
+            <article class="art-letter-card reveal-on-scroll" data-reveal-delay="160">
+              <div>
+                <div class="art-letter-card__photo-wrap">
+                  <img
+                    src="assets/images/testimonial-2.jpg"
+                    alt="Hijri magazine spread on a quiet morning table"
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    class="art-letter-card__photo"
+                  >
+                </div>
+                <div class="art-letter-card__quote-ornament" aria-hidden="true">
+                  <svg width="28" height="22" viewBox="0 0 32 24" fill="currentColor">
+                    <path d="M9.5 4C5.4 6.7 3 10.6 3 15.2C3 18.8 5.4 21 8.4 21C11.1 21 13 19.1 13 16.6C13 14.1 11.1 12.4 8.8 12.4C8.1 12.4 7.3 12.6 6.9 12.8C7.4 9.9 9.5 7.2 12.2 5.5L9.5 4ZM23.5 4C19.4 6.7 17 10.6 17 15.2C17 18.8 19.4 21 22.4 21C25.1 21 27 19.1 27 16.6C27 14.1 25.1 12.4 22.8 12.4C22.1 12.4 21.3 12.6 20.9 12.8C21.4 9.9 23.5 7.2 26.2 5.5L23.5 4Z"/>
+                  </svg>
+                </div>
+                <blockquote class="art-letter-card__quote">
+                  &ldquo;Your words have helped me through one of the toughest periods of life I&rsquo;ve ever been through.&rdquo;
+                </blockquote>
+              </div>
+              <cite class="art-letter-card__cite">
+                <div>
+                  <div class="art-letter-card__author">F.R., 30</div>
+                  <div class="art-letter-card__role">Hijri Print Reader</div>
+                </div>
+                <span class="art-stamp art-stamp--ochre" style="font-size: 0.65rem; padding: 0.2rem 0.5rem;">Verified Reader</span>
+              </cite>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hand-Drawn Divider 3: Delicate Ink Wave & Star -->
+      <div class="art-divider" aria-hidden="true">
+        <svg viewBox="0 0 500 32" fill="none">
+          <path d="M30 16C95 8 155 24 220 16" stroke="#87947A" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M280 16C345 8 405 24 470 16" stroke="#87947A" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M250 7L252.8 13.2L259 16L252.8 18.8L250 25L247.2 18.8L241 16L247.2 13.2L250 7Z" fill="#C9A56C"/>
+        </svg>
+      </div>
+
+      <!-- ====================================================================
+           SECTION 09: THOUGHTFUL GIFTING & FREQUENTLY ASKED QUESTIONS
+           ==================================================================== -->
+      <section id="artisan-faqs" class="art-section" aria-labelledby="artisan-gifting-heading">
+        <div class="art-container">
+          <!-- Thoughtful Gifting Feature -->
+          <div class="art-gifting-banner reveal-on-scroll">
+            <div class="art-gifting-banner__media">
+              <img
+                src="assets/images/vol6-flatlay.png"
+                alt="Hijri Volume 6 Shukr parcel with welcome letter, token and print ready to be shared or gifted"
+                width="640"
+                height="480"
+                loading="lazy"
+                class="art-gifting-banner__img"
+              >
+            </div>
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">08</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>Thoughtful Gifting</span>
+              </span>
+              <h2 id="artisan-gifting-heading" style="font-size: clamp(1.9rem, 2.8vw + 0.5rem, 2.65rem); line-height: 1.15; margin-bottom: 0.85rem;">
+                Share a quiet companion with someone you love.
+              </h2>
+              <p style="color: var(--art-ink-muted); margin-bottom: 1rem;">
+                Whether a friend is walking through a season that calls for patience (<em>Sabr</em>) or stepping into gratitude (<em>Shukr</em>), a single volume of Hijri (&pound;14.99) can be ordered with no ongoing subscription commitment while the monthly pre-order window is open.
+              </p>
+              <p style="color: var(--art-ink-muted); margin-bottom: 1.5rem;">
+                Every parcel includes the 40-page A4 print publication, a welcome letter, the 12-month lunar journey print, and that month&rsquo;s physical Collector&rsquo;s Token &mdash; with free delivery across the UK and internationally.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem;">
+                <a href="#artisan-publications" class="art-btn art-btn--primary">
+                  <span>Order a Single Edition (&pound;14.99)</span>
+                </a>
+                <span class="art-hand-note">No subscription commitment required</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frequently Asked Questions -->
+          <div class="art-faq-layout reveal-on-scroll">
+            <div>
+              <span class="art-index-label">
+                <span class="art-index-label__num">09</span>
+                <span class="art-index-label__dash" aria-hidden="true"></span>
+                <span>Clarity &amp; Reassurance</span>
+              </span>
+              <h2 style="font-size: clamp(1.9rem, 2.8vw + 0.5rem, 2.65rem); line-height: 1.15; margin-bottom: 0.75rem;">
+                Frequently asked questions
+              </h2>
+              <p style="color: var(--art-ink-muted);">
+                Everything you need to know about subscribing, delivery, and how Hijri works.
+              </p>
+
+              <div class="art-faq-contact-box">
+                <strong style="display: block; margin-bottom: 0.35rem; color: var(--art-ink);">Need help with an existing order or milestone?</strong>
+                <p style="font-size: 0.875rem; color: var(--art-ink-muted); margin-bottom: 0.75rem;">
+                  Our small team is always happy to assist with subscriptions, address changes, or token rewards.
+                </p>
+                <a href="mailto:info@shophijri.com" class="art-ink-link" style="font-size: 0.875rem;">
+                  <span>Email info@shophijri.com</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="M13 6l6 6-6 6"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="art-accordion">
+              <details class="art-accordion__item" name="artisan-faq" open>
+                <summary class="art-accordion__summary">
+                  <span>When will my volume arrive?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Pre-orders close on the 12th of each month, and your volume is dispatched within 7&ndash;12 working days after that date. UK orders are sent by Royal Mail 2nd Class, so allow up to 4 days from dispatch for it to reach your door.
+                  </p>
+                </div>
+              </details>
+
+              <details class="art-accordion__item" name="artisan-faq">
+                <summary class="art-accordion__summary">
+                  <span>Can I skip a month or cancel?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Yes. You can pause or cancel your subscription at any time through your account or by getting in touch with us. Just make the change before the 12th of the month so it takes effect before your next volume is prepared.
+                  </p>
+                </div>
+              </details>
+
+              <details class="art-accordion__item" name="artisan-faq">
+                <summary class="art-accordion__summary">
+                  <span>Is delivery really free?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Yes. Delivery is included in the price on every order, in the UK and internationally.
+                  </p>
+                </div>
+              </details>
+
+              <details class="art-accordion__item" name="artisan-faq">
+                <summary class="art-accordion__summary">
+                  <span>Can I buy a single volume?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Yes. Single volumes (&pound;14.99) are available to order while the monthly pre-order window is open. Once the window closes on the 12th, that volume is not available for single purchase again, though limited archive copies of select earlier issues may occasionally appear in our 1448 Archive.
+                  </p>
+                </div>
+              </details>
+
+              <details class="art-accordion__item" name="artisan-faq">
+                <summary class="art-accordion__summary">
+                  <span>Do you offer refunds?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Because every volume is made to order, we don&rsquo;t offer refunds or exchanges and all sales are final. Your subscription itself can be paused or cancelled at any time for future volumes.
+                  </p>
+                </div>
+              </details>
+
+              <details class="art-accordion__item" name="artisan-faq">
+                <summary class="art-accordion__summary">
+                  <span>What is the Collector&rsquo;s Journey?</span>
+                  <span class="art-accordion__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="art-accordion__body">
+                  <p>
+                    Every volume comes with a physical Collector&rsquo;s Token bearing that month&rsquo;s theme. As you collect tokens across the Hijri year, you move through three tiers &mdash; The Wayfarer (4 volumes), The Traveller (8 volumes), and The Companion (12 volumes) &mdash; unlocking exclusive milestone gifts along the way.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 10: PERSONAL EPISTLE NEWSLETTER & COLOPHON FOOTER
+           ==================================================================== -->
+      <section class="art-epistle-section" aria-labelledby="artisan-epistle-heading">
+        <div class="art-container">
+          <div class="art-epistle-card reveal-on-scroll">
+            <span class="art-stamp" style="margin-bottom: 1rem;">Letters From Our Studio</span>
+            <h2 id="artisan-epistle-heading" style="font-size: clamp(2rem, 3vw + 0.5rem, 2.85rem); line-height: 1.15; margin-bottom: 0.75rem;">
+              Receive our monthly studio letter before the 12th.
+            </h2>
+            <p style="color: var(--art-ink-muted); max-width: 56ch; margin-inline: auto;">
+              Sign up to save on your first purchase, receive gentle monthly pre-order reminders before the 12th, and read bonus editorial reflections from Masuma.
+            </p>
+
+            <form id="artisan-newsletter-form" class="art-epistle-form" aria-label="Artisan Edition newsletter signup">
+              <div class="art-epistle-form__row">
+                <label for="artisan-newsletter-email" class="visually-hidden">Email address</label>
+                <input
+                  type="email"
+                  id="artisan-newsletter-email"
+                  name="contact[email]"
+                  placeholder="Write your email address..."
+                  required
+                  autocomplete="email"
+                  class="art-epistle-input"
+                >
+                <button type="submit" class="art-btn art-btn--primary">
+                  <span>Join Letters</span>
+                </button>
+              </div>
+              <p id="artisan-newsletter-feedback" role="status" aria-live="polite" hidden style="margin-top: 0.85rem; font-size: 0.875rem; color: var(--art-oxide); font-weight: 600;"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer (Preserving exact links, policies, and contact info) -->
+    <footer class="art-footer" role="contentinfo">
+      <div class="art-container">
+        <div class="art-footer__top">
+          <!-- Column 1: Brand Identity -->
+          <div>
+            <a href="#artisan-top" aria-label="Hijri by Masuma Abdul-Muhit">
+              <img
+                src="assets/images/logo-ivory.png"
+                alt="Hijri by Masuma Abdul-Muhit"
+                width="172"
+                height="48"
+                loading="lazy"
+                class="art-footer__logo"
+              >
+            </a>
+            <p class="art-footer__desc">
+              A limited-edition monthly Islamic print periodical exploring the timeless concepts of our faith, sans the screen. Authored, edited and designed by Masuma Abdul-Muhit.
+            </p>
+            <a href="mailto:info@shophijri.com" class="art-footer__mail">
+              info@shophijri.com
+            </a>
+          </div>
+
+          <!-- Column 2: The Publication -->
+          <div>
+            <h3 class="art-footer__heading">The Publication</h3>
+            <ul class="art-footer__links">
+              <li><a href="#artisan-publications" class="art-footer__link">Current Issue: Vol. 6 Shukr</a></li>
+              <li><a href="#artisan-publications" class="art-footer__link">Monthly Subscription</a></li>
+              <li><a href="#artisan-inside" class="art-footer__link">What's Inside Every Volume</a></li>
+              <li><a href="#artisan-publications" class="art-footer__link">Shop All Volumes</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: The Journey -->
+          <div>
+            <h3 class="art-footer__heading">The Journey</h3>
+            <ul class="art-footer__links">
+              <li><a href="#artisan-collections" class="art-footer__link">Collector's Journey</a></li>
+              <li><a href="#artisan-rhythm" class="art-footer__link">Midway Moments</a></li>
+              <li><a href="#artisan-story" class="art-footer__link">Behind the Themes Journal</a></li>
+              <li><a href="#artisan-intro" class="art-footer__link">About Hijri &amp; Masuma</a></li>
+              <li><a href="#artisan-faqs" class="art-footer__link">Contact &amp; FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Colophon & Imprint Notes -->
+          <div>
+            <h3 class="art-footer__heading">Studio Colophon</h3>
+            <div class="art-footer__colophon-box">
+              <div><strong>Format:</strong> 40 A4 Pages &bull; 120gsm inner &bull; 350gsm cover</div>
+              <div style="margin-top: 0.35rem;"><strong>Pre-orders close:</strong> 12th of each month</div>
+              <div style="margin-top: 0.35rem;"><strong>Delivery:</strong> Free worldwide postage</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-footer__bottom">
+          <div>
+            &copy; 2026 Hijri by Masuma Abdul-Muhit. The Artisan Edition.
+          </div>
+          <ul class="art-footer__policies" aria-label="Store policies">
+            <li><a href="#artisan-faqs">Privacy policy</a></li>
+            <li><a href="#artisan-faqs">Refund policy</a></li>
+            <li><a href="#artisan-faqs">Shipping policy</a></li>
+            <li><a href="#artisan-faqs">Cancellation policy</a></li>
+            <li><a href="#artisan-faqs">Contact information</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /#theme-artisan -->
+
+  <!-- ========================================================================
+
        PERSISTENT THEME SWITCHER
 
        Allows instant comparison between:
@@ -4358,6 +5784,8 @@
        2. Prestige (Paid)
 
        3. Publisher (Free)
+
+       04 | The Artisan Edition (Bespoke)
 
        ======================================================================== -->
 
@@ -4394,6 +5822,14 @@
         <span>3. Publisher</span>
 
         <span class="theme-btn__badge">Free</span>
+
+      </button>
+
+      <button type="button" class="theme-btn" data-theme-target="artisan" aria-pressed="false">
+
+        <span>04 | The Artisan Edition</span>
+
+        <span class="theme-btn__badge">Bespoke</span>
 
       </button>
 
@@ -4661,6 +6097,79 @@
           <div>DISTRIBUTION: FREE TRACKED WORLDWIDE</div>
           <div>PRE-ORDERS: CLOSES 12TH GREGORIAN</div>
         </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 4. Artisan Edition Mobile Navigation Drawer -->
+  <aside
+    id="artisan-mobile-drawer"
+    class="side-drawer side-drawer--left artisan-drawer"
+    data-drawer
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="artisan-mobile-title"
+  >
+    <div class="side-drawer__header artisan-drawer__header">
+      <span id="artisan-mobile-title" class="artisan-drawer__title">Studio Menu</span>
+      <button type="button" class="btn-icon" aria-label="Close menu" data-drawer-close>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="side-drawer__body artisan-drawer__body">
+      <nav aria-label="Artisan Edition mobile navigation">
+        <ul class="artisan-drawer__list">
+          <li class="artisan-drawer__item">
+            <a href="#artisan-top" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">01</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-publications" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">02</span>
+              <span>Shop</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-collections" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">03</span>
+              <span>Collector's Journey</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-rhythm" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">04</span>
+              <span>Midway Moments</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-story" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">05</span>
+              <span>Journal</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-intro" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">06</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li class="artisan-drawer__item">
+            <a href="#artisan-faqs" class="artisan-drawer__link" data-mobile-nav-link>
+              <span class="artisan-drawer__num">07</span>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="artisan-drawer__footer">
+        <p><strong>Pre-orders close on the 12th of each month.</strong></p>
+        <p style="margin-top: 0.35rem;">Free delivery on all UK &amp; international orders.</p>
       </div>
     </div>
   </aside>

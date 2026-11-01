@@ -1,10 +1,11 @@
-# Shop Hijri — Interactive Three-Theme Homepage Comparison Prototype
+# Shop Hijri — Interactive Four-Theme Homepage Comparison Prototype
 
-An interactive, multi-theme homepage prototype for **Shop Hijri** (`https://shophijri.com/`), presenting three distinct Shopify theme design directions in a single self-contained application:
+An interactive, multi-theme homepage prototype for **Shop Hijri** (`https://shophijri.com/`), presenting four distinct homepage design directions in a single self-contained application:
 
 1. **Option 1: Horizon (Shopify Free Theme)** — Modern, flexible, modular, and conversion-focused.
 2. **Option 2: Prestige (Maestrooo Paid Theme • $380 USD)** — High-end luxury, immersive full-bleed imagery, floating glassmorphic panels, and refined editorial pacing.
 3. **Option 3: Publisher (Shopify Free Theme)** — Avant-garde independent publishing aesthetic, asymmetrical display typography, bookshop catalogue merchandising, and literary indexing.
+4. **04 | The Artisan Edition (Bespoke Handcrafted Direction)** — Warm, tactile independent publishing studio aesthetic featuring unbleached paper (`#F4EBDD`), warm ivory (`#FFF9EF`), ink brown (`#342B27`), oxide red (`#A34E3F`), sage green (`#87947A`), and faded ochre (`#C9A56C`), paired with **Fraunces** + **DM Sans** + **Caveat** typography, original botanical SVG illustrations, paper-mounted frames, and an interactive open-book spread viewer.
 
 ---
 
@@ -36,6 +37,7 @@ Each design option has a dedicated Shopify Online Store 2.0 implementation guide
 - [`HORIZON-MAPPING.md`](./HORIZON-MAPPING.md) — Native sections and theme blocks for Shopify Horizon v3.5.1+.
 - [`PRESTIGE-MAPPING.md`](./PRESTIGE-MAPPING.md) — Native sections and settings for Maestrooo Prestige.
 - [`PUBLISHER-MAPPING.md`](./PUBLISHER-MAPPING.md) — Native sections and styling for Shopify Publisher.
+- [`ARTISAN-MAPPING.md`](./ARTISAN-MAPPING.md) — Native vs. custom Liquid section assessment for **04 | The Artisan Edition**.
 
 ---
 

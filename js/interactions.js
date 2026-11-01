@@ -14,6 +14,7 @@ window.ShopHijri.initInteractions = function initInteractions(navController) {
   initPurchasePlanSelector(navController);
   initTestimonialsSlideshow();
   initNewsletterForm();
+  initArtisanInteractions(navController);
 };
 
 function initProductGallery() {
@@ -193,4 +194,149 @@ function initNewsletterForm() {
     feedback.textContent =
       `Thank you for subscribing with ${email}. Welcome to Hijri.`;
   });
+}
+
+function initArtisanInteractions(navController) {
+  // 1. Artisan Featured Folio Gallery Switcher
+  const artMainImg = document.getElementById('artisan-main-image');
+  const artMainCaption = document.getElementById('artisan-main-caption');
+  const artThumbs = document.querySelectorAll('[data-artisan-thumb]');
+
+  if (artMainImg && artThumbs.length) {
+    artThumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        const newSrc = thumb.getAttribute('data-src');
+        const newAlt = thumb.getAttribute('data-alt');
+        const newCaption = thumb.getAttribute('data-caption');
+
+        artThumbs.forEach((t) => t.setAttribute('aria-selected', 'false'));
+        thumb.setAttribute('aria-selected', 'true');
+
+        artMainImg.style.opacity = '0.35';
+        setTimeout(() => {
+          artMainImg.src = newSrc;
+          if (newAlt) artMainImg.alt = newAlt;
+          if (artMainCaption && newCaption) {
+            artMainCaption.textContent = newCaption;
+          }
+          artMainImg.style.opacity = '1';
+        }, 140);
+      });
+    });
+  }
+
+  // 2. Artisan Selling Plan Selector
+  const artPlanCards = document.querySelectorAll('[data-artisan-plan]');
+  const artRadios = document.querySelectorAll('input[name="artisan_purchase_plan"]');
+  const artPriceCurrent = document.getElementById('artisan-price-current');
+  const artPriceCompare = document.getElementById('artisan-price-compare');
+  const artPriceBadge = document.getElementById('artisan-price-badge');
+  const artSubmitBtn = document.getElementById('artisan-submit-btn');
+  const artSubmitText = document.getElementById('artisan-submit-text');
+
+  const cartPlanLabel = document.getElementById('cart-preview-plan');
+  const cartPriceLabel = document.getElementById('cart-preview-price');
+  const cartSubtotalLabel = document.getElementById('cart-preview-subtotal');
+
+  function updateArtisanPlan(selectedValue) {
+    artPlanCards.forEach((card) => {
+      const planType = card.getAttribute('data-artisan-plan');
+      card.classList.toggle('is-selected', planType === selectedValue);
+    });
+
+    if (selectedValue === 'subscription') {
+      if (artPriceCurrent) artPriceCurrent.textContent = '£11.99 GBP';
+      if (artPriceCompare) {
+        artPriceCompare.textContent = '£14.99 GBP';
+        artPriceCompare.hidden = false;
+      }
+      if (artPriceBadge) {
+        artPriceBadge.textContent = 'Save 20% Monthly';
+      }
+      if (artSubmitText) {
+        artSubmitText.textContent = 'Subscribe — £11.99 / month';
+      }
+      if (cartPlanLabel) {
+        cartPlanLabel.textContent =
+          'Monthly Subscription (Deliver every month • Auto-renews, skip or cancel anytime)';
+      }
+      if (cartPriceLabel) cartPriceLabel.textContent = '£11.99 GBP';
+      if (cartSubtotalLabel) cartSubtotalLabel.textContent = '£11.99 GBP';
+    } else {
+      if (artPriceCurrent) artPriceCurrent.textContent = '£14.99 GBP';
+      if (artPriceCompare) {
+        artPriceCompare.hidden = true;
+      }
+      if (artPriceBadge) {
+        artPriceBadge.textContent = 'Single Pre-Order Edition';
+      }
+      if (artSubmitText) {
+        artSubmitText.textContent = 'Pre-Order Single Volume — £14.99';
+      }
+      if (cartPlanLabel) {
+        cartPlanLabel.textContent =
+          'One-Time Purchase (Single Pre-Order Issue • No subscription commitment)';
+      }
+      if (cartPriceLabel) cartPriceLabel.textContent = '£14.99 GBP';
+      if (cartSubtotalLabel) cartSubtotalLabel.textContent = '£14.99 GBP';
+    }
+  }
+
+  artRadios.forEach((radio) => {
+    radio.addEventListener('change', (e) => {
+      updateArtisanPlan(e.target.value);
+    });
+  });
+
+  if (artSubmitBtn && navController) {
+    artSubmitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      navController.openDrawer('cart-drawer', artSubmitBtn);
+    });
+  }
+
+  // 3. Interactive Open Book Spread Previewer (Section 07: A Closer Look Inside)
+  const spreadImg = document.getElementById('artisan-spread-preview-img');
+  const spreadCaption = document.getElementById('artisan-spread-preview-caption');
+  const spreadTabs = document.querySelectorAll('[data-artisan-spread-tab]');
+
+  if (spreadImg && spreadTabs.length) {
+    spreadTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const src = tab.getAttribute('data-src');
+        const alt = tab.getAttribute('data-alt');
+        const caption = tab.getAttribute('data-caption');
+
+        spreadTabs.forEach((t) => t.setAttribute('aria-selected', 'false'));
+        tab.setAttribute('aria-selected', 'true');
+
+        spreadImg.style.opacity = '0.3';
+        setTimeout(() => {
+          spreadImg.src = src;
+          if (alt) spreadImg.alt = alt;
+          if (spreadCaption && caption) {
+            spreadCaption.textContent = caption;
+          }
+          spreadImg.style.opacity = '1';
+        }, 140);
+      });
+    });
+  }
+
+  // 4. Artisan Newsletter Epistle Form
+  const artForm = document.getElementById('artisan-newsletter-form');
+  const artFeedback = document.getElementById('artisan-newsletter-feedback');
+
+  if (artForm && artFeedback) {
+    artForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = artForm.querySelector('input[type="email"]');
+      const email = emailInput ? emailInput.value.trim() : '';
+      if (!email) return;
+
+      artFeedback.hidden = false;
+      artFeedback.textContent =
+        `Thank you for joining our reading list with ${email}. Look out for our next letter before the 12th.`;
+    });
+  }
 }

@@ -1,0 +1,2182 @@
+/* ==========================================================================
+   OPTION 04: THE ARTISAN EDITION (artisan.css)
+   Bespoke Independent Publishing House & Letterpress Studio Direction
+   Scoped strictly to #theme-artisan and .artisan-drawer
+   ========================================================================== */
+
+#theme-artisan,
+.artisan-drawer {
+  /* ------------------------------------------------------------------------
+     1. Exclusive Artisan Palette Tokens
+     ------------------------------------------------------------------------ */
+  --art-paper: #F4EBDD;           /* Unbleached Paper — Main background */
+  --art-ivory: #FFF9EF;           /* Warm Ivory — Secondary surfaces */
+  --art-ink: #342B27;             /* Ink Brown — Typography & dark sections */
+  --art-oxide: #A34E3F;           /* Oxide Red — Primary buttons & accents */
+  --art-sage: #87947A;            /* Sage Green — Secondary accents */
+  --art-ochre: #C9A56C;           /* Faded Ochre — Small decorative highlights */
+
+  /* Supporting Tints & Accessibility-Verified Contrast Tokens */
+  --art-ink-muted: #5C4F49;       /* Warm muted brown (5.8:1 on #F4EBDD) */
+  --art-ink-soft: #75665F;        /* Subtle metadata ink */
+  --art-oxide-hover: #8B3F31;     /* Deep oxide press state */
+  --art-paper-deep: #EBE0CE;      /* Pressed stock inset surface */
+  --art-ivory-muted: rgba(255, 249, 239, 0.84);
+  --art-rule: rgba(52, 43, 39, 0.16);
+  --art-rule-strong: rgba(52, 43, 39, 0.34);
+  --art-rule-ochre: rgba(201, 165, 108, 0.48);
+
+  /* ------------------------------------------------------------------------
+     2. Editorial Typography System
+     ------------------------------------------------------------------------ */
+  --art-font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --art-font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --art-font-hand: 'Caveat', 'Segoe Script', cursive;
+
+  /* Tactile Paper Shadows */
+  --art-shadow-sheet: 0 10px 28px -8px rgba(52, 43, 39, 0.12), 0 2px 6px rgba(52, 43, 39, 0.06);
+  --art-shadow-book: 0 22px 44px -12px rgba(52, 43, 39, 0.26), 0 6px 16px rgba(52, 43, 39, 0.12);
+  --art-shadow-float: 0 16px 36px -10px rgba(52, 43, 39, 0.18);
+}
+
+#theme-artisan {
+  background-color: var(--art-paper);
+  color: var(--art-ink);
+  font-family: var(--art-font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  position: relative;
+  overflow-x: clip;
+  /* Subtle cotton paper fiber atmosphere via layered CSS gradients */
+  background-image:
+    radial-gradient(rgba(52, 43, 39, 0.03) 1px, transparent 0),
+    radial-gradient(rgba(163, 78, 63, 0.018) 1px, transparent 0);
+  background-size: 28px 28px, 42px 42px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Typography & Modern Web Guidance Compliance (text-wrap: balance & pretty, max-width: 80ch) */
+#theme-artisan h1,
+#theme-artisan h2,
+#theme-artisan h3,
+#theme-artisan h4 {
+  font-family: var(--art-font-serif);
+  color: var(--art-ink);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+#theme-artisan h1 em,
+#theme-artisan h2 em,
+#theme-artisan h3 em {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-weight: 400;
+}
+
+#theme-artisan p,
+#theme-artisan blockquote,
+#theme-artisan li {
+  text-wrap: pretty;
+  max-width: 72ch;
+}
+
+/* Layout Containers */
+#theme-artisan .art-container {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4.5vw, 3.5rem);
+}
+
+#theme-artisan .art-container--narrow {
+  max-width: 980px;
+}
+
+#theme-artisan .art-section {
+  padding-block: clamp(4.5rem, 8vw, 7.25rem);
+  position: relative;
+}
+
+/* --------------------------------------------------------------------------
+   BESPOKE HANDCRAFTED UI ELEMENTS
+   -------------------------------------------------------------------------- */
+
+/* 1. Editorial Section Numbering ("01 — Discover") */
+#theme-artisan .art-index-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--art-font-sans);
+  font-size: 0.78125rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--art-oxide);
+  margin-bottom: 1rem;
+}
+
+#theme-artisan .art-index-label__num {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--art-ink);
+}
+
+#theme-artisan .art-index-label__dash {
+  display: inline-block;
+  width: 22px;
+  height: 1px;
+  background-color: var(--art-oxide);
+}
+
+/* 2. Custom Editorial Stamps & Labels ("Thoughtfully created", "From our studio") */
+#theme-artisan .art-stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  font-family: var(--art-font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--art-oxide);
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-oxide);
+  box-shadow: inset 0 0 0 2px var(--art-ivory), inset 0 0 0 2.75px rgba(163, 78, 63, 0.38);
+  border-radius: 2px;
+  /* Subtle letterpress ink texture via CSS Masking with fallback */
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.92) 65%, rgba(0, 0, 0, 1) 100%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.92) 65%, rgba(0, 0, 0, 1) 100%);
+}
+
+#theme-artisan .art-stamp--sage {
+  color: var(--art-ink);
+  border-color: var(--art-sage);
+  box-shadow: inset 0 0 0 2px var(--art-ivory), inset 0 0 0 2.75px rgba(135, 148, 122, 0.48);
+}
+
+#theme-artisan .art-stamp--ochre {
+  color: var(--art-ink);
+  border-color: var(--art-ochre);
+  box-shadow: inset 0 0 0 2px var(--art-ivory), inset 0 0 0 2.75px rgba(201, 165, 108, 0.55);
+}
+
+@supports (not (mask-image: radial-gradient(#000, #000))) and (not (-webkit-mask-image: radial-gradient(#000, #000))) {
+  #theme-artisan .art-stamp {
+    background-color: var(--art-ivory);
+  }
+}
+
+/* 3. Handwritten Marginalia (Used sparingly in 4 deliberate places) */
+#theme-artisan .art-hand-note {
+  font-family: var(--art-font-hand);
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: var(--art-oxide);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+#theme-artisan .art-hand-note--ink {
+  color: var(--art-ink-muted);
+}
+
+/* 4. Bespoke Buttons with Inset Letterpress Borders & Shifting Illustrated Arrows */
+#theme-artisan .art-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0.95rem 1.85rem;
+  font-family: var(--art-font-sans);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-btn--primary {
+  background-color: var(--art-oxide);
+  color: var(--art-ivory);
+  border: 1px solid var(--art-oxide);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 249, 239, 0.24),
+    0 4px 14px rgba(163, 78, 63, 0.22);
+}
+
+#theme-artisan .art-btn--primary:hover {
+  background-color: var(--art-oxide-hover);
+  border-color: var(--art-oxide-hover);
+  color: var(--art-ivory);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 249, 239, 0.35),
+    0 8px 20px rgba(163, 78, 63, 0.28);
+}
+
+#theme-artisan .art-btn--secondary {
+  background-color: var(--art-ivory);
+  color: var(--art-ink);
+  border: 1px solid var(--art-ink);
+  box-shadow: 3px 3px 0 var(--art-ochre);
+}
+
+#theme-artisan .art-btn--secondary:hover {
+  background-color: var(--art-ink);
+  color: var(--art-ivory);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--art-oxide);
+}
+
+#theme-artisan .art-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  flex-shrink: 0;
+}
+
+#theme-artisan .art-btn:hover svg {
+  transform: translateX(4px);
+}
+
+/* Ink-drawn Editorial Link */
+#theme-artisan .art-ink-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--art-font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--art-ink);
+  padding-bottom: 0.3rem;
+  text-decoration: none;
+}
+
+#theme-artisan .art-ink-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--art-oxide);
+  border-radius: 2px;
+  transform: scaleX(0.35);
+  transform-origin: left center;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-ink-link:hover {
+  color: var(--art-oxide);
+}
+
+#theme-artisan .art-ink-link:hover::after {
+  transform: scaleX(1);
+}
+
+#theme-artisan .art-ink-link svg {
+  width: 17px;
+  height: 17px;
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-ink-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* 5. Hand-Drawn Section Dividers (Distinct SVG Flourishes) */
+#theme-artisan .art-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 0.5rem;
+  color: var(--art-ink-muted);
+  overflow: hidden;
+}
+
+#theme-artisan .art-divider svg {
+  width: min(460px, 88vw);
+  height: auto;
+  overflow: visible;
+}
+
+/* 6. Paper-Inspired Sheet & Corner Ornament Treatments */
+#theme-artisan .art-paper-sheet {
+  position: relative;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  box-shadow: var(--art-shadow-sheet);
+}
+
+#theme-artisan .art-paper-sheet--offset::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--art-paper-deep);
+  border: 1px solid var(--art-rule-strong);
+  transform: translate(8px, 8px);
+  z-index: -1;
+  pointer-events: none;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-paper-sheet--offset:hover::before {
+  transform: translate(11px, 11px);
+}
+
+/* Corner Bookbinding Ornaments */
+#theme-artisan .art-corner-frame {
+  position: relative;
+  padding: 1rem;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  box-shadow: var(--art-shadow-sheet);
+}
+
+#theme-artisan .art-corner-frame::before,
+#theme-artisan .art-corner-frame::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--art-ochre);
+  border-style: solid;
+  pointer-events: none;
+}
+
+#theme-artisan .art-corner-frame::before {
+  top: 5px;
+  left: 5px;
+  border-width: 1.5px 0 0 1.5px;
+}
+
+#theme-artisan .art-corner-frame::after {
+  bottom: 5px;
+  right: 5px;
+  border-width: 0 1.5px 1.5px 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 01: EDITORIAL NAVIGATION & PUBLISHING IMPRINT BAR
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-imprint-bar {
+  background-color: var(--art-ink);
+  color: var(--art-ivory);
+  padding: 0.55rem 1rem;
+  font-size: 0.78125rem;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid rgba(201, 165, 108, 0.3);
+}
+
+#theme-artisan .art-imprint-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.15rem;
+  text-align: center;
+}
+
+#theme-artisan .art-imprint-bar__ornament {
+  color: var(--art-ochre);
+}
+
+#theme-artisan .art-imprint-bar__link {
+  color: var(--art-ochre);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+#theme-artisan .art-imprint-bar__link:hover {
+  color: var(--art-ivory);
+}
+
+#theme-artisan .art-header {
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  background-color: rgba(244, 235, 221, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--art-rule-strong);
+  box-shadow: 0 3px 0 rgba(201, 165, 108, 0.18);
+}
+
+#theme-artisan .art-header .art-container {
+  max-width: 1380px;
+  padding-inline: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+#theme-artisan .art-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.75rem, 1.4vw, 1.85rem);
+  min-height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#theme-artisan .art-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+#theme-artisan .art-header__logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#theme-artisan .art-header__logo-img {
+  width: clamp(130px, 10.5vw, 156px);
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+  filter: sepia(0.18) contrast(1.02);
+}
+
+#theme-artisan .art-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#theme-artisan .art-nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.1rem, 0.35vw, 0.35rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+#theme-artisan .art-nav__item {
+  display: inline-flex;
+  align-items: center;
+  max-width: none;
+}
+
+#theme-artisan .art-nav__item + .art-nav__item::before {
+  content: "\00B7";
+  color: var(--art-ochre);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-inline: clamp(0.1rem, 0.3vw, 0.35rem);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+#theme-artisan .art-nav__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--art-font-sans);
+  font-size: clamp(0.75rem, 0.82vw, 0.84375rem);
+  font-weight: 500;
+  color: var(--art-ink);
+  padding: 0.4rem clamp(0.35rem, 0.55vw, 0.6rem);
+  letter-spacing: 0.02em;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+#theme-artisan .art-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  right: 0.4rem;
+  bottom: 2px;
+  height: 1.5px;
+  background-color: var(--art-oxide);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-nav__link:hover,
+#theme-artisan .art-nav__link[aria-current="page"] {
+  color: var(--art-oxide);
+  background-color: rgba(255, 249, 239, 0.65);
+}
+
+#theme-artisan .art-nav__link[aria-current="page"] {
+  font-weight: 600;
+}
+
+#theme-artisan .art-nav__link:hover::after,
+#theme-artisan .art-nav__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+#theme-artisan .art-header__utilities {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+#theme-artisan .art-currency-select {
+  font-family: var(--art-font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--art-ink);
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  height: 36px;
+  padding: 0 0.55rem;
+  border-radius: 3px;
+  margin-right: 0.2rem;
+  cursor: pointer;
+}
+
+#theme-artisan .art-icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  color: var(--art-ink);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+#theme-artisan .art-icon-btn:hover {
+  background-color: var(--art-ivory);
+  border-color: var(--art-rule-strong);
+  color: var(--art-oxide);
+}
+
+#theme-artisan .art-header__mobile-toggle {
+  display: none;
+}
+
+#theme-artisan .art-cart-badge {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 17px;
+  height: 17px;
+  padding-inline: 4px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1;
+  background-color: var(--art-oxide);
+  color: var(--art-ivory);
+  border-radius: 999px;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 02: SIGNATURE EDITORIAL HERO (ASYMMETRICAL STUDIO DESK)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-hero {
+  padding-block: clamp(3rem, 6vw, 5.5rem) clamp(4rem, 7vw, 6.5rem);
+  position: relative;
+}
+
+#theme-artisan .art-hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+#theme-artisan .art-hero__top-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.35rem;
+}
+
+#theme-artisan .art-hero__title {
+  font-size: clamp(2.55rem, 4.2vw + 0.9rem, 4.35rem);
+  line-height: 1.08;
+  margin-bottom: 1.35rem;
+  color: var(--art-ink);
+}
+
+#theme-artisan .art-hero__title em {
+  color: var(--art-oxide);
+}
+
+#theme-artisan .art-hero__lead {
+  font-size: clamp(1.0625rem, 0.4vw + 0.95rem, 1.2rem);
+  line-height: 1.65;
+  color: var(--art-ink-muted);
+  margin-bottom: 2rem;
+  max-width: 54ch;
+}
+
+#theme-artisan .art-hero__cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+#theme-artisan .art-hero__colophon-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--art-rule-strong);
+  position: relative;
+}
+
+#theme-artisan .art-hero__colophon-ledger::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--art-rule);
+}
+
+#theme-artisan .art-hero__ledger-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+#theme-artisan .art-hero__ledger-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--art-sage);
+  color: var(--art-ink-muted);
+}
+
+#theme-artisan .art-hero__ledger-value {
+  font-family: var(--art-font-serif);
+  font-size: 1.05rem;
+  color: var(--art-ink);
+  font-weight: 500;
+}
+
+/* Right Column: Layered Paper & Publication Desk Composition */
+#theme-artisan .art-hero__stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Background tilted warm ivory backing sheet */
+#theme-artisan .art-hero__backing-sheet {
+  grid-column: 2 / 13;
+  grid-row: 1;
+  width: 100%;
+  height: 94%;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  transform: rotate(2.2deg) translate(10px, 8px);
+  box-shadow: var(--art-shadow-sheet);
+  z-index: 1;
+}
+
+/* Primary Publication Frame */
+#theme-artisan .art-hero__cover-sheet {
+  grid-column: 2 / 12;
+  grid-row: 1;
+  position: relative;
+  z-index: 2;
+  background-color: var(--art-ivory);
+  padding: clamp(0.85rem, 1.8vw, 1.35rem);
+  border: 1px solid var(--art-ink);
+  box-shadow: var(--art-shadow-book);
+  transition: transform 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-hero__cover-sheet:hover {
+  transform: translateY(-3px);
+}
+
+#theme-artisan .art-hero__cover-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--art-rule);
+}
+
+#theme-artisan .art-hero__cover-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  font-size: 0.78125rem;
+  color: var(--art-ink-muted);
+  border-top: 1px solid var(--art-rule);
+  margin-top: 0.75rem;
+}
+
+/* Overlapping Interior Spread Card */
+#theme-artisan .art-hero__spread-card {
+  grid-column: 1 / 7;
+  grid-row: 1;
+  align-self: end;
+  margin-bottom: -1.75rem;
+  z-index: 3;
+  background-color: var(--art-ivory);
+  padding: 0.75rem;
+  border: 1px solid var(--art-ink);
+  box-shadow: var(--art-shadow-float);
+  transform: rotate(-1.8deg);
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-hero__spread-card:hover {
+  transform: rotate(0deg) translateY(-2px);
+}
+
+#theme-artisan .art-hero__spread-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--art-rule);
+}
+
+#theme-artisan .art-hero__spread-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--art-ink-muted);
+  margin-top: 0.45rem;
+}
+
+/* Botanical Sketch & Handwritten Annotation Badge */
+#theme-artisan .art-hero__annotation {
+  grid-column: 7 / 13;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+  margin-top: -1.35rem;
+  margin-right: -0.5rem;
+  z-index: 4;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-ochre);
+  padding: 0.65rem 0.95rem;
+  box-shadow: var(--art-shadow-sheet);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#theme-artisan .art-hero__annotation svg {
+  width: 28px;
+  height: 28px;
+  color: var(--art-sage);
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 03: A PERSONAL INTRODUCTION TO SHOP HIJRI (FOUNDER & STUDIO LETTER)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-intro {
+  position: relative;
+}
+
+#theme-artisan .art-intro__sheet {
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  padding: clamp(2.25rem, 5vw, 4.25rem);
+  box-shadow: var(--art-shadow-sheet);
+  position: relative;
+}
+
+/* Double-ruled inner bookbinding frame */
+#theme-artisan .art-intro__sheet::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--art-rule-ochre);
+  pointer-events: none;
+}
+
+#theme-artisan .art-intro__grid {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: clamp(2.25rem, 4.5vw, 4.5rem);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#theme-artisan .art-intro__visual {
+  position: relative;
+}
+
+#theme-artisan .art-intro__photo-frame {
+  background-color: var(--art-paper);
+  padding: 0.9rem;
+  border: 1px solid var(--art-ink);
+  box-shadow: 6px 6px 0 var(--art-ochre);
+}
+
+#theme-artisan .art-intro__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+
+#theme-artisan .art-intro__photo-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.65rem;
+  font-size: 0.75rem;
+  color: var(--art-ink-muted);
+}
+
+#theme-artisan .art-intro__title {
+  font-size: clamp(2rem, 3vw + 0.6rem, 2.95rem);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+#theme-artisan .art-intro__quote {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.4vw + 0.6rem, 1.45rem);
+  line-height: 1.45;
+  color: var(--art-oxide);
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--art-oxide);
+  margin-bottom: 1.5rem;
+}
+
+#theme-artisan .art-intro__body p {
+  color: var(--art-ink-muted);
+  margin-bottom: 1.1rem;
+  font-size: 1.02rem;
+}
+
+#theme-artisan .art-intro__signoff {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--art-rule);
+}
+
+#theme-artisan .art-intro__author-name {
+  font-family: var(--art-font-serif);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--art-ink);
+}
+
+#theme-artisan .art-intro__author-role {
+  font-size: 0.8125rem;
+  color: var(--art-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 04: DISCOVER THE PUBLICATIONS (BESPOKE EDITORIAL FOLIO & ARCHIVE)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-publications__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.75rem;
+}
+
+#theme-artisan .art-publications__title {
+  font-size: clamp(2.1rem, 3.2vw + 0.6rem, 3.1rem);
+  line-height: 1.12;
+  margin-bottom: 0.5rem;
+}
+
+#theme-artisan .art-publications__subtitle {
+  font-size: 1.0625rem;
+  color: var(--art-ink-muted);
+  max-width: 58ch;
+}
+
+/* Primary Featured Publication Folio (Vol. 6 Shukr) */
+#theme-artisan .art-folio {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: clamp(2.25rem, 4.5vw, 4.25rem);
+  align-items: start;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-ink);
+  padding: clamp(1.5rem, 3.8vw, 3.25rem);
+  box-shadow: 8px 8px 0 rgba(201, 165, 108, 0.35), var(--art-shadow-sheet);
+  margin-bottom: 3.5rem;
+}
+
+#theme-artisan .art-folio__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: sticky;
+  top: 108px;
+}
+
+#theme-artisan .art-folio__stage {
+  position: relative;
+  background-color: var(--art-paper);
+  padding: 0.85rem;
+  border: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-folio__main-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: opacity 220ms ease;
+}
+
+#theme-artisan .art-folio__stage-caption {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.78125rem;
+  color: var(--art-ink-muted);
+  text-align: center;
+  font-style: italic;
+  font-family: var(--art-font-serif);
+}
+
+#theme-artisan .art-folio__thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.65rem;
+}
+
+#theme-artisan .art-folio__thumb {
+  aspect-ratio: 1 / 1;
+  padding: 0.2rem;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  cursor: pointer;
+  opacity: 0.68;
+  transition: opacity 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+#theme-artisan .art-folio__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#theme-artisan .art-folio__thumb:hover,
+#theme-artisan .art-folio__thumb[aria-selected="true"] {
+  opacity: 1;
+  border-color: var(--art-oxide);
+  box-shadow: 0 0 0 1px var(--art-oxide);
+}
+
+/* Right Side of Folio: Product Details & Selling Plan */
+#theme-artisan .art-folio__meta-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+#theme-artisan .art-folio__title {
+  font-size: clamp(1.9rem, 2.6vw + 0.6rem, 2.65rem);
+  line-height: 1.14;
+  margin-bottom: 0.25rem;
+}
+
+#theme-artisan .art-folio__epigraph {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--art-oxide);
+  margin-bottom: 1.25rem;
+}
+
+#theme-artisan .art-folio__price-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-folio__price-current {
+  font-family: var(--art-font-serif);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--art-ink);
+}
+
+#theme-artisan .art-folio__price-compare {
+  font-size: 1.05rem;
+  color: var(--art-ink-soft);
+  text-decoration: line-through;
+}
+
+#theme-artisan .art-folio__price-shipping {
+  font-size: 0.78125rem;
+  color: var(--art-ink-muted);
+  margin-left: auto;
+}
+
+#theme-artisan .art-folio__desc p {
+  font-size: 0.96875rem;
+  color: var(--art-ink-muted);
+  margin-bottom: 0.9rem;
+}
+
+#theme-artisan .art-folio__desc blockquote {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--art-ink);
+  padding: 0.75rem 1rem;
+  background-color: var(--art-paper);
+  border-left: 2px solid var(--art-ochre);
+  margin-block: 1rem 1.5rem;
+}
+
+/* Artisan Selling Plan Options */
+#theme-artisan .art-plans {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.35rem;
+  border: none;
+  padding: 0;
+}
+
+#theme-artisan .art-plans__legend {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--art-ink-muted);
+  margin-bottom: 0.5rem;
+}
+
+#theme-artisan .art-plan-card {
+  display: block;
+  background-color: var(--art-paper);
+  border: 1.5px solid var(--art-rule-strong);
+  padding: 1rem 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+#theme-artisan .art-plan-card.is-selected {
+  background-color: var(--art-ivory);
+  border-color: var(--art-oxide);
+  box-shadow: 4px 4px 0 rgba(163, 78, 63, 0.16);
+}
+
+#theme-artisan .art-plan-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+#theme-artisan .art-plan-card__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  color: var(--art-ink);
+  font-size: 0.96875rem;
+}
+
+#theme-artisan .art-plan-card__radio {
+  accent-color: var(--art-oxide);
+  width: 17px;
+  height: 17px;
+}
+
+#theme-artisan .art-plan-card__price {
+  font-family: var(--art-font-serif);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--art-oxide);
+}
+
+#theme-artisan .art-plan-card__perks {
+  margin-top: 0.65rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--art-rule-strong);
+  padding-left: 1.5rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.84375rem;
+  color: var(--art-ink-muted);
+}
+
+#theme-artisan .art-folio__colophon-note {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.1rem;
+  background-color: var(--art-paper);
+  border: 1px solid var(--art-rule-strong);
+  font-size: 0.8125rem;
+  color: var(--art-ink-muted);
+  display: grid;
+  gap: 0.25rem;
+}
+
+#theme-artisan .art-folio__colophon-note strong {
+  color: var(--art-ink);
+}
+
+/* Complementary Earlier Editions & Parcel Trio (Asymmetrical Rhythm) */
+#theme-artisan .art-complementary-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#theme-artisan .art-complementary-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.95fr 0.95fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+#theme-artisan .art-edition-card {
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-edition-card:nth-child(2) {
+  margin-top: 1.25rem;
+}
+
+#theme-artisan .art-edition-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--art-shadow-float);
+}
+
+#theme-artisan .art-edition-card__media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--art-rule);
+  margin-bottom: 1rem;
+  background-color: var(--art-paper);
+}
+
+#theme-artisan .art-edition-card__media img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-edition-card:hover .art-edition-card__media img {
+  transform: scale(1.03);
+}
+
+#theme-artisan .art-edition-card__tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--art-oxide);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+#theme-artisan .art-edition-card__title {
+  font-size: 1.35rem;
+  line-height: 1.22;
+  margin-bottom: 0.4rem;
+}
+
+#theme-artisan .art-edition-card__excerpt {
+  font-size: 0.875rem;
+  color: var(--art-ink-muted);
+  margin-bottom: 1rem;
+}
+
+#theme-artisan .art-edition-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--art-rule);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 05: THE STORY BEHIND THE WORK (BEHIND THE THEMES & MONTHLY RHYTHM)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-craft-section {
+  background-color: var(--art-ivory);
+  border-block: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-craft-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4.5vw, 4.5rem);
+  align-items: end;
+  margin-bottom: 3rem;
+}
+
+/* 3 Editorial Essays Ledger */
+#theme-artisan .art-essays-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+#theme-artisan .art-essay-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--art-paper);
+  border: 1px solid var(--art-rule-strong);
+  padding: 1.25rem;
+  position: relative;
+}
+
+#theme-artisan .art-essay-card__img-wrap {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--art-rule);
+  margin-bottom: 1.1rem;
+}
+
+#theme-artisan .art-essay-card__img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-essay-card:hover .art-essay-card__img {
+  transform: scale(1.03);
+}
+
+#theme-artisan .art-essay-card__volume {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: var(--art-ivory);
+  color: var(--art-ink);
+  border: 1px solid var(--art-ink);
+  padding: 0.25rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#theme-artisan .art-essay-card__meta {
+  font-size: 0.75rem;
+  color: var(--art-ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+#theme-artisan .art-essay-card__title {
+  font-size: 1.4rem;
+  line-height: 1.24;
+  margin-bottom: 0.6rem;
+}
+
+#theme-artisan .art-essay-card__excerpt {
+  font-size: 0.90625rem;
+  color: var(--art-ink-muted);
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+/* The 4-Step Gentle Monthly Rhythm & Midway Moments Strip */
+#theme-artisan .art-rhythm-band {
+  background-color: var(--art-paper);
+  border: 1px solid var(--art-ink);
+  padding: clamp(1.75rem, 3.5vw, 2.75rem);
+  box-shadow: 6px 6px 0 var(--art-sage);
+}
+
+#theme-artisan .art-rhythm-band__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-rhythm-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#theme-artisan .art-rhythm-step {
+  position: relative;
+  padding-top: 0.5rem;
+}
+
+#theme-artisan .art-rhythm-step__num {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1.65rem;
+  color: var(--art-oxide);
+  line-height: 1;
+  margin-bottom: 0.45rem;
+  display: block;
+}
+
+#theme-artisan .art-rhythm-step__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+}
+
+#theme-artisan .art-rhythm-step__desc {
+  font-size: 0.875rem;
+  color: var(--art-ink-muted);
+  line-height: 1.58;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 06: EXPLORE BY COLLECTION (BOOKMARK & COLLECTOR'S JOURNEY PANELS)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-collections-top {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2rem, 4.5vw, 4.5rem);
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Bookmark-Inspired Navigation & Milestone Blocks */
+#theme-artisan .art-bookmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#theme-artisan .art-bookmark-card {
+  position: relative;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-ink);
+  padding: 2.25rem 1.75rem 1.85rem;
+  box-shadow: 5px 5px 0 var(--art-ochre);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#theme-artisan .art-bookmark-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Ribbon notch at top of bookmark card */
+#theme-artisan .art-bookmark-card__ribbon {
+  position: absolute;
+  top: -1px;
+  right: 1.75rem;
+  width: 34px;
+  height: 44px;
+  background-color: var(--art-oxide);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.4rem;
+  color: var(--art-ivory);
+  font-family: var(--art-font-serif);
+  font-size: 0.78125rem;
+  font-weight: 600;
+}
+
+#theme-artisan .art-bookmark-card:nth-child(2) .art-bookmark-card__ribbon {
+  background-color: var(--art-sage);
+}
+
+#theme-artisan .art-bookmark-card:nth-child(3) .art-bookmark-card__ribbon {
+  background-color: var(--art-ink);
+}
+
+#theme-artisan .art-bookmark-card__tier {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--art-oxide);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+#theme-artisan .art-bookmark-card__title {
+  font-size: 1.75rem;
+  margin-bottom: 0.65rem;
+}
+
+#theme-artisan .art-bookmark-card__desc {
+  font-size: 0.92rem;
+  color: var(--art-ink-muted);
+  margin-bottom: 1.25rem;
+}
+
+#theme-artisan .art-bookmark-card__quote {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--art-ink);
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--art-rule-strong);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 07: A CLOSER LOOK INSIDE (INTERACTIVE OPEN BOOK SPREAD PREVIEW)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-inside-section {
+  background-color: var(--art-ink);
+  color: var(--art-ivory);
+  position: relative;
+}
+
+#theme-artisan .art-inside-section h2,
+#theme-artisan .art-inside-section h3 {
+  color: var(--art-ivory);
+}
+
+#theme-artisan .art-inside-section .art-index-label {
+  color: var(--art-ochre);
+}
+
+#theme-artisan .art-inside-section .art-index-label__num {
+  color: var(--art-ivory);
+}
+
+#theme-artisan .art-inside-section .art-index-label__dash {
+  background-color: var(--art-ochre);
+}
+
+#theme-artisan .art-inside-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Open Book Spread Stage */
+#theme-artisan .art-open-book {
+  background-color: var(--art-ivory);
+  color: var(--art-ink);
+  border: 2px solid var(--art-ochre);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.38);
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  position: relative;
+}
+
+/* Center Book Spine Crease on Desktop */
+#theme-artisan .art-open-book::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 54%;
+  width: 24px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(52, 43, 39, 0.08) 45%,
+    rgba(52, 43, 39, 0.18) 50%,
+    rgba(52, 43, 39, 0.06) 55%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+#theme-artisan .art-open-book__left-page {
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  background-color: var(--art-paper);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+#theme-artisan .art-open-book__plate-wrap {
+  background-color: var(--art-ivory);
+  padding: 0.75rem;
+  border: 1px solid var(--art-rule-strong);
+  box-shadow: var(--art-shadow-sheet);
+}
+
+#theme-artisan .art-open-book__plate-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: opacity 200ms ease;
+}
+
+#theme-artisan .art-open-book__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#theme-artisan .art-spread-tab {
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78125rem;
+  font-weight: 600;
+  background-color: var(--art-ivory);
+  color: var(--art-ink);
+  border: 1px solid var(--art-rule-strong);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+#theme-artisan .art-spread-tab:hover,
+#theme-artisan .art-spread-tab[aria-selected="true"] {
+  background-color: var(--art-oxide);
+  color: var(--art-ivory);
+  border-color: var(--art-oxide);
+}
+
+#theme-artisan .art-open-book__right-page {
+  padding: clamp(1.5rem, 3.5vw, 3rem);
+  background-color: var(--art-ivory);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#theme-artisan .art-inclusions-ledger {
+  display: grid;
+  gap: 1.15rem;
+  margin-block: 1.5rem;
+}
+
+#theme-artisan .art-inclusion-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--art-rule);
+}
+
+#theme-artisan .art-inclusion-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#theme-artisan .art-inclusion-row__num {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--art-oxide);
+  line-height: 1.2;
+}
+
+#theme-artisan .art-inclusion-row h3 {
+  color: var(--art-ink);
+  font-size: 1.15rem;
+  margin-bottom: 0.2rem;
+}
+
+#theme-artisan .art-inclusion-row p {
+  font-size: 0.875rem;
+  color: var(--art-ink-muted);
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 08: READER FEEDBACK & SOCIAL PROOF (EDITORIAL LETTERS)
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-letters-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+#theme-artisan .art-letter-card {
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--art-shadow-sheet);
+  position: relative;
+}
+
+#theme-artisan .art-letter-card:nth-child(2) {
+  transform: translateY(1rem);
+}
+
+#theme-artisan .art-letter-card__photo-wrap {
+  position: relative;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--art-rule);
+  padding: 0.45rem;
+  background-color: var(--art-paper);
+}
+
+#theme-artisan .art-letter-card__photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+#theme-artisan .art-letter-card__quote-ornament {
+  color: var(--art-ochre);
+  margin-bottom: 0.5rem;
+}
+
+#theme-artisan .art-letter-card__quote {
+  font-family: var(--art-font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: var(--art-ink);
+  margin-bottom: 1.25rem;
+}
+
+#theme-artisan .art-letter-card__cite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--art-rule);
+  font-style: normal;
+}
+
+#theme-artisan .art-letter-card__author {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--art-ink);
+}
+
+#theme-artisan .art-letter-card__role {
+  font-size: 0.75rem;
+  color: var(--art-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 09: THOUGHTFUL GIFTING & FREQUENTLY ASKED QUESTIONS
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-gifting-banner {
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-ink);
+  padding: clamp(2rem, 4.5vw, 3.5rem);
+  box-shadow: 7px 7px 0 var(--art-oxide);
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(2rem, 4.5vw, 4rem);
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+#theme-artisan .art-gifting-banner__media {
+  position: relative;
+  padding: 0.75rem;
+  background-color: var(--art-paper);
+  border: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-gifting-banner__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Studio FAQs Ledger */
+#theme-artisan .art-faq-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2rem, 4.5vw, 4.5rem);
+  align-items: start;
+}
+
+#theme-artisan .art-faq-contact-box {
+  margin-top: 1.75rem;
+  padding: 1.35rem;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-rule-strong);
+  border-left: 3px solid var(--art-oxide);
+}
+
+#theme-artisan .art-accordion {
+  border-top: 1.5px solid var(--art-ink);
+}
+
+#theme-artisan .art-accordion__item {
+  border-bottom: 1px solid var(--art-rule-strong);
+}
+
+#theme-artisan .art-accordion__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--art-font-serif);
+  font-size: 1.3rem;
+  color: var(--art-ink);
+  transition: color 180ms ease;
+}
+
+#theme-artisan .art-accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+#theme-artisan .art-accordion__summary:hover {
+  color: var(--art-oxide);
+}
+
+#theme-artisan .art-accordion__icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--art-rule-strong);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--art-oxide);
+  flex-shrink: 0;
+  transition: transform 240ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+#theme-artisan .art-accordion__item[open] .art-accordion__icon {
+  background-color: var(--art-oxide);
+  border-color: var(--art-oxide);
+  color: var(--art-ivory);
+  transform: rotate(45deg);
+}
+
+#theme-artisan .art-accordion__body {
+  padding-bottom: 1.35rem;
+  color: var(--art-ink-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   SECTION 10: PERSONAL DISPATCH NEWSLETTER & COLOPHON FOOTER
+   -------------------------------------------------------------------------- */
+#theme-artisan .art-epistle-section {
+  padding-top: 2rem;
+  padding-bottom: clamp(4rem, 7vw, 6rem);
+}
+
+#theme-artisan .art-epistle-card {
+  max-width: 880px;
+  margin-inline: auto;
+  background-color: var(--art-ivory);
+  border: 1px solid var(--art-ink);
+  padding: clamp(2.25rem, 5vw, 4rem);
+  box-shadow: var(--art-shadow-book);
+  position: relative;
+  text-align: center;
+}
+
+#theme-artisan .art-epistle-card::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border: 1px dashed var(--art-ochre);
+  pointer-events: none;
+}
+
+#theme-artisan .art-epistle-form {
+  max-width: 520px;
+  margin: 1.75rem auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+#theme-artisan .art-epistle-form__row {
+  display: flex;
+  gap: 0.65rem;
+}
+
+#theme-artisan .art-epistle-input {
+  flex: 1;
+  padding: 0.9rem 1.1rem;
+  background-color: var(--art-paper);
+  border: 1px solid var(--art-ink);
+  color: var(--art-ink);
+  font-family: var(--art-font-sans);
+  font-size: 0.9375rem;
+  border-radius: 2px;
+}
+
+#theme-artisan .art-epistle-input:focus {
+  outline: 2px solid var(--art-oxide);
+  outline-offset: 2px;
+}
+
+/* Ink Brown Imprint Footer */
+#theme-artisan .art-footer {
+  background-color: var(--art-ink);
+  color: var(--art-ivory);
+  padding-block: clamp(3.5rem, 6vw, 5.5rem) 2.5rem;
+  border-top: 3px double var(--art-ochre);
+}
+
+#theme-artisan .art-footer__top {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr 1.25fr;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 249, 239, 0.16);
+}
+
+#theme-artisan .art-footer__logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+#theme-artisan .art-footer__desc {
+  font-size: 0.9rem;
+  color: var(--art-ivory-muted);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+#theme-artisan .art-footer__mail {
+  display: inline-block;
+  color: var(--art-ochre);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#theme-artisan .art-footer__heading {
+  font-family: var(--art-font-serif);
+  font-size: 1.15rem;
+  color: var(--art-ochre);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+#theme-artisan .art-footer__links {
+  display: grid;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#theme-artisan .art-footer__link {
+  font-size: 0.875rem;
+  color: var(--art-ivory-muted);
+  transition: color 180ms ease;
+}
+
+#theme-artisan .art-footer__link:hover {
+  color: var(--art-ivory);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#theme-artisan .art-footer__colophon-box {
+  background-color: rgba(255, 249, 239, 0.04);
+  border: 1px solid rgba(201, 165, 108, 0.3);
+  padding: 1.25rem;
+  font-size: 0.8125rem;
+  color: var(--art-ivory-muted);
+  line-height: 1.6;
+}
+
+#theme-artisan .art-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.75rem;
+  font-size: 0.78125rem;
+  color: var(--art-ivory-muted);
+}
+
+#theme-artisan .art-footer__policies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#theme-artisan .art-footer__policies a {
+  color: var(--art-ivory-muted);
+}
+
+#theme-artisan .art-footer__policies a:hover {
+  color: var(--art-ochre);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   ARTISAN MOBILE NAVIGATION DRAWER (.artisan-drawer)
+   -------------------------------------------------------------------------- */
+.artisan-drawer {
+  background-color: var(--art-paper);
+  color: var(--art-ink);
+  border-right: 2px solid var(--art-ink);
+}
+
+.artisan-drawer__header {
+  background-color: var(--art-ivory);
+  border-bottom: 1px solid var(--art-rule-strong);
+  padding: 1.2rem 1.5rem;
+}
+
+.artisan-drawer__title {
+  font-family: var(--art-font-serif);
+  font-size: 1.4rem;
+  color: var(--art-ink);
+}
+
+.artisan-drawer__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 66px);
+  overflow-y: auto;
+}
+
+.artisan-drawer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--art-rule-strong);
+}
+
+.artisan-drawer__item {
+  border-bottom: 1px solid var(--art-rule-strong);
+}
+
+.artisan-drawer__link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  padding-block: 0.95rem;
+  font-family: var(--art-font-serif);
+  font-size: 1.25rem;
+  color: var(--art-ink);
+  transition: color 180ms ease, padding-left 180ms ease;
+}
+
+.artisan-drawer__link:hover {
+  color: var(--art-oxide);
+  padding-left: 0.35rem;
+}
+
+.artisan-drawer__num {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--art-oxide);
+  min-width: 1.5rem;
+}
+
+.artisan-drawer__footer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--art-rule-strong);
+  font-size: 0.8125rem;
+  color: var(--art-ink-muted);
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE BREAKPOINTS (TABLET <= 1024PX & MOBILE <= 768PX)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  #theme-artisan .art-header__mobile-toggle {
+    display: inline-flex;
+  }
+
+  #theme-artisan .art-nav {
+    display: none;
+  }
+
+  #theme-artisan .art-header__logo-link {
+    justify-self: center;
+  }
+
+  #theme-artisan .art-hero__grid,
+  #theme-artisan .art-intro__grid,
+  #theme-artisan .art-folio,
+  #theme-artisan .art-craft-intro,
+  #theme-artisan .art-collections-top,
+  #theme-artisan .art-open-book,
+  #theme-artisan .art-gifting-banner,
+  #theme-artisan .art-faq-layout {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  #theme-artisan .art-folio__gallery {
+    position: static;
+  }
+
+  #theme-artisan .art-open-book::after {
+    display: none;
+  }
+
+  #theme-artisan .art-hero__stage {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  #theme-artisan .art-complementary-grid,
+  #theme-artisan .art-essays-grid,
+  #theme-artisan .art-bookmarks-grid,
+  #theme-artisan .art-letters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #theme-artisan .art-edition-card:nth-child(2),
+  #theme-artisan .art-letter-card:nth-child(2) {
+    margin-top: 0;
+    transform: none;
+  }
+
+  #theme-artisan .art-rhythm-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #theme-artisan .art-footer__top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #theme-artisan .art-currency-select {
+    display: none;
+  }
+
+  #theme-artisan .art-hero__cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #theme-artisan .art-hero__cta-row .art-btn {
+    width: 100%;
+  }
+
+  #theme-artisan .art-hero__colophon-ledger {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  #theme-artisan .art-hero__backing-sheet {
+    display: none;
+  }
+
+  #theme-artisan .art-hero__cover-sheet {
+    grid-column: 1 / 13;
+  }
+
+  #theme-artisan .art-hero__spread-card {
+    grid-column: 2 / 12;
+    transform: none;
+    margin-bottom: -1rem;
+  }
+
+  #theme-artisan .art-hero__annotation {
+    position: static;
+    grid-column: 1 / 13;
+    margin: 0 0 0.75rem 0;
+    justify-self: start;
+  }
+
+  #theme-artisan .art-complementary-grid,
+  #theme-artisan .art-essays-grid,
+  #theme-artisan .art-bookmarks-grid,
+  #theme-artisan .art-letters-grid,
+  #theme-artisan .art-rhythm-steps,
+  #theme-artisan .art-footer__top {
+    grid-template-columns: 1fr;
+  }
+
+  #theme-artisan .art-epistle-form__row {
+    flex-direction: column;
+  }
+
+  #theme-artisan .art-folio__price-shipping {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #theme-artisan *,
+  #theme-artisan *::before,
+  #theme-artisan *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
